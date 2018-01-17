@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <title>웹 표준 관련 태그들 공부하기</title>
+        <meta charset="utf-8">
+        <style>
+            /* 문단태그의 성격 - 오늘쪽으로 여백만큼 늘어지는 모습을 보인다. */
+            dl{border:3px solid red;}
+            dl dt{border:3px solid blue;}
+            dl dd{border:3px solid green;}
+        </style>
+    </head>
+    <body>
+        <!--
+            용어 정의형 목록 태그
+            dl : d list
+            dt : d title
+            dd : d description
+
+            다양한 구조 변화가 가능하다.
+
+            모바일, 태블릿 등의 UI 디자인을 할때
+            터치를 쉽게 하기 위해 카드형 디자인을 하는데
+            이때 dl, dt, dd 구조는 코드가 깔끔하게 나올 수 있다. (권장? 그냥 div? ㅋㅋ)
+        -->
+        <dl>
+            <dt>xhtml이란</dt>
+            <dd> w3c기관에서 제정한 html을 견고하게 하기 위한...</dd>
+            <dt>xhtml이란</dt>
+            <dd> w3c기관에서 제정한 html을 견고하게 하기 위한...</dd>
+        </dl>
+
+        <dl>
+            <dt>xhtml이란</dt>
+            <dt>xhtml이란</dt>
+        </dl>
+
+        <dl>
+            <dd> w3c기관에서 제정한 html을 견고하게 하기 위한...</dd>
+            <dd> w3c기관에서 제정한 html을 견고하게 하기 위한...</dd>
+        </dl>
+
+        <dl>
+            <dd> w3c기관에서 제정한 html을 견고하게 하기 위한...</dd>
+            <dt>xhtml이란</dt>
+        </dl>
+    </body>
+</html>
