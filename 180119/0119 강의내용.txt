@@ -11,3 +11,14 @@ http://webdir.tistory.com/40
 -- 인터넷 교보문고 웹퍼블리싱가이드
 -- 정말 친절하게 가이드가 제시되어 있다.
 http://image.kyobobook.co.kr/ink/html/guide/index.html
+
+
+-- 교육용 웹서버 정보
+host : webstory.ivyro.net
+id : webstory
+pw : green3
+
+http://webstory.ivyro.net/
+
+public_html/webstandard/06/  << 내 자리 번호
+
