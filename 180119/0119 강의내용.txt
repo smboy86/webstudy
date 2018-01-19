@@ -8,3 +8,6 @@ http://webdir.tistory.com/40
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1-transitional.dtd">
 
 
+-- 인터넷 교보문고 웹퍼블리싱가이드
+-- 정말 친절하게 가이드가 제시되어 있다.
+http://image.kyobobook.co.kr/ink/html/guide/index.html
