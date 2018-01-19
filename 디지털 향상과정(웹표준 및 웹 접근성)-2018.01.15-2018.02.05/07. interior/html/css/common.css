@@ -1,0 +1,102 @@
+/* common.css(공통영역내 꾸미기) */
+
+/* 나눔글꼴 웹폰트 적용 */
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+
+/* body꾸미기 */
+
+html,body{height:100%;} /* 높이에 %가 적용되도록 하기 위해서 필요*/
+
+body{
+   font-size:0.75em; /* 0.75em=75%=12px=9pt */
+   font-family:돋움,Dotum,sans-serif;
+   color:#333;
+   line-height:1.2;
+}
+
+a{
+   color:#666;
+   text-decoration:none; /*글자장식 효과 : 없음 */
+}
+
+/*header 영역내 꾸미기 */
+/* 상단로고 */
+#header div.inner h1.logo{
+	border:0px solid green;
+	position:absolute;
+	left:0;
+	top:32px;
+}
+
+
+#header div.inner ul#navi{
+	 border:0px solid red;
+	 padding-top:38px;  /* ★영역내 요소들의 높이를 생성할때는 margin-top이 아닌 padding-top을 사용할 것 */
+	 
+	 margin-left:291px;  /* 로고의 영역으로 활용 */
+}
+#header div.inner ul#navi li{
+	  /*background:url(../images/common/dot.gif) no-repeat 0 4px; */ /* 점모양의 무늬를 li들에 배경그림으로 적용해보기*/
+	 
+	 border:0px solid green;
+	 display:inline; /* li들이 수평구조로 변경됨->문단태그가 인라인화!! */
+
+	 padding-left:34px;
+	 padding-right:35px;
+
+	 /*
+	  psd: 회사소개와 인테리어 사이의 여백 : 75px
+	  padding-left와 padding-right 적용전 화면캡쳐시 기본여백 : 8-2(border두께)=6
+	  75-6=69
+	  69를 나누기 2로 =34와 35발생
+	 */
+}
+
+#header div.inner ul#navi li.first{  /* 메뉴중 first 클래스 위치에만 영향 */
+	padding-left:0;
+	background:none; /* 배경그림 숨기게->점모양이 숨겨짐 */
+}
+
+#header div.inner ul#navi li a{
+	
+	 font-family: "Nanum Gothic", sans-serif;
+	 font-size:18px;
+	 color:#434343;
+}
+
+/* 정보메뉴(로그인/회원가입/즐겨찾기) */
+#header div.inner ul#infoMenu{
+	border:0px solid cyan;
+	position:absolute;
+	right:0;
+	top:25px;
+}
+#header div.inner ul#infoMenu li{
+	border:0px solid red;
+	float:left; /* 수평구조, 사이에 여백 없음, li를 감싸는 부모인 ul의 높이 사라짐 */
+	padding-right:3px;
+}
+#header div.inner ul#infoMenu li.third{
+	padding-right:0;
+}
+
+/* footer 영역내 꾸미기 */
+#footer h2{
+	border:0px solid red;
+    position:absolute;
+	left:0;
+	top:34px;
+}
+#footer address{
+	border:0px solid green;
+	margin-left:239px;
+	padding-top:38px;
+	padding-right:131px;
+	padding-left:27px;
+	font-size:11px;
+	color:#a4a4a4;
+	line-height:1.8;
+	background:url(../images/common/bottom_line.gif) no-repeat left 40px;
+}
+

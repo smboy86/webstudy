@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1-transitional.dtd">
+<html>
+<head>
+<title> 문단태그들과 인라인 태그들 </title>
+<meta charset="utf-8">
+<style>
+   h1,h2,h3,h4,h5,h6{
+	   background-color:yellow;
+		 text-align:center;
+		 /* ★문단태그들은 width선언하지 않았을때 한단계 상위의 부모 크기를 따라감
+      ★내용이 있는 주변 여백을 영역으로 갖으면서 위/아래 다른 영역의 내용이 자신의 옆으로 오지 못하게 함
+			★ 문단태그들은 정렬속성(text-align)을 적용할 수 있다
+		 */
+		 
+		p{ background-color:red;}
+		div{ background-color:green;}
+		
+	 }
+</style>
+</head>
+<body>
+  <!-- 주제용 문단태그들-->
+  <h1> heading1 </h1>
+	<h2> heading2 </h2>
+	<h3> heading3 </h3>
+	<h4> heading4 </h4>
+	<h5> heading5 </h5>
+	<h6> heading6 </h6>
+	
+	<!-- 본문용 문단태그(글 또는 그림 등을 감쌀때 주로 활용) -->
+	<p> p태그 </p>
+	
+	<!-- 레이아웃 문단태그(문단들을 감싸거나 레이아웃(박스구조))에서 주로 활용 -->
+	<div> div태그 </div>
+	
+	<!-- 순서있는 리스트/순서없는 리스트 : 목록형 문단태그들-->
+	<ol>
+	    <li>사과</li>
+			<li>딸기</li> 
+			<li>참외</li> 		 
+	</ol>
+	
+	<ul>
+	    <li>사과</li>
+			<li>딸기</li> 
+			<li>참외</li> 		 
+	</ul>
+	
+	<!-- 단어 정의형 즉 사전식 정의형 문단태그 -->
+	<dl>
+	    <dt>주제</dt>
+			<dd>설명</dd>
+	</dl>
+	
+	<!-- 문단유형의 인용문 -->
+	<blockquote> 인용문 </blockquote>
+	<!-- 인라인 유형의 인용문 -->
+	★<q> 인용문 </q>★
+	
+	<address> 서울시 구로구 구로동...</address>
+</body>
+</html>

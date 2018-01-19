@@ -1,0 +1,22 @@
+/* reset.css(초기화 작업) */
+
+/* 태그들에 대한 여백 초기화 */
+html,body,h1,h2,h3,h4,h5,h6,p,div,a,span,ol,ul,li,dl,dt,dd,address,blockquote,q,table,tr,th,td,form,input,textarea,select,lable,legend{
+    margin:0;
+	padding:0;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-size:100%; /* 16px=100%=1em=12pt */
+	font-family:"맑은 고딕",돋움,Dotum,sans-serif;
+	color:#000;
+	font-weight:normal; /*글꼴두께 : 보통으로 */
+}
+
+ol,ul { list-style:none;}
+hr { display:none; }
+img{ border:0; }
+
+em, address{
+	font-style:normal; /* 기울임꼴이 아니게 */
+}

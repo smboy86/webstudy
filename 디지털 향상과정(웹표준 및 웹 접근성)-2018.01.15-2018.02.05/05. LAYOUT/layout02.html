@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>layout01.html</title>
+<meta charset="utf-8">
+<style type="text/css">
+<!--
+    html,body,div{margin:0; padding:0;}
+	html,body{height:100%;} /* 높이에 %적용되도록 하기위해 */
+	
+	#wrapper{ border:5px solid red; margin:0 auto;width:1000px; height:500px;}
+	#wrapper #header{height:100px; background:green;}
+	#wrapper #contents{height:300px; background:orange;}
+	#wrapper #footer{height:100px; background:gray;}
+	/* ★문단태그들은 width선언하지 않아도 한단계 상위 부모의 크기를 따라감 */
+	
+	#wrapper #contents #c01{ width:200px; height:100%; background:#333; float:left;}
+	#wrapper #contents #c02{ width:600px; height:100%; background:#666;float:left;}
+	#wrapper #contents #c03{ width:200px; height:100%; background:#999;float:left;}
+	
+	-->
+</style>
+</head>
+<body>
+    <div id="wrapper"><!--전체감싸기 시작-->
+	    <div id="header">헤더</div>
+		<div id="contents"><!--contents-->
+		    <div id="c01">컨텐츠01</div>
+			<div id="c02">컨텐츠02</div>
+			<div id="c03">컨텐츠03</div>
+		</div><!--//contents-->
+		<div id="footer">하단</div>
+	</div><!--전체감싸기 끝-->
+</body>
+</html>

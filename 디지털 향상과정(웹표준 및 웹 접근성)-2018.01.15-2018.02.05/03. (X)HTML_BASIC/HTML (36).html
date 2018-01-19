@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko" >
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=euc-kr" />
+	<title>개체 삽입</title>
+</head>
+<body>
+  <h1>Object를 이용한 개체 삽입</h1>
+	<h2>플래시 개체</h2>
+	<div>
+    <object type="application/x-shockwave-flash" data="data/banner.swf" width="306" height="125" id="banner">
+      <param name="movie" value="data/banner.swf" />
+      <param name="allowFullScreen" value="false" />
+      <param name="quality" value="high" />
+      <param name="bgcolor" value="#ffffff" />
+	  </object>
+  </div>
+
+  <h2>동영상 개체</h2>
+  <div class="interview">
+    <object id="player" width="320px" height="300px" type="application/x-oleobject" classid="clsid:22D6F312-B0F6-11D0-94AB-0080C74C7E95" >
+      <param name="FileName" value="data/interview.wmv" />
+      <param name="autoStart" value="0">
+      <param name="showcontrols" value="1" /> 
+      <!--[if !IE]> <-->
+        <object width="320px" height="300px" type="video/x-ms-wmv" data="data/interview.wmv">
+          <param name="autostart" value="0" />
+          <param name="showcontrols" value="1" />
+          <p>동영상 파일 : <a href="data/interview.wmv">두산베어스 내야수 손시헌 선수 인터뷰</a> </p>
+        </object>
+      <!--> <![endif]-->
+    </object>
+  </div>
+
+</body>
+</html>

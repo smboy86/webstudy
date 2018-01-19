@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1-transitional.dtd">
+<html>
+<head>
+<title> xhtml익혀보기 </title>
+<meta charset="utf-8">
+<style>
+    dl{ border:5px solid red;}
+	dt{ border:3px solid blue; text-align:center;}
+	dd{ border:3px solid green; text-align:right;}
+</style>
+</head>
+<body>
+    <dl>
+	     <dt> 스타일시트란?</dt>
+		 <dd> html태그를 꾸미기 위한 용도....</dd>
+	</dl>
+	
+	<!--
+	   dl : 용어 정의형 리스트 즉 사전식 리스트
+	   dt : dl안의 주제형 
+	   dd : dl안의 주제를 설명하는 본문형
+	   
+	   ★주의하기!! : dl안의 dt와 dd를 사용, 그외 태그는 안됨
+	   ex)  아래의 유형은 안됨!!
+	         <dl>
+	            <li>사과</li>
+				<a href="#">딸기</a>
+				<dd> 귤</dd>
+			</dl>
+		    아래와 같이 활용하세요!!
+            <dl>
+	            <dd>사과</dd>
+				<dd><a href="#">딸기</a></dd>
+				<dd> 귤</dd>
+			</dl>	
+
+        ※ 1. dl안의 dt와 dd요소들은 순서에 관계 없다
+           2. dl안의 dt와 dd요소들은 dd들로만 선언되어 있거나 dt로만 선언해도 된다
+		★dl, dt, dd는 모두 문단태그들 ->정렬속성 사용 가능   
+	-->
+</body>
+</html>

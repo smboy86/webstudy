@@ -1,0 +1,4 @@
+/* css파일을 그룹처럼 한 파일로 생성함 */
+@import url(./reset.css);
+@import url(./common.css);
+@import url(./layout.css);

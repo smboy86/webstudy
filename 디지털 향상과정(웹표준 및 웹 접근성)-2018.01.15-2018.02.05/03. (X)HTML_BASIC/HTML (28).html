@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko" >
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=euc-kr" />
+	<title>제목 셀과 내용 셀의 연관성 부여</title>
+</head>
+<body>
+	<h1>제목 셀과 내용 셀의 연관성</h1>
+  <h2>scope 속성의 사용</h2>
+  <table border="1">
+    <tr>
+      <th scope="col">서적명</th>
+      <th scope="col">출판사</th>
+      <th scope="col">판매 부수</th>
+    </tr>
+    <tr>
+      <th scope="row">웹 접근성 향상을 위한 웹 표준</th>
+      <td>제우미디어</td>
+      <td>25,000부</td>
+    </tr>
+    <tr>
+      <th scope="row">크리에이티브 디자이너를 위한 웹 표준</th>
+      <td>제우미디어</td>
+      <td>20,000부</td>
+    </tr>
+	</table>
+
+  <h2>id, headers 속성의 사용</h2>
+	<table border="1">
+    <tr>
+      <th id="publishing">출판사</th>
+      <th id="bookTitle">서적명</th>
+      <th id="circulation">판매 부수</th>
+    </tr>
+    <tr>
+      <th headers="publishing" id="jeumedia" rowspan="2">제우미디어</th>
+      <td headers="publishing jeumedia bookTitle">웹 접근성 향상을 위한 웹 표준</td>
+      <td headers="circulation">25,000부</td>
+    </tr>
+    <tr>
+      <td headers="publishing jeumedia bookTitle">크리에이티브 디자이너를 위한 웹 표준</td>
+      <td headers="circulation">20,000부</td>
+    </tr>
+	</table>
+</body>
+</html>
