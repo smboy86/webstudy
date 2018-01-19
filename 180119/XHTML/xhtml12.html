@@ -4,7 +4,7 @@
     <meta charset="utf-8">    
     <title> 문단태그들과 인라인 태그들 </title>
     <style>
-        h1,h2,h3,h4,h5,h6{
+        h1, h2, h3, h4, h5, h6 {
             /* 
                 문단태그들은 width선언하지 않아도 한 단계 상위의 크기를 따라감 
                 내용이 있는 주변 여백을 영역으로 갖으면서 위/아래 다른 영역의 내용이 자신의 옆으로 오지 못하게 함
@@ -13,7 +13,18 @@
             background-color:yellow;
             text-align:center;
         }
-        p{ background-color:red;}
+        p { background-color:red;}
+        div { background-color:green; text-align: center;}
+        ol,ul { border:3px solid blue;}
+        li { border:3px solid grey;}
+
+        dl{border:3px solid black;}
+        dl dt { border:3px solid pink;}
+        dl dd { border:3px solid cyan;}
+
+        blockquote, q { background-color:yellow;}
+        address { border:3px solid green;}
+
     </style>
 </head>
 <body>
