@@ -42,9 +42,8 @@ public_html/webstandard/06/  << 내 자리 번호
 -------------------- 필기
 최상위폴더 구조
 
-삼성화재    - index.html
+웹사이트    - index.html
            - a  - a1  - logo.gif
                 - a2 
            - b  - b1  - sub.html
                 - b2
-         
