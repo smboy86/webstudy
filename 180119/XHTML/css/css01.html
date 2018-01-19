@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta charset="utf-8">    
+    <title> 스타일시트 기본형식 익히기 </title>
+    <style type="text/css">
+        html, body { height: 100% }
+        /* 기본적으로 body 는 상하좌우 여백이 존재하기 때문에 디자인시 필요에 따라 그것을 없애는 작업(초기화)가 필요하다. */
+        html { border: 0px solid blue; } 
+        /* sans-serif : 폰트명이 아니라, 폰트 계열을 의미 - 반듯반듯한 폰트체 */
+        body {
+            border: 5px solid red;
+            height: 100%;
+            font-family: "맑은 고딕", 굴림, 돋움, sans-serif;
+            font-size: 20px;
+            color:black;
+        }
+
+        p, div { color:red;}
+
+        /*
+        스타일시트 꾸미기 [기본형식1]
+        꾸밀태그 { 속성: 속성값; 속성: 속성값;
+        주의!! 콜론(:) 뒤에서 엔터하면 안됨
+        세미콜론(;) : 한 문장의 끝을 의미
+        세미콜론끼리는 한 줄로 연결해도 되고 엔터해도 됨
+
+        스타일시트 꾸미기 [기본형식2]
+        꾸밀태그, 꾸밀태그, 꾸밀태그 {속성:속성값;속성:속성값;}
+        같은 효과를 여러태그에 동시 적용하고 할때 컴마(,) 활용
+
+        */
+    </style>
+</head>
+<body>
+    <!-- 스타일시트 : 문서꾸미기 = body 태그 -->
+
+    여기는 body영역입니다.
+    <p>딸기</p>
+    <p>딸기</p>
+    <p>딸기</p>
+    <p>딸기</p>
+
+    <div>딸기</div>
+    <div>딸기</div>
+    
+    
+</body>
+</html>
