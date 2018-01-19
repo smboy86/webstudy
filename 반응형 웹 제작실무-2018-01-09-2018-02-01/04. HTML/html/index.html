@@ -1,0 +1,571 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>삼양식품</title>
+<meta charset="utf-8">
+<meta name="robots" content=" index, follow">
+<meta name="삼양식품" content="식품 전문업체, 삼양라면, 불닭볶음면, 별뽀빠이, 삼양우유 등 제품소개, 이벤트, 사회공헌 소개">
+<meta name="description" content="페이지 설명">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="./css/import.css" />
+
+<link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+
+<!--웹폰트-->
+<link rel="stylesheet" href="./css/base.css" type="text/css" charset="utf-8" />
+
+<!--자바스크립트-->
+
+<!-- Link Swiper's CSS --> 
+<link rel="stylesheet" href="./css/swiper.min.css"> 
+<link rel="stylesheet" href="./css/swiper.css"> 
+	
+<!-- 이벤트 슬라이드 CSS --> 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<link rel="stylesheet" href="./css/superslide.css"> 
+</head>
+<body>
+
+	<main>
+	
+		<!--인포 메뉴시작-->
+		<section id="infomenu">
+		<div class="inner">
+			<nav class="btn">
+				<ul id="navi01">
+					<li class="tab01"><a href="#">삼양</a></li>
+					<li class="tab02"><a href="http://www.sydeliciousshop.com/">삼양맛샵</a></li>
+					<li class="tab03"><a href="http://www.samyangfood.co.kr/kor/ir/bulletin.do">IR</a></li>
+					<li class="tab04"><a href="http://www.samyangfood.co.kr/kor/recruit/list.do">인재채용</a></li>
+				</ul>
+			</nav>
+			<!-- login-->
+			<div class="login">
+				<ul id="info">
+					<li class="first"><a href="index_login.html">로그인</a></li>
+					<li><a href="#">회원가입</a></li>
+					<li><a href="#">마이페이지</a></li>
+				</ul>
+				
+				<div id="language">
+					<form action="#" method="post">
+					<fieldset>
+					<legend> 언어선택</legend>
+					<select name="lengu" title="사이트 선택">
+					  <option value='#'>KOR</option>
+					  <option value='#'>ENG</option>
+					  <option value='#'>CHN</option>
+					</select>
+					</fieldset>
+					</form>
+				</div>
+			</div><!-- //login-->
+			
+		</div>
+		</section>
+			<!--//상단위 메뉴끝-->
+				
+				
+		<header><!--헤더-->
+		  <div class="inner"><!--헤더inner-->
+		  
+			<!--상단로고-->
+			<div class="main">
+				<h1 class="logo"><a href="index.html"><img src="./image/common/logo.png" alt="삼양"/></a></h1>
+				<h1 class="logo-t"><a href="index.html"><img src="./image/common/logo-t.png" alt="삼양"/></a></h1>
+				<h1 class="menu"><a href="#"><img src="./image/common/menu.png" alt="삼양"/></a></h1>
+				
+				<div class="shop"><p><a href="#">쇼핑몰</a></p></div>
+				
+				<!--메인메뉴시작-->
+		
+				<nav id="navi02">
+					<ul>
+						<li><a href="index_sub01.html">브랜드</a></li>
+						<li><a href="index_sub02.html">삼양패밀리</a></li>
+						<li><a href="index_sub03.html">홍보관</a></li>
+						<li><a href="index_sub04.html">커뮤니티</a></li>
+						<li><a href="index_sub05.html">회사소개</a></li>
+					</ul>
+				</nav>
+				
+			
+			  <!--//메인메뉴-->
+			</div>
+			
+		  </div><!--//헤더inner-->
+		</header><!--헤더끝-->
+		
+		
+		<section id="visual">
+		<!-- Swiper -->
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide bg1">
+						<div class="inner"><!--비주얼inner-->
+							<dl class="text1">
+								<dt>친구라면</dt>
+								<dd><img src="./image/main/v-img.png"></dd>
+							</dl>
+							<dl class="text2">
+								<dt class="t1">마음을 함께 전달해요</dt>
+								<dt class="t2">삼양라면</dt>
+								<dd class="t-img"><img src="./image/main/v-img2.png"></dd>
+							</dl>
+						</div><!--//비주얼inner-->
+					</div>
+					<div class="swiper-slide bg2"></div>
+					<div class="swiper-slide bg3"></div>
+					<div class="swiper-slide bg4"></div>
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+				<!-- Add Arrows -->
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			</div>
+
+			<!-- Swiper JS -->
+			<script src="./js/swiper.min.js"></script>
+
+			<!-- Initialize Swiper -->
+			<script>
+			var swiper = new Swiper('.swiper-container', {
+				pagination: '.swiper-pagination',
+				nextButton: '.swiper-button-next',
+				prevButton: '.swiper-button-prev',
+				paginationClickable: true,
+				//spaceBetween: 30,
+				centeredSlides: true,
+				autoplay: 2500,
+				autoplayDisableOnInteraction: false
+			});
+			</script>
+		</section>	
+		
+		<!--보조메뉴-->
+		<section id="main-s01">
+			<div class="inner">
+				<ul class="nav">
+                    <li>
+                        <a href="#product" class="scroll">삼양 제품소개</a>
+                    </li>
+                    <li class="center">
+                        <a href="#family" class="scroll">삼양 패밀리</a>
+                    </li>
+                    <li>
+                        <a href="#community" class="scroll">삼양 커뮤니티</a>
+                    </li>
+                </ul>
+			</div>
+		</section>
+		<!--//메뉴-->
+		
+		<script>
+		$(document).ready(function(){
+			$('.scroll').click(function(e){
+				e.preventDefault();
+				$('html, body').animate({scrollTop:$(this.hash).offset().top}, 500);
+			});
+		});
+		</script>
+		
+		<section id="main-s02">
+		
+		<div class="inner">
+				<ul>
+					<li class="news"><a href="#">공지사항</a></li>
+					<li class="news2"><a href="#">※2016년 9월(월), 삼양식품 홈페이지 리뉴...</a></li>
+				</ul>
+		</div>
+		<div class="event-t"><a href="#"></a></div>
+		
+		<div class="slider">
+		  <div class="bd">
+			<ul> 
+			  <li>
+			  <dl class="event-55">
+				<dt class="text1">EVENT</dt>
+				<dt class="text2">모바일 홈페이지 런칭기념<br>삼양라면 공유 이벤트</dt>
+				<dt class="text3">창립55주년 기념 이벤트 공유하고<br>푸짐한 선물 받자!</dt>
+				<dt class="text4"><a href="http://www.samyangfood.co.kr/kor/community/event/view.do?eSeq=9">자세히보기</a></dt>
+			   </dl>
+			   </li>
+			  
+			  <li>
+			  <dl class="event-5">
+				<dt class="text1">EVENT</dt>
+				<dt class="text2">불닭볶음면 5주년<br>기념이벤트</dt>
+				<dt class="text3">여러분이 가장 좋아하는<br>불닭볶음면 BEST MENU를 뽑아주세요</dt>
+				<dt class="text4"><a href="http://www.samyangfood.co.kr/kor/community/event/view.do?eSeq=9">자세히보기</a></dt>
+			   </dl>
+			  </li>
+			  
+			   <li>
+			   <dl class="event-s">
+				<dt class="text1">EVENT</dt>
+				<dt class="text2">2016웹어워드 코리아 수상시념<br>SNS공유이벤트</dt>
+				<dt class="text3">웹어워드코리아 최우수상 수상 기념 이벤트<br>공유하고 푸짐한 선물 받자!</dt>
+				<dt class="text4"><a href="http://www.samyangfood.co.kr/kor/community/event/view.do?eSeq=7&pageIndex=1&pageUnit=10&searchCondition=&searchKeyword=">자세히보기</a></dt>
+			   </dl> 
+			   </li>
+			</ul>
+		  </div>
+		  
+		  <div class="hd">
+			<ul>
+			</ul>
+		  </div>
+
+		   <div class="pnBtn prev"> <span class="blackBg"></span> <a class="arrow" href="javascript:void(0)"></a> </div>
+		  <div class="pnBtn next"> <span class="blackBg"></span> <a class="arrow" href="javascript:void(0)"></a> </div>
+		  
+		</div>
+		
+		<!-- 이벤트 제이커리 --> 
+	<script type="text/javascript" src="./js/superslide.2.1.js"></script>
+	
+		<script type="text/javascript">
+		jQuery(".slider .bd li").first().before( jQuery(".slider .bd li").last() );
+		jQuery(".slider").hover(function(){
+			 jQuery(this).find(".arrow").stop(true,true).fadeIn(300) 
+			 },function(){ 
+				jQuery(this).find(".arrow").fadeOut(300) });				
+			 jQuery(".slider").slide(
+				{ titCell:".hd ul", mainCell:".bd ul", effect:"leftLoop",/*autoPlay:true,*/ vis:3,autoPage:true, trigger:"click"}
+			);
+		</script>
+		</section>
+		
+		<section id="main-s03">
+			<div class="inner" id="product"><!--inner-->
+				<ul class="title">
+					<li class="text1">삼양 제품소개</li>
+					<li class="text2">다양한 제품을 한곳에서 즐기세요!</li>
+					<li class="text3">Delicious Together!</li>
+				</ul>
+				<ul class="btn">
+					<li class="btn1"><a href="#">라면류</a></li>
+                    <li class="btn2"><a href="#">장소스류</a></li>
+                    <li class="btn3"><a href="#">유제품류</a></li>
+					<li class="btn4"><a href="#">스낵류</a></li>
+				</ul>
+				
+				<div class="swiper-container02">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+						   <dl class="snac1">
+							<a href="http://www.samyangfood.co.kr/kor/brand/view.do?searchCateCd1=&searchMainUseYn=Y&seq=327">
+							<dd><img src="./image/main/prizle.png"/></dd>
+							<dd><img src="./image/main/p-line.gif"/></dd>
+							<dt>언제 어디서나 자유롭게 즐기는 프레즐</dt>
+							<dd>프리첼</dd>
+							</a>
+							</dl>
+						</div>
+						<div class="swiper-slide">
+						   <dl class="snac2">
+						   <a href="http://www.samyangfood.co.kr/kor/brand/view.do?searchCateCd1=&searchMainUseYn=Y&seq=75">
+							<dd><img src="./image/main/starsnack.png"/></dd>
+							<dd><img src="./image/main/p-line.gif"/></dd>
+							<dt>별사탕을 쏙쏙 골라먹는 재미!</dt>
+							<dd>별뽀빠이</dd>
+							</a>
+							</dl>
+						</div>
+						<div class="swiper-slide">
+						<a href="#"> 
+						   <dl class="snac3">
+						   <a href="http://www.samyangfood.co.kr/kor/brand/view.do?searchCateCd1=&searchMainUseYn=Y&seq=79">
+							<dd><img src="./image/main/saddobob.png"/></dd>
+							<dd><img src="./image/main/p-line.gif"/></dd>
+							<dt>부드럽고 달콤한 영양 간식</dt>
+							<dd>사또밥</dd>
+							</a>
+							</dl>
+						</div>
+						
+						
+						<div class="swiper-slide">  
+						   <dl class="snac4">
+						   <a href="http://www.samyangfood.co.kr/kor/brand/view.do?searchCateCd1=&searchMainUseYn=Y&seq=77"> 
+							<dd><img src="./image/main/jjanggu.png"/></dd>
+							<dd><img src="./image/main/p-line.gif"/></dd>
+							<dt>베스트 장수 스낵</dt>
+							<dd>짱구</dd>
+							</a>
+							</dl>
+						
+						</div>
+
+						<div class="swiper-slide">
+						   <dl>  
+								<dt>주제</dt>
+								<dd>내용</dd>
+						   </dl>
+						</div>
+						<div class="swiper-slide">
+						   <dl>  
+								<dt>주제</dt>
+								<dd>내용</dd>
+						   </dl>
+						</div>
+					</div>
+					<!-- Add Pagination -->
+					<div class="swiper-pagination"></div>
+				</div>
+						
+				<!-- Swiper JS -->
+				<script src="./js/swiper.min.js"></script>
+
+			</div><!--//inner-->
+
+				<!-- Add Arrows -->
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+					
+				<!-- Initialize Swiper -->
+				<script>
+				var swiper = new Swiper('.swiper-container02', {
+					pagination: '.swiper-pagination',
+					paginationClickable: true,
+					nextButton: '.swiper-button-next',
+					prevButton: '.swiper-button-prev',
+					slidesPerView: 4,
+					spaceBetween: 14,
+					breakpoints: {
+						1024: {
+							slidesPerView: 3,
+							spaceBetween: 20
+						},
+						768: {
+							slidesPerView: 2,
+							spaceBetween: 18
+						},
+						640: {
+							slidesPerView: 2,
+							spaceBetween: 25
+						},
+						480: {
+							slidesPerView: 1,
+							spaceBetween: 0
+						}
+					}
+				});
+				</script>
+		</section>
+		
+		<section id="main-s04">
+			<div class="inner">
+				<ul>
+					<li class="title">신제품</li>
+					<li class="text1">핵불닭볶음면 · 파개장 · 쿨불닭비빔면</li>
+				</ul>
+				<div class="img">
+                    <img src="./image/main/new_img.png" alt=""/>
+                </div>
+			</div>
+		</section>
+		
+		<section id="main-s05" >
+			<div class="inner" id="family">
+			<ul class="title">
+				<li class="text1">삼양패밀리</li>
+				<li class="text2">삼양식품의 관계·계열사를 소개합니다.</li>
+			</ul>
+			
+			<div class="box">
+				<dl class="box1"><a href="#">
+					<dt>대관령 삼양 목장</dt>
+					<dd>600만평의 광할한 대지<br> 푸르른 대관령 무공해 천연 목장</dd>
+					</a>
+				</dl>
+				<dl class="box2"><a href="#">
+					<dt>삼양새아침</dt>
+					<dd>식생활 문화의 밝은 햇살</dd>
+					</a>
+				</dl>
+				<dl class="box3"><a href="#">
+					<dt>호면당</dt>
+					<dd>품격있는 프리미엄 <br>누들하우스</dd>
+					</a>
+				</dl>
+				<dl class="box4"><a href="#">
+					<dt>삼양제주우유</dt>
+					<dd>자연에 가장 가까운맛</dd>
+				</dl></a>
+			</div>
+			</div>
+		</section>
+		
+		<section id="main-s06">
+			<div class="inner">
+				<ul>
+					<li class="text1">삼양맛샵오픈</li>
+					<li class="text2">삼양식품의 다양한 제품을 만나보세요</li>
+					<li class="btn"><a href="#">자세히 보기</a></li>
+				</ul>
+			</div>
+		</section>
+	
+		<section id="main-s07">
+			<div class="inner" id="community">
+				<ul class="title">
+					<li class="text1">삼양 커뮤니티</li>
+					<li class="text2">삼양식품은 여러분과 함께 맛있는 세상을 만들어갑니다.</li>
+				</ul>
+				<div class="vedio">
+				<iframe width="643" height="530" src="https://www.youtube.com/embed/3n8Dtth6jGg" frameborder="0" allowfullscreen></iframe>
+				</div>
+				
+				<div class="sns"><!--sns-->
+					<h1>SNS</h1>
+					<ul class="icon">
+					<li><a href="https://www.facebook.com/samyangfoods" target="_blank" title="새창열림" ><img src="./image/main/icon-facebook.png"/></a></li>
+					<li><a href="http://blog.naver.com/samyangfoods" target="_blank" title="새창열림" ><img src="./image/main/icon-blog.png"/></a></li>
+					<li><a href="https://www.instagram.com/samyangfoods/" target="_blank" title="새창열림" ><img src="./image/main/icon-insta.png"/></a></li>
+					<li><a href="https://twitter.com/samyangfoods" target="_blank" title="새창열림" ><img src="./image/main/icon-twiter.png"/></a></li>
+					</ul>
+					<div class="scroll-t">
+						<ul>
+							<li><a href="#"><img src="./image/main/samyangfacebook01.png"/></a></li>
+							<li><a href="#"><img src="./image/main/samyangfacebook02.png"/></a></li>
+						</ul>
+					</div>
+					
+					<div class="scroll"><!--페이스북 연결-->
+						<iframe class="face-book" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsamyangfoods&tabs=timeline&width=420&height=326&small_header=true&adapt_container_width=false&hide_cover=true&show_facepile=false&appId" width="420" height="326" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+						
+						<div class="fb-page" data-href="https://www.facebook.com/samyangfoods" data-tabs="timeline" data-width="420" data-height="326" data-small-header="true" data-adapt-container-width="false" data-hide-cover="true" data-show-facepile="false"><blockquote cite="https://www.facebook.com/samyangfoods" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/samyangfoods"></a></blockquote>
+						</div>
+						
+						<div id="fb-root"></div>
+							<script>(function(d, s, id) {
+							  var js, fjs = d.getElementsByTagName(s)[0];
+							  if (d.getElementById(id)) return;
+							  js = d.createElement(s); js.id = id;
+							  js.src = "https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=";
+							  fjs.parentNode.insertBefore(js, fjs);
+							}(document, 'script', 'facebook-jssdk'));</script>
+						
+					</div><!--//페이스북 연결-->
+					
+					
+				</div><!--//sns-->
+				
+				<div class="letter">
+				<a href="#">
+					<ul>
+						<li class="text1">삼양사연</li>
+						<li class="text2">삼양식품과 함께한<br />여러분의 다양한 사연을 기다립니다.</li>
+					</ul>
+				</a>
+				</div>
+				<div class="recipe">
+				<a href="#">
+					<ul>
+						<li class="text1">레시피</li>
+						<li class="text2">삼양라면 레시피 : 파계라면</li>
+						<li class="text3">2017.03.06</li>
+					</ul>
+				</a>
+				</div>
+			</div>
+		</section>
+		
+		<footer class="main" style="clear:both;">
+			<div class="inner"><!--inner-->
+				<p class="logo2"><img src="./image/common/logo2.png" alt="삼양"/></p>
+				<div class="foot-area01"><!--foot-area01-->
+				<ul class="footer-menu">
+					<li><a href="/kor/information/company/index.do">회사소개</a></li>
+					<li><a href="/kor/community/inquiry/write.do">고객지원</a></li>
+					<li><a href="/kor/ir/bulletin.do">IR</a></li>
+					<li><a href="/kor/recruit/list.do">인재채용</a></li>
+					<li><a href="/kor/information/location/index.do">찾아오시는 길</a></li>
+				</ul>
+				
+				<address class="add">
+					서울특별시 성북구 오패산로3길 104(하월곡동) <span>Tel. 02-940-3000</span><span>Fax. 02-942-4350</span><br>
+					※ 고객지원센터 : 080-940-3333 (무료상담전화) <br>
+					상담시간 (평일) 오전 9시 - 오후 6시 [점심시간 : 오후 12시 - 1시 ]
+				</address>
+				</div><!--//foot-area01-->
+				
+				<div class="foot-area01-t"> 
+				<ul class="footer-menu02">
+					<li><a href="/kor/information/company/index.do">회사소개</a></li>
+					<li><a href="/kor/community/inquiry/write.do">고객지원</a></li>
+					<li><a href="#">pc버전</a></li>
+					<li>
+						<form action="#" method="post">
+							<fieldset>
+							<legend></legend>
+							<select name="lengu" title="사이트 선택">
+							  <option value='#'>Family site</option>
+							  <option value='#'>삼양맛샵</option>
+							  <option value='#'>삼양목장</option>
+							  <option value='#'>호면당</option>
+							  <option value='#'>삼양새아침</option>
+							  <option value='#'>제주우유</option>
+							</select>
+							</fieldset>
+						</form>
+					</li>
+					<li>
+						<form action="#" method="post">
+							<fieldset>
+							<legend></legend>
+							<select name="lengu" title="사이트 선택">
+							  <option value='#'>ENGLISH</option>
+							  <option value='#'>CHINA</option>
+							  <option value='#'>KOREA</option>
+							</select>
+							</fieldset>
+						</form>
+					</li>
+				</ul>
+				
+				<address class="add02">
+					서울특별시 성북구 오패산로3길 104(하월곡동)<br><span>Tel. 02-940-3000</span>  <span>Fax. 02-942-4350</span>
+				</address>
+				</div>
+				
+				<div class="foot-area02"><!--그림-->
+					<div class="family">
+						<form action="#" method="post">
+						<fieldset>
+						<legend> 패밀리사이트</legend>
+						<select name="lengu" title="사이트 선택">
+						  <option value='#'>패밀리사이트</option>
+						  <option value='#'>삼양맛샵</option>
+						  <option value='#'>삼양목장</option>
+						  <option value='#'>호면당</option>
+						  <option value='#'>삼양새아침</option>
+						  <option value='#'>제주우유</option>
+						</select>
+						</fieldset>
+						</form>
+					</div>
+					<p style="margin-top:28px;">
+					<img src="./image/common/wa.png" alt="웹어워드2017"/>
+					<p>
+				</div>
+			</div><!--//inner-->
+		</footer>
+		<footer class="adr"><!--adr-->
+			<div class="inner">
+				<p class="copyright">Copyright © 2016 Samyangfoods. All rights reserved.</p>
+				<ul class="sns">
+					<li><a href="http://blog.naver.com/samyangfoods" target="_blank"><img src="./image/common/footer_blog.png" alt=""></a></li>
+					<li><a href="https://www.instagram.com/samyangfoods/" target="_blank"><img src="./image/common/footer_facebook.png" alt=""></a></li>
+					<li><a href="https://twitter.com/samyangfoods" target="_blank"><img src="./image/common/footer_insta.png" alt=""></a></li>
+					<li><a href="https://www.facebook.com/samyangfoods" target="_blank"><img src="./image/common/footer_twiter.png" alt=""></a></li>
+				</ul>
+			</div><!--//adr-->
+		</footer>
+		
+	</main>
+</body>
+</html>

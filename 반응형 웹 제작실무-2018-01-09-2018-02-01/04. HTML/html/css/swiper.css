@@ -1,0 +1,192 @@
+
+/*
+html, body {
+	position: relative;
+	height: 100%;
+}
+body {
+	background: #eee;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color:#000;
+	margin: 0;
+	padding: 0;
+}
+*/
+
+section#visual{width:100%; height:605px; padding-bottom:20px}
+/*(swiper)높이값 100%는 임시로 설정해 둠->px인지 %인지 판단하여 작업*/
+
+
+.swiper-container {
+	width: 100%;
+	height: 100%;
+}
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+.bg1{
+	background:url(../image/main/main_visual.png) no-repeat center top;
+	background-size:cover;
+	position:relative;
+	border:0px solid red;
+}
+.bg2{
+	background:url(../image/main/v2.jpg)  no-repeat center top;
+	background-size:cover;
+}
+.bg3{
+	background:url(../image/main/v3.jpg)  no-repeat center top;
+	background-size:cover;
+}
+.bg4{
+	background:url(../image/main/v4.jpg) no-repeat center top;
+	background-size:cover;
+}
+
+	/*비주얼*/
+dl.text1{
+	position:absolute;
+	top:43px;
+	left:56px;
+}
+
+dl.text1 dt{
+	font-family: 'NanumBrush';
+	font-size:48px;
+	color:#fff;
+	float:left;
+	display:inline;
+}
+
+dl.text1 dd{
+	float:left;
+	display:inline;
+}
+
+dl.text2{
+}
+
+dl.text2 dt.t1{
+	font-family: 'NanumBrush';
+	font-size:72px;
+	color:#fff;
+	position:absolute;
+	top:159px;
+	right:412px;
+}
+
+dl.text2 dt.t2{
+	font-family: 'NanumBrush';
+	font-size:72px;
+	color:#f36621;
+	position:absolute;
+	top:247px;
+	right:412px;
+}
+
+dl.text2 dd.t-img{
+	position:absolute;
+	top:370px;
+	right:412px;
+}
+
+@media all and (min-width: 600px) and (max-width: 1279px) {
+	
+	
+
+section#visual{
+	height:840px;
+	padding-bottom:0;
+}
+	
+.bg1{
+	background:url(../image/main/main_visual-t.png) no-repeat center top;
+	background-size:cover;
+	position:relative;
+}
+
+.bg2{
+	background:url(../image/main/main_visual-t.png) no-repeat center top;
+	background-size:cover;
+}	
+
+.bg3{
+	background:url(../image/main/main_visual-t.png) no-repeat center top;
+	background-size:cover;
+}	
+
+.bg4{
+	background:url(../image/main/main_visual-t.png) no-repeat center top;
+	background-size:cover;
+}
+
+dl.text1{
+	position:absolute;
+	top:41px;
+	left:30px;
+}
+
+dl.text1 dt{
+	font-family: 'NanumBrush';
+	font-size:35px;
+	color:#fff;
+	float:left;
+	display:inline;
+}
+
+dl.text1 dd img{
+	width:110px;
+	height:40px;
+	float:left;
+	display:inline;
+}
+
+dl.text2{
+}
+
+dl.text2 dt.t1{
+	font-family: 'NanumBrush';
+	font-size:60px;
+	color:#fff;
+	position:absolute;
+	top:312px;
+	right:30px;
+}
+
+dl.text2 dt.t2{
+	font-family: 'NanumBrush';
+	font-size:60px;
+	color:#f36621;
+	position:absolute;
+	top:387px;
+	right:30px;
+}
+
+dl.text2 dd.t-img{
+	position:absolute;
+	top:525px;
+	right:30px;
+}	
+
+dl.text2 dd.t-img img{
+	width:220px;
+	height:184px;
+}
+

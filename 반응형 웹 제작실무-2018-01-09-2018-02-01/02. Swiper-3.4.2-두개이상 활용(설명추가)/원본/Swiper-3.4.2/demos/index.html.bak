@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>스와이퍼 효과(두개 이상)</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="./css/style.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="../dist/css/swiper.css">
+<style>
+   body{background:#fff;}
+   .bg1{background:url(./images/visual01.png) no-repeat center 120px;background-size:cover;}
+   .bg2{background:url(./images/visual02.png) no-repeat center 120px;background-size:cover;}
+   .bg3{background:url(./images/visual03.png) no-repeat center 120px;background-size:cover;}
+   .bg4{background:url(./images/visual04.png) no-repeat center 120px;background-size:cover;}
+</style>
+</head>
+<body>
+   <header>
+        <div class="inner"> 로고와 메뉴영역</div>
+   </header>
+   
+   <section id="visual">
+        <!--<div class="inner"> 안쪽</div>-->
+		  <!-- Swiper -->
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide bg1">Slide 1</div>
+					<div class="swiper-slide bg2">Slide 2</div>
+					<div class="swiper-slide bg3">Slide 3</div>
+					<div class="swiper-slide bg4">Slide 4</div>
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+				<!-- Add Arrows -->
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			</div>
+
+			<!-- Swiper JS -->
+			<script src="../dist/js/swiper.min.js"></script>
+
+			<!-- Initialize Swiper -->
+			<script>
+			var swiper = new Swiper('.swiper-container', {
+				pagination: '.swiper-pagination',
+				paginationClickable: true,
+				nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev'
+			});
+			</script>
+   </section>
+   
+   <section id="product" style="position:relative">
+        <!-- Add Arrows -->
+					<div class="swiper-button-next" style="padding-right:100px;border:5px solid gray;"></div>
+					<div class="swiper-button-prev" style="padding-right:100px;border:5px solid gray;"></div>
+        <div class="inner"> 
+		    <!-- Swiper -->
+				<div class="swiper-container2"><!--★클래스명 변경-->
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+						    <dl>
+							    <dt>주제</dt>
+								<dd>내용</dd>
+							</dl>
+						</div>
+						<div class="swiper-slide">
+						    <dl>
+							    <dt>주제</dt>
+								<dd>내용</dd>
+							</dl>
+						</div>
+						<div class="swiper-slide">
+						    <dl>
+							    <dt>주제</dt>
+								<dd>내용</dd>
+							</dl>
+						</div>
+						<div class="swiper-slide">
+						    <dl>
+							    <dt>주제</dt>
+								<dd>내용</dd>
+							</dl>
+						</div>
+						<div class="swiper-slide">
+						    <dl>
+							    <dt>주제</dt>
+								<dd>내용</dd>
+							</dl>
+						</div>
+						<div class="swiper-slide">
+						    <dl>
+							    <dt>주제</dt>
+								<dd>내용</dd>
+							</dl>
+						</div>
+						<div class="swiper-slide">
+						    <dl>
+							    <dt>주제</dt>
+								<dd>내용</dd>
+							</dl>
+						</div>
+						<div class="swiper-slide">
+						    <dl>
+							    <dt>주제</dt>
+								<dd>내용</dd>
+							</dl>
+						</div>
+						<div class="swiper-slide">
+						    <dl>
+							    <dt>주제</dt>
+								<dd>내용</dd>
+							</dl>
+						</div>
+						<div class="swiper-slide">
+						    <dl>
+							    <dt>주제</dt>
+								<dd>내용</dd>
+							</dl>
+						</div>
+						<div class="swiper-slide">
+						    <dl>
+							    <dt>주제</dt>
+								<dd>내용</dd>
+							</dl>
+						</div>
+				
+					</div>
+					<!-- Add Pagination -->
+					<div class="swiper-pagination"></div>
+					
+				</div>
+
+				<!-- Swiper JS 같은 파일 두번 불러들이기 때문에 삭제 또는 주석처리
+				<script src="../dist/js/swiper.min.js"></script>-->
+
+				<!-- Initialize Swiper -->
+				<script>
+				var swiper = new Swiper('.swiper-container2', { //★클래스명 변경
+					pagination: '.swiper-pagination',
+					paginationClickable: true,
+					nextButton: '.swiper-button-next',
+                    prevButton: '.swiper-button-prev',
+					slidesPerView: 5,
+					spaceBetween: 50,
+					breakpoints: {
+						1024: {
+							slidesPerView: 4,
+							spaceBetween: 40
+						},
+						768: {
+							slidesPerView: 3,
+							spaceBetween: 30
+						},
+						640: {
+							slidesPerView: 2,
+							spaceBetween: 20
+						},
+						320: {
+							slidesPerView: 1,
+							spaceBetween: 10
+						}
+					}
+				});
+				</script>
+		</div>
+   </section>
+   
+    <footer>
+        <div class="inner"> 안쪽</div>
+   </footer>
+   
+</body>
+</html>

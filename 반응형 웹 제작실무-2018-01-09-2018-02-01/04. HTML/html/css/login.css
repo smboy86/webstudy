@@ -1,0 +1,134 @@
+/*로그인 페이지*/
+section#login{
+	height:755px;
+	width:100%;
+	background:url(../image/login/log-img.png) no-repeat center top;
+	position:relative;
+}
+section#login h1{
+	font-family: 'notokr-regular';
+	font-size:30px;
+	color:#fff;
+	text-align:center;
+	padding-top:50px;
+}
+
+section#login div.log{
+	height:504px;
+	width:575px;
+	background:#fff;
+	position:absolute;
+	top:139px;
+	left:674px;
+}
+
+section#login div.log .inner{
+	width:500px;
+	height:100%;
+	margin:0 auto;
+}
+
+section#login div.log div.inner div.search input{
+	border:1px solid #c2c2c2;
+	width:100%;
+	height:49px;
+	text-indent:10px;
+}
+
+section#login div.log div.inner div.search fieldset.search1{
+	padding-top:90px;
+	padding-bottom:11px;
+}
+
+section#login div.log div.inner div.search #idpw{
+	font-family: 'notokr-regular';
+	font-size:14px;
+	color:#918888;
+}
+
+section#login div.log div.inner p.id-img{
+	float:left;
+	padding-top:13px;
+	padding-bottom:23px;
+	margin-right:7px;
+}
+
+section#login div.log div.inner p.id-text{
+	padding-top:16px;
+	font-family: 'notokr-regular';
+	font-size:17px;
+	color:#918888;
+}
+
+section#login div.log div.inner button.btn01{
+	height:67px;
+	width:100%;
+	background:#e86102;
+	font-family: 'notokr-regular';
+	font-size:23px;
+	color:#fff;
+	margin-bottom:18px;
+}
+
+section#login div.log div.inner button.btn02{
+	border:1px solid #3d6bce;
+	background:#fff;
+	background-image:url('../image/login/facebook-img.png');
+	background-repeat:no-repeat;
+	background-position:17px 13px;
+	height:59px;
+	width:244px;
+}
+
+section#login div.log div.inner button.btn02 p{
+	font-family: 'notokr-regular';
+	font-size:15px;
+	color:#918888;
+	float:right;
+	margin-right:18px;
+	margin-top:7px;
+}
+
+section#login div.log div.inner button.btn03{
+	border:1px solid #39951a;
+	background:#fff;
+	background-image:url('../image/login/naver-img.png');
+	background-repeat:no-repeat;
+	background-position:23px 21px;
+	height:59px;
+	width:244px;
+	float:right;
+}
+
+section#login div.log div.inner button.btn03 p{
+	font-family: 'notokr-regular';
+	font-size:15px;
+	color:#918888;
+	float:right;
+	margin-right:18px;
+	margin-top:7px;
+}
+
+section#login div.log div.inner .find{
+	padding-top:50px;
+	border:0px solid blue;
+}
+
+section#login div.log div.inner .find p{
+	border:0px solid red;
+	font-family: 'notokr-regular';
+	font-size:17px;
+	color:#918888;
+	float:left;
+	margin-right:85px;
+	
+}
+
+section#login div.log div.inner .find p:first-child{
+	color:#000;
+	margin-left:52px;
+}
+
+section#login div.log div.inner .find p:last-child{
+	margin-right:0px;
+}
