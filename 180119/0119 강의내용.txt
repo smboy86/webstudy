@@ -1,0 +1,10 @@
+Doctype 선언 잘 정리된 사이트
+
+
+http://webdir.tistory.com/40
+
+-- 이걸 가져오기 위해서 찾았다.
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1-transitional.dtd">
+
+
