@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta charset="utf-8">    
+<title> 스타일시트 기본형식 익히기 </title>
+<style type="text/css">
+    h2 span {color:red}
+
+    div{ border:3px solid red;}
+    div p {border:3px solid blue;}
+    div p em{ border:3px solid green;}
+
+    div p em { background-color:yellow}
+
+</style>
+</head>
+<body>
+    <!-- 
+        띄어쓰기 : 하위 DOM 모두
+        > : 바로 아래 자식 DOM 만
+    -->
+    <h1>딸기<span>사과</span></h1>
+    <h2>딸기<span>사과</span></h2>
+
+    <div>
+        할아버지/할머니
+        <p>
+            엄마/아빠
+            <em>나</em>
+        </p>
+    </div>
+</body>
+</html>
