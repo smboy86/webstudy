@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta charset="utf-8">    
+<title> 스타일시트 속성과 속성값 : margin </title>
+<style type="text/css">
+    body, h1 {margin:0;padding:0;}
+    h1 {border:5px solid blue;}
+    /*
+        padding을 영역내의 위/아래로 적용하면 영역의 높이로 활용할 수 있다.
+        특히 수직으로 가운데 정렬 효과이거나 위/아래의 서로다른 높이를 적용하고자 할대 유용
+
+        padding : 영역 안쪽 여백
+    */
+    h1.subject01 {padding-top:50px; padding-bottom: 100px;}
+    div {border:3px solid red; width: 300px;}
+</style>
+</head>
+<body>
+    <h1 class="subject01">주제</h1>
+    <h1 class="subject02">ㅁㅁㅁㅁ</h1>
+    <div>
+        <dl>
+            <dt>
+                dt 이름
+            </dt>
+            <dd>
+                dd 컨텐츠
+            </dd>
+        </dl>
+    </div>
+</body>
+</html>
