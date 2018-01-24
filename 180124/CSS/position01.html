@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta charset="utf-8">    
+<title> 스타일시트 속성과 속성값 : position </title>
+<style type="text/css">
+    html,body,div,h1 {margin:0;padding:0;}
+    /* #header {width:80%;height:200px;background:yellow;margin:0 auto;} */
+    #header {width:60%;height:200px;background:yellow;margin:0 auto;}
+    #header h1 {position:absolute;left:0;top:0;border:1px solid black;}
+
+    /* 
+        가운데 정렬 Tip 
+        margin:0 auto;    >> 가운데 정렬을 의미
+    */
+    /*
+        자유로운 배치 또는 겹치게 할려면 position:absolute; 활용
+    */
+
+    /* 
+        position:relative 선언없이 absolute로 접근하면 body 기준으로 시작됨 
+        반대로 relative를 선언하면 자식들은 선언한 곳에서부터 시작함
+    */
+    #he {position:relative;top:50px;width:70%;height:200px;background:red;margin:0 auto;}
+    #he>h1 {padding-left:100px;}
+</style>
+</head>
+<body>
+    <div id="he">
+        <h1>로고1111</h1>
+    
+        <div id="header">
+            <h1>로고222</h1>
+        </div>
+    </div>
+</body>
+</html>
