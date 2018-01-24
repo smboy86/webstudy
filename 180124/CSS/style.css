@@ -1,0 +1,13 @@
+html, body { height: 100% }
+/* 기본적으로 body 는 상하좌우 여백이 존재하기 때문에 디자인시 필요에 따라 그것을 없애는 작업(초기화)가 필요하다. */
+html { border: 0px solid blue; } 
+/* sans-serif : 폰트명이 아니라, 폰트 계열을 의미 - 반듯반듯한 폰트체 */
+body {
+    border: 5px solid red;
+    height: 100%;
+    font-family: "맑은 고딕", 굴림, 돋움, sans-serif;
+    font-size: 20px;
+    color:black;
+}
+
+p, div { color:blue; font-size: 3em}
