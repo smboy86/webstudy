@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta charset="utf-8">    
+<title> 스타일시트 속성과 속성값 : margin </title>
+<style type="text/css">
+    body,p,div {margin:0;padding:0;}
+    div {width:400px;height:200px;border:3px solid black;}
+    div p {width:400px;background:yellow;padding-left:50px}
+    /* 부모에 width 를 주고 안쪽에 padding 주었을때 변화 */
+    /* 400px + 50 = 450px 이렇게 padding 에 따라 실제 크기가 달라지기 때문에 
+        padding을 줄때는 보통 부모영역에 값을 주고 자식단에서 padding 을 준다. */
+</style>
+</head>
+<body>
+    <div>
+        <p> 딸기 </p>
+    </div>
+</body>
+</html>

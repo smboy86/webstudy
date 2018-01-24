@@ -8,6 +8,13 @@
     div {width:400px;height:200px;border:3px solid black;}
     div p {background:yellow;padding-left:50px}
     /*  부모에 width 를 주고 안쪽에 padding 주었을때 변화 */
+    /* 
+        부모안의 자식인 문단태그에서는 넓이값을 입력하지 않음
+        문단태그 이기 때문에 한단계 상위의 부모 넓이를 자동으로 따라감
+
+        문단태그 넓이(width(x)) + 50px = 부모크기와 동일한 문단태그 넓이
+        문단태그는 width 선언하지 않았을 경우 한 단계 상위 부모크기와 동일한 크기를 유지
+    */
 </style>
 </head>
 <body>
