@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta charset="utf-8">    
+<title> 스타일시트 속성과 속성값 : margin </title>
+<style type="text/css">
+    /*
+        margin을 좌우에 적용하면 넓이 폭이 줄어듬
+        문단 태그들은 width 선언하지 않아도 한단계 상위 부모 크기를 따라감
+    */
+    body,div{margin:0;padding:0;}
+    div {border:3px solid red;font-size:2em;}
+    div#box01 {margin-left:100px;margin-right:100px}
+    #box02 {margin-top:50px;margin-bottom: 50px;}
+    #box03 ul {margin-left:50px;}
+    /*
+        margin을 위/아래로 적용하면 서로 다른 성질의 영역끼리 구분되는 여백을 적용할수 있게 함
+        예) 헤더오 비쥬얼, 비주얼과 컨텐츠, 컨텐츠와 하단을 구분하는 여백
+    */
+</style>
+</head>
+<body>
+    <div id="box01">box01</div>
+    <div id="box02">box02</div>
+    <div id="box03">box03
+        <ul>
+            <h5>NOTICE</h5>
+            <li>2017년 첫 번째글...</li>
+            <li>2017년 두 번째글...</li>
+            <li>2017년 세 번째글...</li>
+        </ul>
+
+    </div>
+</body>
+</html>
