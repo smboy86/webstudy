@@ -1,0 +1,7 @@
+CSS 가장 중요한 속성과 속성값
+
+1. margin
+2. padding
+3. position
+4. float
+
