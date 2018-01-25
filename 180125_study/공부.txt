@@ -1,0 +1,41 @@
+# 인프런 강의 
+https://www.inflearn.com/course-status-2/
+
+
+강의가 http://jsbin.com/에서 코드를 작성하면서 예제를 들어 준다.
+
+써보니 꽤 심플하고 괜찮은 웹서비스인듯 하다.
+
+
+
+#1 HTMl 구조화 설계
+http://jsbin.com/teposig/edit?html,output
+
+#2 CSS 기본개념과 렌더링 원리
+  1) inline
+    태그 안에 style="" 속성으로 선언
+  2) internal
+    동 <html> 문서 안에 <style></style> 태그 안에 선언
+  3) external 
+    <head> 안에 <link> 로 외부 css 파일을 로딩해서 사용
+
+  위의 순서대로 스타일 적용 우선순위가 결정된다.
+
+  http://jsbin.com/tararuv/edit?html,css,output
+
+
+
+#3 CSS에서의 상속 개념
+ http://jsbin.com/xusudow/edit?html,css,output
+ 
+ 설명이 좀 애매하다... ㅎㅎ
+
+#4 기본개념과 렌더링 원리
+  1) 같은 형태 선언(인라인, 인터널, 익스터널) 일 경우 같은 스타일에 선언일 경우 가장 나중에 스타일이 적용된다.
+  2) 셀렉터가 구체적일 경우 우선순위를 준다.
+  3) id 속성에 가중치가 더 큼
+  
+  css cascading = "css specificity"
+
+
+
