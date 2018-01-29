@@ -33,3 +33,29 @@ https://www.w3schools.com/
 -- daum webstandard 
 
 http://darum.daum.net/
+
+
+
+-- 포토샵 Tip
+
+[1] 단축키
+  1) ctrl + 0   : 화면에 비율 맞추기 (화면 전체 보기)
+  2) ctrl + h   : 레이아웃 구조 켜고 끄기
+  3) ctrl + r   : 전체 눈금자 켜고 끄기
+  4) ctrl + -,+ : 축소 확대
+  5) space      : 손잡이
+  6) ctrl + space : 돋보기 기능
+  7) ctrl + ;   : 레이아웃 가이드 (view-clear guide 로 초기화 후 생성 - view-clearSlice)
+
+[2] 웹 퍼블리싱 작업
+  1) 레이아웃 작업을 위한 가이드 설정
+
+[3] 웹 퍼블리싱 작업 순서
+  1) PSD 파일 열기
+  2) 전체 레이아웃 가이드 설정
+    - ctrl + a  >  F8  - info 창 W, H 확인 (전체 크기 확인)
+    - view > clearGuide
+    - view > clearSlice
+    - view > snap 체크
+    - 가장 큰 형태의 레이아웃 가이드 선 그리기 (확대 후 > shift 누르고 선택 (1px 씩 이동))
+  3) 가이드별 레이아웃 크기 조회 (Rectangle Marquee tool)
