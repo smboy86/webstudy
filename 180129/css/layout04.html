@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" >
+<head>
+	<title>레이아웃실습</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8 "/>
+    <style type="text/css">
+        html,body,div{margin:0;padding:0}
+        #wrapper{
+            width:1000px;
+            height:500px;
+            border:3px solid red;
+            margin:0 auto; /* 문단태그 자체를 가운데 정렬로 */
+        }
+        #top {
+            height:100px;
+            background:green;
+        }
+        #contents {
+            height:300px;
+            background:orange;
+        }
+        #contents div.c1 {
+            width:20%;
+            height: 100%;
+            float:left;
+            background:khaki;
+        }
+        #contents div.c2 {
+            width:60%;
+            height: 100%;
+            float:left;
+            background:white;
+        }
+        #contents div.c3 {
+            width:20%;
+            height: 100%;
+            float:left;
+            background:purple;
+        }
+
+        #footer {
+            height:100px;
+            background:green;
+        }
+        /*
+            div태그들은 문단태그이기 때문에 수직구조를 기본적으로 취함
+            문단태그들은 width를 선언하여 넓이를 줄이더라도 다른 태그들이 양옆에 오지 못하게함
+
+            문단태그들을 수평구조로 하기 위하여 강제적 제어 명령인 float을 활용할 것
+        */
+	</style>
+</head>
+<body>
+    <div id="wrapper"> <!-- wrapper 감싸다 -->
+        <div id="top">탑</div>
+        <div id="contents"> <!-- content -->
+            <div class="c1">컨텐츠1</div>
+            <div class="c2">컨텐츠2</div>
+            <div class="c3">컨텐츠3</div>
+        </div> <!-- //content -->
+        <div id="footer">푸터</div>
+    </div><!-- //wrapper 감싸다 -->
+</body>
+</html>
