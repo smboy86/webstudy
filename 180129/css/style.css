@@ -1,0 +1,6 @@
+#wrapper {width:1920px;height:1870;border:5px solid red;}
+
+#header {width:1000px;height: 97px;border: 1px solid red;}
+#visual {height: 555px;border: 1px solid blue;}
+#contents {height: 1087px;border: 1px solid green;}
+#footer {height: 131px;border: 1px solid yellow;}

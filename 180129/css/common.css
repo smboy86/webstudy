@@ -1,0 +1,11 @@
+/* common.css header와 footer 처럼 모든 페이지 내에서 사용되는 영역을 꾸밀때 활용 */
+
+/* body요소와 a꾸미기(공통부분) */
+body {
+    color:#333;
+    line-height:1.2; /*줄간격*/
+    font-family: "돋움",Dotum,굴림,Gulim,sans-serif;
+    font-size:100%; /* 100%=16px=12pt=1em */
+}
+
+a {text-decoration:none;} /* 글자장식효과 없게 */
