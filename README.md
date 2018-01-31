@@ -59,3 +59,10 @@ http://darum.daum.net/
     - view > snap 체크
     - 가장 큰 형태의 레이아웃 가이드 선 그리기 (확대 후 > shift 누르고 선택 (1px 씩 이동))
   3) 가이드별 레이아웃 크기 조회 (Rectangle Marquee tool)
+  4) 이미지 슬라이스
+    - 슬라이스 툴로 이미지 가이드 라인 잡기 (슬라이스 툴 )
+    - ctrl + alt + shift + s   :: 슬라이스 화면
+    - 이미지 명 정하기
+    - 슬라이스할 이미지 선택
+    - 저장하기 >> 옵션 선택
+      > setting > Put a Image 해제
