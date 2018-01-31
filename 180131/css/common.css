@@ -10,17 +10,29 @@ body {
 
 a {text-decoration:none;} /* 글자장식효과 없게 */
 
-@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
 
+@font-face { /* 나눔고딕 Regular */
+    font-family: 'Nanum Gothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url(http://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.eot);
+    src: url(http://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.eot?#iefix) format('embedded-opentype'),
+         url(http://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.woff2) format('woff2'),
+         url(http://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.woff) format('woff'),
+         url(http://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.ttf) format('truetype');
+}
+  
 /* header (공통) */
 #header {height: 97px;border: 3px solid purple;}
-#header div.inner h1.logo{float:left;padding:32px;margin-right:80px;border:2px solid burlywood;}
-#header div.inner ul#navigation{float:left;padding-top:35px;border:5px solid fuchsia;}
-#header div.inner ul#navigation li {border:1px solid red;display: inline;}
-/* #header div.inner ul#navigation li a {background: yellow;font-family: 나눔고딕,"맑은 고딕",돋움,sans-serif;font-size: 18px;color:#434343;} */
+#header div.inner h1.logo{float:left;padding-top:32px;margin-right:80px;border:1px solid burlywood;}
+#header div.inner ul#navigation{float:left;padding-top:35px;border:1px solid fuchsia;}
+#header div.inner ul#navigation li {padding:0 35px 0 34px; border:1px solid red;display: inline;} /* 34 + 35 = 69 = 75 - 6 */
+#header div.inner ul#navigation li:first-child {padding-left:0px;} /* 가상클래스를 이용한 선택 */
+#header div.inner ul#navigation li:last-child {padding-right:0px;}
 #header div.inner ul#navigation li a {background: yellow;font-family: 'Nanum Gothic', sans-serif;font-size: 18px;color:#434343;}
-#header div.inner ul#infoMenu{float:left;border:2px solid black;}
-#header div.inner ul#infoMenu li{border:1px solid green;display: inline;}
+#header div.inner ul#infoMenu{float:right;border:1px solid black;padding-top: 35px;}
+#header div.inner ul#infoMenu li{display: inline;border:1px solid green;}
+#header div.inner ul#infoMenu li:last-child{margin-right:0;}
 
 /* footer (공통) */
 #footer {height: 131px;border: 3px solid yellow;}
