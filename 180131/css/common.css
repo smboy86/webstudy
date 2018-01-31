@@ -9,3 +9,14 @@ body {
 }
 
 a {text-decoration:none;} /* 글자장식효과 없게 */
+
+/* header (공통) */
+#header {height: 97px;border: 3px solid purple;}
+#header div.inner h1.logo{float:left;border:2px solid burlywood;}
+#header div.inner ul#navigation{float:left;border:5px solid fuchsia;}
+#header div.inner ul#navigation li {border:1px solid red;display: inline;}
+#header div.inner ul#infoMenu{float:left;border:2px solid black;}
+#header div.inner ul#infoMenu li{border:1px solid green;display: inline;}
+
+/* footer (공통) */
+#footer {height: 131px;border: 3px solid yellow;}
