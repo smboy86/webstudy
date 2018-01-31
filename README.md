@@ -66,3 +66,6 @@ http://darum.daum.net/
     - 슬라이스할 이미지 선택
     - 저장하기 >> 옵션 선택
       > setting > Put a Image 해제
+  5) 메뉴 작업
+    - 메뉴 속 글씨체 획득
+    - Preference > Units & Rulers > Units Type : Pixels (단위 맞추기)
