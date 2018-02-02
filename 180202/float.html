@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>헤더 꾸미기</title>
+    <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
+    <style>
+        * {margin:0;padding:0;box-sizing: border-box;} /* border-box : border 와 padding 을 지정한 width 안에 넣어 준다. (넘치지 않는다.)*/
+        a {text-decoration:none; color:#333;font-family: "맑은 고딕"}
+        /* 헤더 레이아웃 구성 순서 */
+        /* 1) li -> display:inline 지정    +@ 크롬 6px 여백 존재*/
+        /* 2) 위치 조정 +@ height 가 있는 박스 안에 태그의 상하 위치를 잡을땐 padding 을 먼저(?) 쓴다.*/
+        #header {width:100%;height:120px;border:3px solid red;}
+        #header div.inner {width:1000px;height:100%;border:3px solid blue;margin:0 auto;}
+        
+        #header div.inner h1 {float:left;padding-top:30px;padding-right:50px;border:1px solid black;}
+        
+        #header div.inner ul#navi {float:left;margin-left:200px;padding-top:30px;border:1px solid cyan;}
+        #header div.inner ul#navi li {/*padding:0 20px;*/border:1px solid gray;display: inline;}
+        #header div.inner ul#navi li a {padding:0 10px;background: yellow;display: inline-block;}
+        
+        #header div.inner ul#info {float:right;padding-top:30px;border:1px solid pink;}
+        #header div.inner ul#info li {border:1px solid greenyellow;display: inline;}
+        #header div.inner ul#info li a {background: yellow;}
+
+        /*
+            인라인 태그는 아래와 같은 속성은 기본적으로 적용되지 않음
+            span, a, img, em
+
+            margin, padding, text-aligh, width, height
+
+            하지만 적용하게 만들 순 있다.
+            display:block or display:inline-block 적용
+        */
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div class="inner">
+            <h1>로고</h1>
+            <ul id="navi">
+                <li><a href="#">menu1</a></li>
+                <li><a href="#">menu2</a></li>
+                <li><a href="#">menu3</a></li>
+                <li><a href="#">menu4</a></li>
+                <li><a href="#">menu5</a></li>
+            </ul>
+            <ul id="info">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
