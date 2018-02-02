@@ -22,6 +22,8 @@ http://image.kyobobook.co.kr/ink/html/guide/index.html
 기타 : cursor
 
 
+-- 디비컷 - 웹디자인 평가 및 우수 웹사이트 모음
+https://www.dbcut.com/bbs/index.php
 
 -- 교육용 웹서버 정보
 http://webstory.ivyro.net/
@@ -66,6 +68,14 @@ http://darum.daum.net/
     - 슬라이스할 이미지 선택
     - 저장하기 >> 옵션 선택
       > setting > Put a Image 해제
+  5) 이미지 1개씩 따기
+    - 마퀴툴로 이미지 영역 설정
+    - edit > copy Merged  (레이어 통째로 카피)
+    - ctrl + n  (새파일)  >> 자동으로 크기 조절 >> ctrl + v (붙여넣기)
+    - file > save for web 
+    - gif냐 설정해서 이미지 저장
   5) 메뉴 작업
     - 메뉴 속 글씨체 획득
     - Preference > Units & Rulers > Units Type : Pixels (단위 맞추기)
+  6) 레이아웃 안에 a 태그 작업을 할때 참고
+    - a태그 padding 을 먹일일이 있으면 display:inline-block 을 먹이도록 한다.

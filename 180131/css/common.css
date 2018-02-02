@@ -23,15 +23,16 @@ a {text-decoration:none;} /* 글자장식효과 없게 */
 }
   
 /* header (공통) */
-#header {height: 97px;border: 3px solid purple;}
-#header div.inner h1.logo{float:left;padding-top:32px;margin-right:80px;border:1px solid burlywood;}
-#header div.inner ul#navigation{float:left;padding-top:35px;border:1px solid fuchsia;}
-#header div.inner ul#navigation li {padding:0 35px 0 34px; border:1px solid red;display: inline;} /* 34 + 35 = 69 = 75 - 6 */
-#header div.inner ul#navigation li:first-child {padding-left:0px;} /* 가상클래스를 이용한 선택 */
-#header div.inner ul#navigation li:last-child {padding-right:0px;}
-#header div.inner ul#navigation li a {background: yellow;font-family: 'Nanum Gothic', sans-serif;font-size: 18px;color:#434343;}
-#header div.inner ul#infoMenu{float:right;border:1px solid black;padding-top: 35px;}
-#header div.inner ul#infoMenu li{display: inline;border:1px solid green;}
+#header {height: 97px;border: 3px solid purple;background:url('../images/common/header_bg.gif') repeat-x 0 0}
+#header div.inner h1.logo{float:left;padding-top:32px;margin-right:80px;border:0px solid burlywood;}
+#header div.inner ul#navigation{float:left;padding-top:32px;border:0px solid fuchsia;}
+#header div.inner ul#navigation li {display: inline;background:url('../images/common/dot.gif') no-repeat 0 center;border:0px solid red;} /* 34 + 35 = 69 = 75 - 6 */
+#header div.inner ul#navigation li:first-child {background:none;}
+#header div.inner ul#navigation li:first-child a{padding-left:0px;} /* 가상클래스를 이용한 선택 */
+#header div.inner ul#navigation li:last-child a{padding-right:0px;}
+#header div.inner ul#navigation li a {display:inline-block;padding:6px 35px 6px 34px;font-family: 'Nanum Gothic', sans-serif;font-size: 18px;color:#434343;}/* 34 + 35 = 69 = 75 - 6 */
+#header div.inner ul#infoMenu{float:right;border:0px solid black;padding-top: 35px;}
+#header div.inner ul#infoMenu li{display: inline;border:0px solid green;}
 #header div.inner ul#infoMenu li:last-child{margin-right:0;}
 
 /* footer (공통) */
