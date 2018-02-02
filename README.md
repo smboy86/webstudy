@@ -79,3 +79,17 @@ http://darum.daum.net/
     - Preference > Units & Rulers > Units Type : Pixels (단위 맞추기)
   6) 레이아웃 안에 a 태그 작업을 할때 참고
     - a태그 padding 을 먹일일이 있으면 display:inline-block 을 먹이도록 한다.
+
+
+
+
+  ########################################################################33
+  자주 사용하는 포토샵 단축키 
+
+  space : 손잡이 이동
+  ctrl + space : 돋보기툴 
+  ctrl + shift + c : Copy Merged
+  ctrl + n : 새파일
+  ctrl + ; : 가이드 라인 감추기/보이기
+  ctrl + shift + alt + s : Save for Web
+  
