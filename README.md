@@ -86,10 +86,10 @@ http://darum.daum.net/
   ########################################################################33
   자주 사용하는 포토샵 단축키 
 
-  space : 손잡이 이동
-  ctrl + space : 돋보기툴 
-  ctrl + shift + c : Copy Merged
-  ctrl + n : 새파일
-  ctrl + ; : 가이드 라인 감추기/보이기
-  ctrl + shift + alt + s : Save for Web
-  
+  space                     : 손잡이 이동
+  ctrl + space              : 돋보기툴 
+  ctrl + shift + c          : Copy Merged
+  ctrl + n                  : 새파일
+  ctrl + ;                  : 가이드 라인 감추기/보이기
+  ctrl + shift + alt + s    : Save for Web
+  ctrl + 0                  : 전체 화면으로 비율 맞추기
