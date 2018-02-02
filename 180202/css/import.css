@@ -1,0 +1,4 @@
+/* 스타일시트 한번에 가져오기 */
+@import url('./common.css');
+@import url('./reset.css');
+@import url('./style.css');
