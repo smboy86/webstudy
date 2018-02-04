@@ -1,0 +1,10 @@
+* {box-sizing:border-box}
+
+body {border: 1px solid red;}
+wrap {border: 1px solid blue;}
+#top_login_bar {width:100%;height:60px;position: relative;font:#d9d9d9; border: 1px solid green;}
+#top_login_bar #login_bar01 {width:563px;height:100%;position: absolute;left:855px;}
+#top_login_bar #login_bar01 li {display: inline;position:relative;float:left}
+#top_login_bar #login_bar01 li a {display: inline-block;padding:23px 0;font-size:22px;}
+#top_login_bar #login_bar01 li:list-child {right:0;}
+#top_login_bar #login_bar02 {position: absolute;right:160px;}
