@@ -70,6 +70,6 @@ input[type=image]{cursor:pointer;}
 /* Common Layout */
 html, body {font-family:'Noto Sans KR', Dotum, '돋움', Arial, sans-serif;height:100%;margin:0;padding:0} 
 #wrap {position:relative;width:1200px;height:100%;margin:0 auto;padding:0;overflow:hidden;}
-#header {height:180px;margin:0;padding:0;border-bottom:0;}
+#header {width:1200px;margin:0 auto;padding:0;border-bottom:0;}
 #container{width:1200px;margin:0 auto;padding:0px;}
 #footer {width:1200px;margin:0 auto;padding:0px;}
