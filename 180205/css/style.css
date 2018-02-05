@@ -1,0 +1,27 @@
+* {box-sizing:border-box}
+html, body {height:100%;}
+
+#wrapper {width:100%;height:1870;border:0px solid red;}
+#visual {height: 555px;background:url('../images/common/main_visual.png') no-repeat center top;background-size: cover; border: 0px solid blue;}
+#contents {height: 1087px;border: 0px solid green;}
+
+.inner {width:1000px;height:100%;margin:0 auto;}
+
+
+#contents div.inner {border:0px solid green;}
+#contents div.inner div.text {width:1000px;height:178px;border:0px solid blue;text-align:center;}
+
+#contents div.inner h2 {padding-top:24px;border:0px solid indigo;}
+#contents div.inner h3 {padding-top:28px;}
+#contents div.inner p {padding-top:12px;}
+
+#contents div.inner div.news {height:221px;border:1px solid #dedede;}
+#contents div.inner div.news div.box01 {width:333px;height:100%;float:left;border-right:1px solid #dedede;}
+#contents div.inner div.news div.box01 dl {padding:23px 0 0 29px;}
+#contents div.inner div.news div.box01 dd.dd_sec {padding:15px 0 26px 2px;}
+
+#contents div.inner div.news div.box02 {width:333px;height:100%;float:left;border-right:1px solid #dedede;}
+#contents div.inner div.news div.box02 dl {padding:23px 0 0 29px;font-size: 18px;font-weight:bold;}
+#contents div.inner div.news div.box02 dd.dd_sec {padding:15px 0 26px 2px;font-size: 12px;font-weight:400;}
+
+#contents div.inner div.news div.box03 {width:330px;height:100%;float:left;}
