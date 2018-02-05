@@ -27,6 +27,8 @@ https://www.dbcut.com/bbs/index.php
 
 -- 교육용 웹서버 정보
 http://webstory.ivyro.net/
+webstory
+green3
 
 -- HTML 
 https://www.w3schools.com/
