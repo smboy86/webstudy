@@ -2,3 +2,24 @@
 
 라라벨 강의
 https://laracasts.com/series/visual-studio-code-for-php-developers/episodes/2
+
+
+css 속성 선택자 
+
+1) 
+13) 동적 가상 클래스 선택자
+ - hover : 마우스 올릴때 적용
+ - focus : 마우스를 클릭해서 포커스가 적용되면 적용
+14) 가상 선택자
+ - 문단 태그에만 적용된다.
+ - first-child, nth-child
+15) 순서 가상 선택자
+ - first-letter : 첫 글자 적용
+ - first-line : 첫 번째줄 적용
+16) 내용 추가 가상 선택자
+ - before : 앞에 붙인다.
+ - after : 뒤에 붙인다.
+17) 전체 선택자
+18) 그룹 선택자 (,)
+ - 태그 , 태그 : 동시에 선택함 
+    
