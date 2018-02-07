@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>  </title>
+<meta charset="utf-8">
+<style>
+    *{margin:0; padding:0; box-sizing:border-box;}
+	html,body,main{ height:100%;}
+	body{/*font-size:32px;*/ font-family:"나눔고딕","맑은 고딕"}
+	
+	img{max-width:100%; vertical-align:top;}
+    #contents{ width:80%; height:auto; border:3px solid red; margin: 0 auto;}
+	/* ★ 태블릿 및 모바일 유형에서 내용을 감싸는 박스의 높이값을 px or % 활용시  유용하지 않음 */
+	#contents .line01{ width:100%; height:auto; border:3px solid green;}
+	#contents .line01 dl{ width:50%; height:100%; border:3px solid blue;float:left;margin-bottom:50px;}
+	#contents .line01 dl dt{padding:2vh 0px; background:yellow; /*font-size:20px;*/ font-size:1.25em;}
+	#contents .line01 dl dd{padding:2vh 0px 20vh; background:green; /*font-size:16px;*/font-size:1em;}
+	
+	
+	#contents .line02{ width:100%; height:auto; border:3px solid pink;}
+	#contents .line02 dl{ width:33.3%; height:100%; border:3px solid blue;float:left;margin-bottom:50px;}
+	#contents .line02 dl dt{padding:2vh 0px; background:red;/*font-size:20px;*/ font-size:1.25em;}
+	#contents .line02 dl dd{padding:2vh 0px 20vh; background:orange;/*font-size:16px;*/font-size:1em;}
+	
+	#contents .line03{ width:100%; height:auto; border:3px solid cyan;}
+	#contents .line03 dl{ width:100%; height:100%; border:3px solid blue;float:left;margin-bottom:50px;}
+	#contents .line03 dl dt{padding:2vh 0px; background:#999;/*font-size:20px;*/ font-size:1.25em;}
+	#contents .line03 dl dd{padding:2vh 0px 20vh; background:#eee;/*font-size:16px;*/font-size:1em;}
+	
+</style>
+</head>
+<body>
+    <section id="contents">
+	     <div class="line01">
+		       <dl>
+			       <dt> 주제 </dt>
+				   <dd> 설명 </dd>
+				</dl>
+				<dl>
+			       <dt> 주제 </dt>
+				   <dd> 설명 </dd>
+				</dl>
+		 </div>
+		 
+		 <div class="line02">
+		       <dl>
+			       <dt> 주제 </dt>
+				   <dd> 설명 </dd>
+				</dl>
+				<dl>
+			       <dt> 주제 </dt>
+				   <dd> 설명 </dd>
+				</dl>
+				<dl>
+			       <dt> 주제 </dt>
+				   <dd> 설명 </dd>
+				</dl>
+		 </div>
+		 
+		  <div class="line03">
+		       <dl>
+			       <dt> 주제 </dt>
+				   <dd> 설명 </dd>
+				</dl>
+		   </div>
+		 
+	</section>
+	
+</body>
+</html>

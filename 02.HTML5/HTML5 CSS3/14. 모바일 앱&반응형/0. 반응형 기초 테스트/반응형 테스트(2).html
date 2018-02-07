@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html>
+<title>반응형 기본테스트</title>
+<head>
+   <meta charset="utf-8" />
+   <style type="text/css">
+   <!--
+       *{
+	      margin:0;
+		  padding:0;
+	   }
+	   ol,ul{
+	      list-style:none;
+	   }
+	   a{ 
+	      text-decoration:none;
+	   }
+	   body{
+	      font-size:1em;
+		  color:#333;
+		  font-family:"나눔고딕";
+	   }
+	   #wrapper{
+	        width:960px;
+			margin:0 auto;
+			border:1px solid black;
+	   }
+	   header{
+	        height:200px;
+			background:yellow;
+			position:relative;
+	   }
+	   header h1{
+	       width:200px;
+		   background:#000;
+		   color:#fff;
+		   position:absolute;
+		   left:0;
+		   top:50px;
+		  }
+	   header ul#navigation{
+          height:50px;
+		  position:absolute;
+		  right:0;
+		  top:50px;
+		  border:0px solid blue;
+        }
+		
+		header ul#navigation li{
+	       display:inline;
+		   border:1px solid blue;
+		   padding:5px 10px;
+	   }
+		
+		
+	   
+		header h2{
+		    visibility:hidden;
+		}
+      
+        @media only screen and (max-width:1024px){
+		     #wrapper{
+			     width:100%;
+			 }
+		     ul#navigation{
+			   display:none;
+			 }
+			 header,section,footer{
+			    width:100%;
+				border:0px solid green;
+			 }
+			 header h2{
+			     visibility:visible;
+			     width:100px;
+				 height:100px;
+				 background:magenta;
+				 position:absolute;
+				 top:50px;
+				 right:50px;
+				 color:#fff;
+			     }
+			 }
+			 
+		@media only screen and (max-width:460px){
+		     #wrapper{
+			     width:100%;
+			 }
+         }			 
+		
+		
+		
+	   section{
+	        height:600px;
+			background:orange;
+		}
+	   footer{
+	        height:100px;
+			background:gray;
+	   }
+   -->
+   </style>
+</head>
+<body>
+   <div id="wrapper">
+       <header> 
+
+	       <h1>로고</h1>
+		   <ul id="navigation">
+		        <li><a href="#">menu1</a></li>
+				<li><a href="#">menu2</a></li>
+				<li><a href="#">menu3</a></li>
+				<li><a href="#">menu4</a></li>
+				<li><a href="#">menu5</a></li>
+		   </ul>
+		   
+		   <h2>QNB MENU</h2>
+
+	   </header>
+	   <section>
+	           여기는 본문입니다!
+	   </section>
+	   <footer>하단</footer>
+   </div>
+
+
+</body>
+</html>

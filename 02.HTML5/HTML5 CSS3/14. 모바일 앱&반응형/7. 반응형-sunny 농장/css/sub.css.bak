@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+#container .contentArea {padding:20px;background:#fff url('../images/bg_intro.png') no-repeat right top;border:5px solid red;}
+#container .contentArea h2.pageTit {padding:10px 0;font:bold 20px "NGothic";color:#333;border:5px solid blue;}
+#container .contentArea h3.sTit {padding:10px 0;font:bold 17px "NGothic";border:1px solid green;}
+#container .contentArea .bodyText {padding:10px 0;font:13px/1.6 "NGothic";border:1px solid gray;}
+#container .contentArea .introlist {padding:10px;border:2px solid yellow;}
+#container .contentArea .introlist li {padding-left:15px;background:url(../images/bg_bullet.gif) no-repeat 0 50%;font:13px/1.6 "NGothic";color:#666;border:5px solid cyan;}
+
+@media all and (max-width:767px) {
+#intro #gnb {padding-top:0;}
+#intro #gnb ul li.first a {background:orange url("../images/gnbicon3.png") no-repeat 20px center;color:#fff;border:5px solid pink;}
+.contentArea h3.sTit {border-bottom:1px solid #ccc;}
+}
+
+@media all and (min-width:768px) and (max-width:1023px) {
+#intro #gnb ul li.first a {background:pink;} 
+.contentArea {padding:10px;}
+}
+
+@media all and (min-width:1024px) and (max-width:1279px) {
+#intro #gnb ul li.first a {background:yellow;} 
+.contentArea {padding:80px;}
+}
+
+@media all and (min-width:1280px) {
+#intro #gnb ul li.first a {background:red;} 
+.contentArea {padding:20px;}
+}
+

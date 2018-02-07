@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+<head> 
+<title>html5 요소 살펴보기 </title>
+<meta charset="utf-8">
+<style>
+   *{margin:0; padding:0;}
+   ol,ul{list-style:none;}
+   body{font-size:16px; color:#000;font-family:"맑은 고딕";}
+   a{font-size:1em; color:#666; text-decoration:none;
+   font-family:"맑은 고딕";}
+   
+   html,body{height:100%;} /* 높이에 %적용되도록 하기 위해 */
+   header, section, footer{ width:100%; display:block;}
+   .inner{width:1000px; height:100%; margin:0 auto; border:5px solid black;}
+   
+   header{
+      height:200px;
+	  background:yellow;
+	  position:absolute;
+   }
+   
+   header div.inner h1{
+      border:1px solid red;
+	  text-align:center;
+	  padding:30px 0;
+   }
+   
+   header div.inner h1 a{
+       display:inline-block; 
+	   /* 인라인 태그를 블록화 즉 문단태그 성질로 변경 */
+       background:green;
+	   padding:10px 30px;
+	   /*
+	     인라인 태그들은 width, height, padding, margin, vertical-align, text-align 등의 속성이 (정확히) 적용되지 않음
+		 
+		 이 속성들이 인라인 태그들에도 적용되게 하기위해
+		 display:inline-block;
+		 dispaly:block 
+		 중에 한개를 사용
+	   */
+   }
+   
+   header div.inner nav{
+      border:1px solid blue;
+   }
+   header div.inner nav ul{
+      border:1px solid green;
+	  text-align:center;
+	  padding:20px 0;
+   }
+   header div.inner nav ul li{
+      border:1px solid pink;
+	  display:inline; /*문단성격을 인라인화 */
+	  padding-left:30px;
+	  padding-right:30px;
+   }
+   
+   header div.inner nav ul li a{
+      background:cyan;
+	  padding:10px 20px;
+	  display:inline-block;
+   }
+   
+   section#visual{
+      height:100%;
+	  background:orange;
+   }
+   
+   footer{
+      height:150px;
+	  background:gray;
+   }
+</style>
+</head>
+<body>
+    <header>
+	     <div class="inner"> 
+		     <h1><a href="./index.html" title="logo">logo</a></h1>
+			 <nav>
+			      <ul>
+				       <li><a href="#">menu</a></li>
+					   <li><a href="#">menu</a></li>
+					   <li><a href="#">menu</a></li>
+					   <li><a href="#">menu</a></li>
+					   <li><a href="#">menu</a></li>
+				  </ul>
+			 </nav>
+		 </div>
+    </header>
+	
+	<section id="visual">
+	     <div class="inner"> 비주얼 안쪽 </div>
+	</section>
+	
+	 <footer>
+	     <div class="inner"> 하단</div>
+    </footer>
+	
+	
+</body>
+</html>

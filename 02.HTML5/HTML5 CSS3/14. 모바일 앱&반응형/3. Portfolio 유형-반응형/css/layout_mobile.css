@@ -1,0 +1,864 @@
+@charset "utf-8";
+
+/*************************************** 공통요소 정의 ***************************************/
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, p, form, fieldset, input, th, td{margin:0;padding:0;}
+
+/*기본 font 설정*/
+body{
+	font-size:0.75em;
+	font-family:돋움,dotum,굴림,gulim,arial;
+	color:#414042;		
+}
+a{color:#414042;text-decoration:none;}
+a:hover{color:#414042;text-decoration:underline;}
+a:focus{color:#414042;}
+a:active{color:#414042;}
+
+@font-face{
+	font-family:nanumFont;
+	src:url('font/nanum.eot');
+	src:local('nanumgothicExtraBold'), url('font/nanum.ttf') format('truetype');	
+}
+
+/*이미지 설정*/
+img{border:0;}
+
+/*리스트 설정*/
+ul, ol{list-style:none;}
+
+/*테이블 설정*/
+table{
+	width:100%;
+	border-collapse:collapse;	
+}
+
+/*기본 form 설정*/
+select, input{font-size:100%;}
+textarea{font-size:12px;}
+input[type="radio"]{position:relative;top:2px;}
+input[type="checkbox"]{position:relative;top:2px;}
+
+/*버튼 설정*/
+.btnDiv{clear:both;padding-top:20px;text-align:center;}
+.btnDiv button{
+	background:#000;
+	border:none;
+	padding:5px 30px;
+	color:#fff;
+	font-weight:bold;
+	font-size:90%;
+	margin:0 2px;
+	cursor:pointer;
+	
+	border-radius:15px;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	
+	box-shadow:1px 1px 1px #ccc;
+	-moz-box-shadow:1px 1px 1px #ccc;
+	-webkit-box-shadow:1px 1px 1px #ccc;
+}
+.btnDiv a{
+	background:#000;
+	padding:5px 30px;
+	color:#fff;
+	font-weight:bold;
+	font-size:90%;
+	margin:0 2px;
+	text-decoration:none;
+	
+	border-radius:15px;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	
+	box-shadow:1px 1px 1px #ccc;
+	-moz-box-shadow:1px 1px 1px #ccc;
+	-webkit-box-shadow:1px 1px 1px #ccc;
+}
+
+/*반복네비게이션 링크*/
+#skipTop{
+	position:absolute;
+	width:0;height:0;font-size:0;
+	overflow:hidden;visibility:hidden;
+}
+#skipBottom{
+	background:#000;
+	text-align:center;
+	padding:10px 0;
+	display:block;
+	width:100%;
+	color:#fff;
+}
+
+/*숨김제목*/
+.hiddenTitle{
+	display:none;
+}
+
+/*********************************** 레이아웃 ***********************************/
+/*서브페이지 타이틀*/
+header{position:relative;}
+header hgroup{
+	position:absolute;
+	width:0;height:0;font-size:0;
+	overflow:hidden;visibility:hidden;
+}
+
+/*트위터*/
+.twitterContent{	
+	border-bottom:#d0d0d0 solid 1px;
+	background:url(mobileImg/bg_twitter.png) left bottom repeat-x;
+}
+#twitterDiv{
+	padding:10px 50px 10px 10px;	
+}
+#twitterDiv a{
+	display:block;
+	background:url(img/icn_twitter.gif) 0 1px no-repeat;
+	padding-left:18px;
+	line-height:17px;	
+	text-decoration:none;
+	color:#000;
+	min-height:20px;
+}
+
+/*메인메뉴*/
+#mainNavi_05{/*모바일에선 color 메뉴 숨김*/
+	position:absolute;
+	width:0;height:0;font-size:0;
+	overflow:hidden;visibility:hidden;
+}
+
+#navMain{overflow:hidden;}/*메뉴 열기 닫기*/
+
+.mobilemenu_off{
+	height:0;
+	transition:all 0.3s;
+	-moz-transition:all 0.3s;
+	-webkit-transition:all 0.3s;
+}
+.mobilemenu_on{
+	height:150px;
+	transition:all 0.3s;
+	-moz-transition:all 0.3s;
+	-webkit-transition:all 0.3s;
+}
+
+header button{/*메뉴 열기 닫기 버튼*/
+	border:0;cursor:pointer;overflow:hidden;
+	position:absolute;right:10px;bottom:10px;
+	width:27px;height:27px;
+}
+header button span{
+	position:absolute;
+	width:0;height:0;font-size:0;
+	overflow:hidden;visibility:hidden;
+}
+.menuBtn_off{background:url(mobileImg/btn_open.gif) no-repeat;}
+.menuBtn_on{background:url(mobileImg/btn_close.gif) no-repeat;}
+
+#mainNavi{	
+	overflow:hidden;	
+	background:#000;
+	width:100%;
+	display:inline-block;	
+}
+#mainNavi li{	
+	float:left;
+	border-bottom:#666 solid 1px;
+	border-right:#666 solid 1px;
+	width:50%;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	background:#000 url(mobileImg/bg_mainNav.png) no-repeat;
+}
+
+#mainNavi li a{
+	padding-top:49px;
+	height:0;
+	overflow:hidden;
+	display:block;
+	margin:0 auto;
+	transition:all 0.3s;
+	-moz-transition:all 0.3s;
+	-webkit-transition:all 0.3s;
+}
+
+
+#mainNavi li#mainNavi_01 a{background:url(img/mainNavi1.gif) no-repeat;width:56px;}
+#mainNavi li#mainNavi_01 a:hover{background:url(img/mainNavi1.gif) 0 -50px no-repeat;}
+#mainNavi li#mainNavi_01 a:focus{background:url(img/mainNavi1.gif) 0 -100px no-repeat;}
+#mainNavi li#mainNavi_01 a.actMenu{background:url(img/mainNavi1.gif) 0 -50px no-repeat;}
+
+#mainNavi li#mainNavi_02 a{background:url(img/mainNavi2.gif) no-repeat;width:95px;}
+#mainNavi li#mainNavi_02 a:hover{background:url(img/mainNavi2.gif) 0 -50px no-repeat;}
+#mainNavi li#mainNavi_02 a:focus{background:url(img/mainNavi2.gif) 0 -100px no-repeat;}
+#mainNavi li#mainNavi_02 a.actMenu{background:url(img/mainNavi2.gif) 0 -50px no-repeat;}
+
+#mainNavi li#mainNavi_03 a{background:url(img/mainNavi3.gif) no-repeat;width:71px;}
+#mainNavi li#mainNavi_03 a:hover{background:url(img/mainNavi3.gif) 0 -50px no-repeat;}
+#mainNavi li#mainNavi_03 a:focus{background:url(img/mainNavi3.gif) 0 -100px no-repeat;}
+#mainNavi li#mainNavi_03 a.actMenu{background:url(img/mainNavi3.gif) 0 -50px no-repeat;}
+
+#mainNavi li#mainNavi_04 a{background:url(img/mainNavi4.gif) no-repeat;width:55px;}
+#mainNavi li#mainNavi_04 a:hover{background:url(img/mainNavi4.gif) 0 -50px no-repeat;}
+#mainNavi li#mainNavi_04 a:focus{background:url(img/mainNavi4.gif) 0 -100px no-repeat;}
+#mainNavi li#mainNavi_04 a.actMenu{background:url(img/mainNavi4.gif) 0 -50px no-repeat;}
+
+#mainNavi li#mainNavi_05 a{background:url(img/mainNavi5.gif) no-repeat;width:61px;}
+#mainNavi li#mainNavi_05 a:hover{background:url(img/mainNavi5.gif) 0 -50px no-repeat;}
+#mainNavi li#mainNavi_05 a:focus{background:url(img/mainNavi5.gif) 0 -100px no-repeat;}
+#mainNavi li#mainNavi_05 a.actMenu{background:url(img/mainNavi5.gif) 0 -50px no-repeat;}
+
+#mainNavi li#mainNavi_06 a{background:url(img/mainNavi6.gif) no-repeat;width:85px;}
+#mainNavi li#mainNavi_06 a:hover{background:url(img/mainNavi6.gif) 0 -50px no-repeat;}
+#mainNavi li#mainNavi_06 a:focus{background:url(img/mainNavi6.gif) 0 -100px no-repeat;}
+#mainNavi li#mainNavi_06 a.actMenu{background:url(img/mainNavi6.gif) 0 -50px no-repeat;}
+
+#mainNavi li#mainNavi_07 a{background:url(img/mainNavi7.gif) no-repeat;width:73px;}
+#mainNavi li#mainNavi_07 a:hover{background:url(img/mainNavi7.gif) 0 -50px no-repeat;}
+#mainNavi li#mainNavi_07 a:focus{background:url(img/mainNavi7.gif) 0 -100px no-repeat;}
+#mainNavi li#mainNavi_07 a.actMenu{background:url(img/mainNavi7.gif) 0 -50px no-repeat;}
+
+#mainNavi li#adminNavi_01 a{background:url(img/adminNavi1.gif) no-repeat;width:56px;}
+#mainNavi li#adminNavi_01 a:hover{background:url(img/adminNavi1.gif) 0 -50px no-repeat;}
+#mainNavi li#adminNavi_01 a:focus{background:url(img/adminNavi1.gif) 0 -100px no-repeat;}
+#mainNavi li#adminNavi_01 a.actMenu{background:url(img/adminNavi1.gif) 0 -50px no-repeat;}
+
+#mainNavi li#adminNavi_02 a{background:url(img/adminNavi2.gif) no-repeat;width:120px;}
+#mainNavi li#adminNavi_02 a:hover{background:url(img/adminNavi2.gif) 0 -50px no-repeat;}
+#mainNavi li#adminNavi_02 a:focus{background:url(img/adminNavi2.gif) 0 -100px no-repeat;}
+#mainNavi li#adminNavi_02 a.actMenu{background:url(img/adminNavi2.gif) 0 -50px no-repeat;}
+
+#mainNavi li#adminNavi_03 a{background:url(img/adminNavi3.gif) no-repeat;width:103px;}
+#mainNavi li#adminNavi_03 a:hover{background:url(img/adminNavi3.gif) 0 -50px no-repeat;}
+#mainNavi li#adminNavi_03 a:focus{background:url(img/adminNavi3.gif) 0 -100px no-repeat;}
+#mainNavi li#adminNavi_03 a.actMenu{background:url(img/adminNavi3.gif) 0 -50px no-repeat;}
+
+#mainNavi li#adminNavi_04 a{background:url(img/adminNavi4.gif) no-repeat;width:69px;}
+#mainNavi li#adminNavi_04 a:hover{background:url(img/adminNavi4.gif) 0 -50px no-repeat;}
+#mainNavi li#adminNavi_04 a:focus{background:url(img/adminNavi4.gif) 0 -100px no-repeat;}
+#mainNavi li#adminNavi_04 a.actMenu{background:url(img/adminNavi4.gif) 0 -50px no-repeat;}
+
+/*서브페이지 서브메뉴*/
+#subNav{
+}
+#subNav ul{
+	display:inline-block;
+	width:100%;
+}
+#subNav ul li{
+	float:left;
+	width:25%;
+	border-right:#727f8e solid 1px;
+	border-bottom:#727f8e solid 1px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	text-align:center;	
+}
+#subNav ul li a{
+	padding:15px 0;
+	color:#fff;
+	font-weight:bold;
+	font-size:90%;
+	letter-spacing:-1px;
+	text-decoration:none;
+	display:block;
+	background:#8f9fb1;
+	min-height:30px;
+	
+	-webkit-transition:all 0.3s;
+}
+#subNav ul li.actMenu a{background:#0850a0;}
+#subNav ul li a:hover{background:#0850a0;}
+
+#Content footer{background:transparent;padding:0;}
+/*하단영역*/
+footer{
+	font-size:90%;	
+	color:#fff;
+	letter-spacing:-1px;
+	line-height:130%;
+	background:#a6a6a6;
+	padding:10px;
+	margin-top:20px;
+	text-align:center;
+}
+footer a{color:#fff;}
+footer img,footer ul{
+	position:absolute;
+	width:0;height:0;font-size:0;
+	overflow:hidden;visibility:hidden;
+}
+footer p:nth-child(4),footer p:nth-child(5),footer p:nth-child(6){
+	display:none;
+}
+
+/*서브페이지 콘텐츠*/
+#Content{
+	line-height:170%;
+	position:relative;
+}
+
+#Content h1{
+	color:#0099d8;
+	font-size:18px;
+	font-family:nanumFont,"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	background:url(img/icn_subTitle.gif) 0 2px no-repeat;
+	padding:0 0 15px 27px;
+	letter-spacing:-1px;
+}
+
+/*카테고리 슬로건*/
+@-webkit-keyframes sloganAnimation{
+	from{		
+		opacity:0.1;
+		transform:scale(1.2,1);
+		-webkit-transform:scale(1.2,1);
+		-moz-transform:scale(1.2,1);
+	}
+	to{
+		opacity:1.0;
+		transform:scale(1,1);
+		-webkit-transform:scale(1,1);
+		-moz-transform:scale(1,1);
+	}
+}
+.sloganHeader{			
+	text-align:center;
+	border-bottom:#ccc solid 1px;
+	font-weight:bold;
+	padding:20px 0;
+	margin-bottom:25px;
+}
+#Content .sloganHeader h1{
+	-webkit-animation-name:sloganAnimation;
+	-webkit-animation-duration:2s;
+	
+	color:#0850a0;
+	font-size:22px;		
+	padding:0 0 3px 0;	
+	background:transparent;
+	font-family:nanumFont,Arial Black;
+}
+.sloganHeader p.slogan{
+	-webkit-animation-name:sloganAnimation;
+	-webkit-animation-duration:2s;
+	
+	color:#808285;
+	font-size:12px;
+	font-family:nanumFont,"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.sloganHeader p.slogan strong{color:#0c9f4e;}
+
+footer .coforward{
+	position:absolute;
+	width:0;height:0;font-size:0;
+	overflow:hidden;visibility:hidden;
+}
+
+/*coForward 이름 단어 설정*/
+.coforward{
+	color:#0099D8;
+	font-style:normal;
+	font-weight:bold;
+	font-family:nanumFont,"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.coforward span{
+	color:#0850A0;
+	font-variant:small-caps;
+	font-family:nanumFont,"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+/****************************** 메인 ******************************/
+@-webkit-keyframes mainAnimation{
+	from{
+		transform:rotate(-45deg) scale(0.3,0.3);
+		-webkit-transform:skew(20deg,20deg) scale(0.3,0.3);
+		-moz-transform:rotate(-45deg) scale(0.3,0.3);
+		opacity:0.1;
+	}
+	to{
+		transform:rotate(0deg) scale(1,1);
+		-webkit-transform:skew(0deg,0deg) scale(1,1);
+		-moz-transform:rotate(0deg) scale(1,1);
+		opacity:1;
+	}
+}
+#mainPageContent{
+	-webkit-animation-name:mainAnimation;
+	-webkit-animation-duration:2s;
+	
+	width:262px;
+	height:149px;
+	margin:50px auto;
+	position:relative;
+	background:url(mobileImg/main_bg.png) right 60px no-repeat;
+}
+#mainPageContent h1{		
+	position:absolute;
+	top:0;
+	left:0;
+}
+#mainPageContent h1 img{width:159px;}
+@-webkit-keyframes mainTitleAnimation{
+	from{
+		width:1px;
+	}
+	to{
+		width:124px;
+	}
+}
+#mainPageContent h2{
+	-webkit-animation-name:mainTitleAnimation;
+	-webkit-animation-duration:2s;
+	
+	position:absolute;
+	top:34px;
+	left:138px;
+	background:#000 url(mobileImg/main_title.png) 5px 2px no-repeat;
+	width:125px;
+	padding-top:22px;
+	height:0;
+	overflow:hidden;
+}
+#memberLink{	
+	display:inline-block;
+	position:absolute;
+	right:0;
+	top:0;
+	z-index:100;
+}
+#memberLink li{float:left;}
+#memberLink li img{width:31px;}
+
+/****************************** COFORWARD 카테고리 ******************************/
+/***** Team 이름의 의미 - COFORWARD-팀명에 담긴 의미 *****/
+#teamName .depth_01_01{
+	border:#dcddde solid 5px;
+	padding:20px 10px;
+	margin-top:20px;
+}
+#teamName .depth_01_01 p{text-align:center;}
+#teamName .depth_01_01 li{
+	background:#0850a0;
+	color:#fff;
+	padding:20px;
+	margin:10px 0;
+	text-align:center;
+}
+.listType01 li .coforward, .listType01 li .coforward span{
+	color:#FFF;
+}
+/***** Team Logo에 대하여 - Logo에 대하여 *****/
+#teamLogo .logoDesc{
+	border-top:#bcbec0 solid 5px;
+	border-left:#bcbec0 solid 5px;
+	border-right:#bcbec0 solid 5px;
+	border-bottom:#bcbec0 dashed 1px;
+	background:#fafafa;
+	padding:10px;
+	margin-top:20px;
+}
+#teamLogo .logoDesc dt{
+	padding-top:114px;
+	height:0;
+	overflow:hidden;
+}
+#teamLogo .logoDesc dt:nth-child(1){
+	background:url(mobileImg/logo_desc1.png) center 10px no-repeat;	
+}
+#teamLogo .logoDesc dt:nth-child(3){
+	background:url(mobileImg/logo_desc2.png) center 10px no-repeat;
+}
+#teamLogo .logoDesc dd{
+	font-size:90%;
+	letter-spacing:-1px;
+	padding-bottom:10px;
+}
+#teamLogo figure{
+	border-left:#bcbec0 solid 5px;
+	border-right:#bcbec0 solid 5px;
+	border-bottom:#bcbec0 solid 5px;
+	padding:20px 10px;
+	text-align:center;
+}
+#teamLogo figure img{width:150px;}
+#teamLogo figure figcaption{
+	font-family:nanumFont,"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#6d6e71;
+	font-size:14px;
+}
+#teamLogo figure figcaption strong{color:#000;}
+
+/***** Team Logo에 대하여 - Logo에 대하여 - 로고의 형태적 의미 *****/
+#teamLogo #logoShapeDesc{margin-top:20px;}
+#teamLogo #logoShapeDesc figure{
+	border-top:#bcbec0 solid 5px;
+	border-bottom:#bcbec0 dashed 1px;
+	margin-top:20px;
+}
+#teamLogo #logoShapeDesc ul{
+	border-left:#bcbec0 solid 5px;
+	border-right:#bcbec0 solid 5px;
+	border-bottom:#bcbec0 solid 5px;
+	padding:5px;
+	background:#fafafa;
+	font-size:90%;
+	letter-spacing:-1px;
+}
+#teamLogo #logoShapeDesc ul li{
+	padding:5px 0;
+}
+
+/***** Team 구성원 소개 *****/
+#memberInfo .depth_01{
+	border:#bcbec0 solid 5px;
+	padding:10px;
+	margin-bottom:10px;
+}
+#memberInfo .depth_01 figure{
+	text-align:center;
+}
+#memberInfo .depth_01 h1.memberName{	
+	background:transparent;
+	color:#0850a0;
+	text-align:center;
+	font-size:120%;
+	padding:0 0 10px 0;
+}
+#memberInfo .depth_01 .memberTomember{
+	padding:10px;
+	background:#eee;
+	font-size:90%;
+	letter-spacing:-1px;
+	line-height:13px;
+	margin-top:10px;
+	
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	
+	box-shadow:1px 1px 1px #ccc;
+	-moz-box-shadow:1px 1px 1px #ccc;
+	-webkit-box-shadow:1px 1px 1px #ccc;	
+}
+#memberInfo .depth_01 .memberTomember footer{font-size:100%;text-align:right;color:#999;margin-top:5px;}
+
+/****************************** Method 카테고리 ******************************/
+#coforwardMethod .depth_01{	
+	border:#bcbec0 solid 5px;
+	padding:10px 10px 70px 10px;
+	margin-bottom:10px;
+	min-height:210px;
+	background:#fff url(mobileImg/bg_method_01.gif) left bottom no-repeat;
+}
+#coforwardMethod #siteAccessibililty{background:#fff url(mobileImg/bg_method_02.gif) left bottom no-repeat;}
+#coforwardMethod #siteWebstandard{background:#fff url(mobileImg/bg_method_03.gif) left bottom no-repeat;}
+#coforwardMethod .depth_01 p{	
+	padding:0 0 0 70px;
+}
+
+/****************************** News 카테고리 ******************************/
+/*이전 다음달 버튼*/
+#newLinkDiv{
+	text-align:center;
+	font-family:nanumFont;
+	font-size:120%;
+	padding-bottom:20px;
+}
+#newLinkDiv a{
+	display:inline-block;
+	text-decoration:none;
+	margin:0 2px;
+	color:#fff;
+}
+.newsPreLink{	
+	height:28px;
+	line-height:28px;
+	padding:0 12px 2px 5px;	
+	border-width:1px 3px 4px 19px;
+	-webkit-border-image:url(img/btn_prevLink.png) 1 3 4 19;
+	-moz-border-image:url(img/btn_prevLink.png) 1 3 4 19;	
+}
+.newsNextLink{
+	height:28px;
+	line-height:28px;
+	padding:0 7px 2px 10px;	
+	border-width:1px 19px 4px 3px;
+	-webkit-border-image:url(img/btn_nextLink.png) 1 19 4 3;
+	-moz-border-image:url(img/btn_nextLink.png) 1 19 4 3;
+}
+
+/*뉴스 리스트*/	
+.newsListItem{
+	padding:10px 10px 5px 10px;
+	border:#bcbec0 solid 5px;
+	display:inline-block;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	width:100%;
+}
+article.oddItem{background:#f8f8f8;border-top:none;}
+.newsListItem h2{font-size:120%;}
+.newsListItem h2 a{
+	display:block;
+	color:#fff;
+	text-align:center;
+	padding:5px 0;
+	margin-bottom:20px;	
+	
+	background:#4380c4;
+	background:-webkit-gradient(linear, left top, left bottom, from(#4380c4), to(#0850a0));
+	background:-moz-linear-gradient(top,#4380c4,#0850a0);
+	
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+.newsListItem figure{text-align:center}
+.newsListItem figure img{max-height:200px;max-width:200;}/*리스트 부분 높이를 고정*/
+.newsListItem .newsListTxtDiv{/*리스트 부분 높이를 고정*/
+	height:140px;
+	overflow:hidden;	
+}
+footer.newsListFooter{
+	clear:both;	
+	border-top:#ccc solid 1px;
+	margin-top:10px;
+	display:inline-block;
+	width:100%;
+}
+footer.newsListFooter p{
+	padding-left:0;
+	float:left;
+	padding-top:10px;
+}
+footer.newsListFooter div{
+	float:right;
+	padding-top:10px;
+}
+footer.newsListFooter .coforward{
+	position:static;
+	width:auto;height:auto;font-size:inherit;
+	overflow:auto;visibility:visible;
+}
+
+.noNewsArticle{border:#bcbec0 solid 5px;text-align:center;padding:50px 0;background:#f8f8f8;}
+
+/*뉴스 상세보기*/
+.newsViewAticle h1{
+	border-bottom:#bcbec0 solid 5px;
+}
+.newsViewAticle img{max-width:290px;}
+.newsViewAticle section{
+	border-bottom:#bcbec0 solid 5px;
+	border-left:#bcbec0 solid 5px;
+	border-right:#bcbec0 solid 5px;
+	padding:10px;
+	display:inline-block;
+	width:100%;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}	
+.newsViewAticle figure,.newsViewAticle div{padding-bottom:10px;}
+
+.newsViewAticle h2{
+	font-family:nanumFont;
+	color:#0850a0;
+	font-size:140%;
+	padding-bottom:15px;
+	letter-spacing:-1px;
+}
+.newsViewAticle footer .coforward{
+	position:static;
+	width:auto;height:auto;font-size:inherit;
+	overflow:auto;visibility:visible;
+}
+
+/*텍스트정렬*/
+.textAlign_left{text-align:left;}
+.textAlign_center{text-align:center;}
+.textAlign_right{text-align:right;}
+
+/*이미지정렬*/
+.lBlockImg{text-align:center;display:block;}
+.cBlockImg{text-align:center;display:block;}
+.rBlockImg{text-align:center;display:block;}
+
+.lFloatImg{text-align:center;display:block;}
+.rFloatImg{text-align:center;display:block;}		
+
+/*다단 - 모바일에서는 다단지원하지 않음*/
+
+/*섹션 푸터*/
+#Content .newsSubFooter{
+	border:#ccc solid 1px;
+	display:inline-block;
+	width:100%;
+	margin-top:0;
+}
+.newsSubFooter p{
+	float:left;
+	padding:5px 10px;
+}
+.newsSubFooter div{
+	float:right;
+	padding:5px 10px;
+}
+
+/*뉴스 푸터*/
+#Content #newsMainFooter{
+	background:#bcbec0;
+	color:#fff;
+	display:inline-block;
+	width:100%;
+	margin-top:0;
+}
+#newsMainFooter p{padding-left:0;float:left;padding:5px 30px;}
+#newsMainFooter div{float:right;padding:5px 30px;}
+
+/*비디오정렬*/
+.videoDiv{padding-top:10px;}
+.videoDiv a{
+	background:url(img/icn_video.png) no-repeat;
+	line-height:16px;
+	padding:2px 0 0 22px;
+	display:block;
+}
+
+/*일반 버튼과 차별 - 덜 중요한 관리버튼*/
+.commandBtnDiv button{
+	background:#fff;
+	color:#666;
+	border:#999 solid 1px;
+	padding:3px 5px;
+	font-weight:bold;
+	font-size:90%;
+	margin:0 2px;
+	cursor:pointer;
+	
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	
+	box-shadow:1px 1px 1px #ccc;
+	-moz-box-shadow:1px 1px 1px #ccc;
+	-webkit-box-shadow:1px 1px 1px #ccc;
+}
+.commandBtnDiv a{
+	display:inline-block;
+	text-decoration:none;
+	background:#fff;
+	color:#666;
+	border:#999 solid 1px;
+	padding:3px 5px;
+	font-weight:bold;
+	font-size:90%;
+	margin:0 2px;
+	cursor:pointer;
+	
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	
+	box-shadow:1px 1px 1px #ccc;
+	-moz-box-shadow:1px 1px 1px #ccc;
+	-webkit-box-shadow:1px 1px 1px #ccc;
+}
+
+.commandBtnDiv{padding-top:10px;}
+
+/************************************ 준비중입니다. ************************************/
+#nowWorking{
+	-webkit-animation-name:mainAnimation;
+	-webkit-animation-duration:1s;
+	
+	background:url(mobileImg/nowWorking.gif) center 30px no-repeat;
+	padding-top:345px;
+	height:0;
+	overflow:hidden;
+}
+
+/************************************ Contact ************************************/
+.formTable th{
+	border-bottom:#ccc solid 1px;
+	padding:7px 0;
+	background:#f8f8f8;
+	width:70px;
+	font-size:90%;
+	letter-spacing:-1px;
+}
+.formTable td{
+	border-bottom:#ccc solid 1px;
+	padding:7px 10px;
+}
+.formTable input[type="text"]{width:95%;}
+.formTable textarea{width:95%;height:100px;}
+
+.formDesc{
+	color:#fff;
+	font-size:90%;
+	font-weight:bold;
+	letter-spacing:-1px;
+	padding:5px 10px;
+	
+	
+	border-radius:2px 2px 0 0;
+	-moz-border-radius:2px 2px 0 0;
+	-webkit-border-radius:2px 2px 0 0;
+	
+	box-shadow:0 0 2px 0 rgba(0,0,0,.2);
+	-moz-box-shadow:0 0 2px 0 rgba(0,0,0,.2);
+	-webkit-box-shadow:0 0 2px 0 rgba(0,0,0,.2);
+	
+	background:#999;
+	background:-webkit-gradient(linear, left top, left bottom, from(#999), to(#666));
+	background:-moz-linear-gradient(top,#999,#666);
+	margin-bottom:2px;
+}
+.label_Rq{
+	background:url(img/icn_star.gif) no-repeat;
+	width:9px;
+	padding-top:9px;
+	height:0;
+	overflow:hidden;
+	display:inline-block;
+	margin:0 5px;
+}
+
+.errorMsg{
+	font-family:nanumFont;
+	text-align:center;
+	border:#ccc solid 2px;
+	background:#f8f8f8;
+	padding:10px 0;
+	margin-bottom:15px;
+	
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;	
+}
+.errorMsg h2{padding-bottom:5px;font-size:110%;letter-spacing:-1px;color:#000;}
+.errorCnt{color:#FF0000;}
+.errorMsg a{color:#FF0000;}
+.errorMsg ul{font-size:90%;}
+
+.returnMsg{
+	text-align:center;
+	border:#ccc solid 2px;
+	background:#f8f8f8;
+	padding:30px 0;
+	
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;	
+}
+#Content .returnMsg h1{background:transparent;padding:0;font-size:120%;}

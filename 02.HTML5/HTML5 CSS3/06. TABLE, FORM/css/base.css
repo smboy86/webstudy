@@ -1,0 +1,34 @@
+ /* 웹폰트 */
+		@font-face {
+			font-family:'NanumGothic';  /* 나눔고딕 */
+			font-weight:900;
+			src: url('../webcafe/font/NanumGothic.eot');
+			src: url('../webcafe/font/NanumGothic.eot?#iefix') format('embedded-opentype'),
+				 url('../webcafe/font/NanumGothic.woff') format('woff'),
+				 url('../webcafe/font/NanumGothic.ttf') format('truetype');
+		}
+		@font-face {
+			font-family:'NanumBold';
+			font-weight:600;
+			src: url('../webcafe/font/NanumGothicBold.eot');
+			src: url('../webcafe/font/NanumGothicBold.eot?#iefix') format('embedded-opentype'),
+				 url('../webcafe/font/NanumGothicBold.woff') format('woff'),
+				 url('../webcafe/font/NanumGothicBold.ttf') format('truetype');
+		}
+		@font-face {
+			font-family:'NanumEX';
+			font-weight:900;
+			src: url('../webcafe/font/NanumGothicExtraBold.eot');
+			src: url('../webcafe/font/NanumGothicExtraBold.eot?#iefix') format('embedded-opentype'),
+				 url('../webcafe/font/NanumGothicExtraBold.woff') format('woff'),
+				 url('../webcafe/font/NanumGothicExtraBold.ttf') format('truetype');
+		}
+		@font-face {
+			font-family: 'webcafe';
+			font-weight:400;
+			src: url('../webcafe/font/webcafeIcon.eot');
+			src: url('../webcafe/font/webcafeIcon.eot?#iefix') format('embedded-opentype'),
+				 url('../webcafe/font/webcafeIcon.woff') format('woff'),
+				 url('../webcafe/font/webcafeIcon.ttf') format('truetype'),
+				 url('../webcafe/font/webcafeIcon.svg#webcaferegular') format('svg');
+		}

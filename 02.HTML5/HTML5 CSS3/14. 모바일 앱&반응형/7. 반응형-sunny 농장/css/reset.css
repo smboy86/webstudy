@@ -1,0 +1,18 @@
+/* reset.css */
+
+@charset "utf-8";
+
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,summary,caption,thead,tbody,tfoot,tr,th,td,
+form,fieldset,legend,label,address,blockquote,
+header,footer,section,article,aside,figure,figcaption,details,hgroup,nav,menu,
+audio,video,canvas,time,mark {margin:0;padding:0;}
+
+header,footer,section,article,aside,figure,figcaption,details,hgroup,nav,menu {display:block;}
+
+li {list-style-type:none;}
+li img, dt img, dd img {vertical-align:top;}
+img,fieldset,iframe {border:none;}
+input {vertical-align:middle;}
+address,em {font-style:normal;}
+hr {display:none;}
+#skip, .hdd {font-size:0;line-height:0;width:0;height:0;position:absolute;left:-9999px;visibility:hidden;}

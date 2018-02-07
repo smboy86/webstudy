@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title> 배경그림 적용</title>
+<meta charset="utf-8">
+<style>
+   *{margin:0; padding:0; }
+    html,body{height:100%;}
+	#contents { width:100%; height:100%;border:3px solid red;}
+	#contents dl{ width:50%; height:50%; border:3px solid black; box-sizing:border-box;float:left;}
+	
+	#contents dl:nth-child(1){ background:url(./images/img01.gif) no-repeat center top; background-size:cover;}
+	#contents dl:nth-child(2){ background:url(./images/img02.gif) no-repeat center top; background-size:cover;}
+	#contents dl:nth-child(3){ background:url(./images/img03.gif) no-repeat center top; background-size:cover;}
+	#contents dl:nth-child(4){ background:url(./images/img04.gif) no-repeat center top; background-size:cover; }
+	
+	@media all and (min-width: 1440px) and (max-width: 1920px) {
+		#contents dl:nth-child(1){ background:url(./images/img01.gif) no-repeat center -300px; background-size:cover;}
+		#contents dl:nth-child(2){ background:url(./images/img02.gif) no-repeat center -200px; background-size:cover;}
+		#contents dl:nth-child(3){ background:url(./images/img03.gif) no-repeat center -200px; background-size:cover;}
+		#contents dl:nth-child(4){ background:url(./images/img04.gif) no-repeat center -200px; background-size:cover; }
+	}
+	
+	@media all and (min-width: 1280px) and (max-width: 1439px) {
+		#contents dl:nth-child(1){ background:url(./images/img01.gif) no-repeat left -200px; background-size:cover;}
+		#contents dl:nth-child(2){ background:url(./images/img02.gif) no-repeat right -150px; background-size:cover;}
+		#contents dl:nth-child(3){ background:url(./images/img03.gif) no-repeat center -100px; background-size:cover;}
+		#contents dl:nth-child(4){ background:url(./images/img04.gif) no-repeat center -50px; background-size:cover; }
+	}
+	
+	#contents dl dt{ padding:10px 0; border:1px solid green;}
+	#contents dl dd{ padding:50px 0; border:1px solid pink;}
+</style>
+</head>
+<body>
+      <div id="contents">
+	       <dl>
+		       <dt> 주제 </dt>
+			   <dd> 설명 </dd>
+			</dl>
+			<dl>
+		       <dt> 주제 </dt>
+			   <dd> 설명 </dd>
+			</dl>
+			<dl>
+		       <dt> 주제 </dt>
+			   <dd> 설명 </dd>
+			</dl>
+			<dl>
+		       <dt> 주제 </dt>
+			   <dd> 설명 </dd>
+			</dl>
+		</div>
+	  
+	 <div id="event"></div>
+</body>
+</html>

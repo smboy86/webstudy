@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>pre 요소</title>
+	</head>
+	<body>
+		<section>
+			<h1>롤오버 이미지</h1>
+			<p>
+				자바스크립트 롤오버 이미지 소스 입니다.
+			</p>
+			
+			<pre>
+			<code>
+				function toggleImg(imgNode, onOff){
+					var imgFileName = imgNode.src;
+						if(onOff == "on"){
+							if(imgFileName.lastIndexOf("_ov.gif") < 0){
+							imgNode.src = imgFileName.substring(0, imgFileName.lastIndexOf(".gif")) + "_ov.gif";
+						}
+						}else{
+							if(imgFileName.lastIndexOf("_ov.gif") > 0){
+							imgNode.src = imgFileName.substring(0, imgFileName.lastIndexOf(".gif")-3) + ".gif";
+						}
+					}
+				}
+           </code>
+		   </pre>
+		  
+		</section>
+
+		<!--
+         <pre>요소 :  Preformatted Text
+		 공백이나 줄바꿈 등을 입력한 그대로 웹 브라우저 화면에 표현하고자 할때 사용, 주로 프로그래밍 소스를 마크업하거나 여러줄에 걸쳐 표현해야 하는 긴 문장 등에 적합
+		-->
+	</body>
+</html>

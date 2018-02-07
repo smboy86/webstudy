@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> ul안의 li안의 이미지들 반응형 테스트</title>
+		<meta charset="UTF-8" />
+		<style type="text/css">
+         <!--
+          *{margin:0; padding:0;}
+		  ol,ul { list-style:none;}
+		  html,body{height:100%;}
+		  .inner{width:80%; border:1px solid red; margin:0 auto; min-height:20px;position:relative;}
+	      #header{height:150px; background:#eee;}
+		  
+		  #header .inner h1.logo1{ border:1px solid blue; position:absolute; left:0; top:30px;}
+		  #header .inner h1.logo2{ border:1px solid green; display:none;}
+		  #header .inner nav { border:1px solid cyan;margin-left:250px;padding-top:50px;}
+		  #header .inner nav ul li{ border:1px solid red;display:inline;padding:0 30px;}
+		  #header .inner div.qnb{ border:1px solid pink; display:none;}
+		  
+		  @media all and (min-width:600px) and (max-width:1279px) {
+		        .inner{width:92.5%; border:1px solid red; margin:0 auto; min-height:20px;position:relative; background:cyan;}
+				
+		       #header .inner h1.logo1{ display:none;}
+			   #header .inner nav { display:none;}
+			   #header .inner h1.logo2{ border:1px solid green; display:block;text-align:center; padding:20px 0;}
+			   #header .inner div.qnb{ border:1px solid pink; display:block;position:absolute;right:0;top:30px;width:50px; height:50px;background:red;}
+		  }
+		  
+		  #s01{height:100%; background:#ccc;}
+		  #s02{height:200%; background:#bbb;}
+		  #s03{height:1500px; background:#bbb;}
+		  #footer{height:200px; background:#999;}
+		  
+		  
+        	-->		 
+		</style>
+	</head>
+
+	<body>
+        <div id="header"><!-- header-->
+		     <div class="inner"><!-- header inner-->
+		         <h1 class="logo1">로고(pc용)</h1>
+				 <h1 class="logo2">로고(태블릿)</h1>
+				 
+				 <nav>
+				    <ul>
+                        <li><a href="#">menu</a></li>
+						<li><a href="#">menu</a></li>
+						<li><a href="#">menu</a></li>
+						<li><a href="#">menu</a></li>
+						<li><a href="#">menu</a></li>
+						<li><a href="#">menu</a></li>
+				    </ul>					
+				 </nav>
+				 <div class="qnb">QNB</div>
+		     </div><!-- //header inner-->
+		</div><!-- //header-->
+		
+		<div id="s01"><div class="inner"></div></div>
+		<div id="s02"><div class="inner"></div></div>
+		<div id="s03"><div class="inner"></div></div>
+		<div id="footer"><div class="inner"></div></div>
+	</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> 반응형 레이아웃 단위변화</title>
+		<meta charset="UTF-8" />
+		<style type="text/css">
+         <!--
+          *{margin:0; padding:0; box-sizing:border-box;}
+		  ol,ul{list-style:none;}
+		  .inner{width:1200px;border:1px solid red;margin:0 auto;}
+		  header{  width:100%; height:150px; background:yellow; }
+		  #contents{  width:100%; height:1500px; background:orange; }
+		  
+		  #contents .inner nav{
+		     border:5px solid #000; 
+			 width:30%;
+		  }
+		  
+		  #contents .inner nav ul{
+		      border:3px solid green; 
+		   }
+		   
+		   #contents .inner nav ul li{
+		      border:2px solid gray;
+              			  
+		   }
+		   
+		   #contents .inner nav ul li a{
+		      border:2px solid cyan;
+              display:block;			  
+			  width:100%;
+			  padding:20px 0;
+			  background:white;
+		   }
+		   
+		   
+		  footer{  width:100%; height:100px; background:green; }
+		  
+		  @media all and (min-width:600px) and (max-width:1279px){
+		      .inner{width:92.5%;border:5px solid blue;margin:0 auto;}
+			   
+			  #contents .inner nav{
+				 border:5px solid #000; 
+				 width:100%;
+			  }
+			  
+			  #contents .inner nav ul{
+				  border:3px solid green; 
+			   }
+			   
+			   #contents .inner nav ul li{
+				  border:2px solid gray;
+				  display:inline;
+				  float:left;
+			      width:20%;
+				}
+			   
+			   #contents .inner nav ul li a{
+				  border:2px solid cyan;
+				  display:inline-block;			  
+				  width:100%;
+				  padding:10px 0;
+				  background:white;
+			   }
+		   
+		  }
+		  
+		  @media all and (min-width:300px) and (max-width:599px){
+		      .inner{width:80%;border:5px solid black;margin:0 auto;}
+			  
+			  #contents .inner nav{
+				 border:5px solid #000; 
+				 width:100%;
+			  }
+			  
+			  #contents .inner nav ul{
+				  border:3px solid green; 
+			   }
+			   
+			   #contents .inner nav ul li{
+				  border:2px solid gray;
+				  display:block;
+				  /*float:left;*/
+			      width:100%;
+				}
+			   
+			   #contents .inner nav ul li a{
+				  border:2px solid cyan;
+				  display:block;			  
+				  width:100%;
+				  padding:15px 0;
+				  background:cyan;
+				  font-size:1em;
+				  text-decoration:none;
+				  color:#000;
+			   }
+			   #contents .inner nav ul li a:hover{
+			      background:pink;
+			   }
+			   
+		  }
+         -->		 
+		</style>
+	</head>
+    <body>
+	<header>
+	    <div class="inner">로고와 메뉴들</div>
+	</header>
+	<section id="contents">
+	    <div class="inner">
+		    <nav>
+			    <ul>
+				    <li><a href="#">link</a></li>
+					<li><a href="#">link</a></li>
+					<li><a href="#">link</a></li>
+					<li><a href="#">link</a></li>
+					<li><a href="#">link</a></li>
+				</ul>
+			</nav>
+		
+		</div>
+	</section>
+	<footer>
+	    <div class="inner">하단</div>
+	</footer>
+   
+	</body>
+</html>

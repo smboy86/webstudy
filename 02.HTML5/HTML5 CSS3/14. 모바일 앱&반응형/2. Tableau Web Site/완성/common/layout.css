@@ -1,0 +1,80 @@
+@charset "utf-8";
+/* Layout */
+body {
+	background:url(../images/stripe_pattern.png) repeat-x;
+	margin-top:50px;
+	border:5px solid red;
+	}
+header { 
+	display:none;
+	}
+#wrapper {
+	width:960px;
+	margin:0 auto;
+	border:5px solid blue;
+	}
+#sidebarNav {
+	float:left;
+	background:url(../images/logo.png) no-repeat;
+	width:320px;
+	padding-top:210px;
+	position:fixed;
+	z-index:10;
+	border:5px solid green;
+	}
+#sidebarNav ul li a {
+	display:block; /* 인라인태그를 블록속성 즉 문단으로 변경 */
+	/*
+	대표적 인라인 태그들 : a, img, span 등
+	내용만큼만 영역을 가지고 있어서 다른 영역의 내용들이 옆으로 올수 있게 됨
+	문단안에 넣는 요소들을 인라인 태그라고 함
+	ex)<p><img> or 글씨 </p>
+	
+	★인라인 속성에 width, height, padding, margin등이 완전하게 적용되지 않기 때문에 display:block 또는 display:inline-block을 적용시킴
+	display:block; 수직구조
+	display:inline-block; 수평구조
+	*/
+	border:1px solid pink;
+	font-weight:bold;
+	font-size:1.2em;
+	/*text-align:center;*/
+	padding:25px 0px 10px 0px ;
+	/*border-bottom:1px solid #eee;*/
+	}
+#sidebarNav ul li a:hover, #sidebarNav ul li a.activeLi {
+	background:url(../images/painting_pink.png) no-repeat center top;
+	}
+#contentsMain {
+	float:right;
+	width:630px;
+	padding-top:50px;
+	border:5px solid cyan;
+	}
+footer {
+	clear:both;
+	/* 앞쪽에서 float 속성을 사용한 경우 해제하지 않으면 아래쪽 내용이 위로 올라오거나 옆으로 오는 현상이 생김
+	
+	따라서 float을 해제하기 위해 clear:both;를 사용
+	현재 영역 양쪽에 다른 내용이 못 오게 함
+	
+    */
+	padding:20px 0px 30px 0px;
+	background:url(../images/stripe_pattern.png) repeat-x left bottom;
+	border-top:1px solid #333;
+	border:5px solid gray;
+	}
+footer p {
+	border:5px solid black;
+	width:960px;
+	position:relative;
+	left:350px;
+	/*
+	원래 있던 자리에서 왼쪽으로 350픽셀만큼 떨어지게 함
+	*/
+	margin:0px auto; /* 가운데 정렬 */
+	padding-bottom:20px;
+	}
+footer p span {
+	display:block;  /* span태그는 인라인 태그, block값을 적용함으로써 문단유형으로 변경 */
+	border:1px solid red;
+	}

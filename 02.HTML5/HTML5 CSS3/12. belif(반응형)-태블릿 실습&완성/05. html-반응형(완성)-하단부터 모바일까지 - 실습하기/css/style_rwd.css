@@ -1,0 +1,333 @@
+/*reset(초기화 작업)*/
+*{margin:0; padding:0;} /*모든 태그들 바깥/안쪽 여백 초기화 */
+h1,h2,h3,h4,h5,h6 { font-size:1em; color:#000; font-family:"맑은 고딕",돋움,Dotum,sans-serif;font-weight:normal;}
+ol,ul{list-style:none; }
+hr{display:none;}
+fieldset, img { border:0; max-width:100%; vertical-align:top;}
+body{font-family:글꼴체; font-size:0.8em; color:#333; line-height:1.2; background:url(../images/common/body_bg.gif) repeat;}
+a{font-family:글꼴체; font-size:0.8em; color:#666; text-decoration:none;}
+input,select,label{vertical-align:middle;}
+html,body,main{height:100%;}
+
+/*------------contents(pc형) 1920~1280까지--------*/
+section#contents{
+	width:90%;
+	height:auto;
+	padding-bottom:100px;
+	margin:0 auto;
+	background:#eeeeee;
+}
+
+section#contents div.inner{
+	width:1200px;
+	height:100%;
+	border:0px soild black;
+	margin:0 auto;
+}
+section#contents div.inner div.contents_box{
+	width:1200px;
+	height:560px;
+	border:0px solid red;
+	padding-top:50px;
+	box-sizing:border-box;
+}
+
+section#contents div.inner dl.film_box{
+	background:url(../images/main/contents_1.png) no-repeat 0 0;
+	float:left;
+	width:50%;
+	height:100%;
+}
+section#contents div.inner dl.book_box{
+	background:url(../images/main/contents_2.png) no-repeat 0 0;
+	float:left;
+	width:50%;
+	height:100%;
+}
+section#contents div.inner dt.film_text1, section#contents div.inner dt.book_text1{
+	font-size:34px;
+	font-family:'seoul-namsan-jung-b';
+	color:#000;
+	border:0px solid green;
+	text-align:center;
+	padding-top:221px;
+}
+ section#contents div.inner dd.film_text2, section#contents div.inner dd.book_text2{
+	 font-size:18px;
+	 font-family:'seoul-namsan-jung-b';
+	color:#000;
+	border:0px solid blue;
+	text-align:center;
+	padding-top:13px;
+	padding-bottom:37px;
+ }
+ section#contents div.inner dd.film_box, section#contents div.inner dd.book_box{
+	
+	  border:1px solid #000;
+	  text-align:center;
+	  padding-top:8px;
+	  padding-bottom:8px;
+	  width:198px;
+	  margin:0 auto;
+	  background-color:rgba(255,255,255,0.2);
+}
+	  
+ section#contents div.inner dd.film_box a, section#contents div.inner dd.book_box a{
+	 font-size:12px;
+	 font-family:'seoul-namsan-jung-m';
+	 color:#000;
+	 border:0px solid pink;
+	 display:block;
+	
+ }
+ /*------------contents2--------*/
+  section#contents div.inner div.boxs{
+	  width:1200px;
+	  height:490px;
+	  margin-top:50px;
+	  border:0px solid red;
+  }
+
+ section#contents div.inner div.boxs dl.box1{
+	 float:left;
+	 margin-right:45px;
+	 width:370px;
+	 height:490px;
+	 background:#000;
+ }
+ section#contents div.inner div.boxs dl.box2{
+	 float:left;
+	 margin-right:45px;
+	 width:370px;
+	 height:490px;
+	 background:#000;
+ }
+section#contents div.inner div.boxs dl.box3{
+	 width:370px;
+	 height:490px;
+	 float:left;
+	 background:#000;
+  }
+section#contents div.inner div.boxs dt.t{
+	   font-size:24px;
+	   font-family:'seoul-namsan-jang-l';
+	   color:#f5f5f5;
+	   border:0px solid red;
+	   text-align:center;
+	   padding:44px 0 16px;
+}
+section#contents div.inner div.boxs dd.s{
+	font-size:16px;
+	font-family:'seoul-namsan-jang-l';
+	color:#f5f5f5;	
+	 border:0px solid blue;
+	 text-align:center;
+	 padding-top:12px;
+	 padding-bottom:45px;
+}
+ section#contents div.inner div.boxs dd.btn{
+	 text-align:center;
+	 border:1px solid #f5f5f5;
+	 width:133px;
+	 padding-top:8px;
+	 padding-bottom:8px;
+	 margin:0 auto;
+	
+ }
+section#contents div.inner div.boxs dd.btn a{
+	 font-size:12px;
+	 display:block;
+	font-family:'seoul-namsan-jung-m';
+	color:#fff;
+ }
+ /*------------contents3--------*/
+ section#contents div.inner div.last{
+	 width:1200px;
+	 height:510px;
+	 border:0px solid green;
+	 margin-top:50px;
+	 padding-top:107px;
+	 background:url(../images/main/last_img.png) no-repeat 0 0;
+}
+
+ 
+section#contents div.inner div.last dl.last_1{
+	width:415px;
+	height:295px;
+	background:rgba(0,57,111,0.85);
+	margin:0 auto;
+}
+section#contents div.inner div.last dl.last_1 dt.t{
+	font-size:30px;
+	font-family:'seoul-namsan-jang-l';
+	color:#fff;
+	text-align:center;
+	border:0px solid pink;
+	padding-top:55px;
+}
+section#contents div.inner div.last dl.last_1 dd.s{
+	font-size:17px;
+	font-family:'seoul-namsan-jang-l';
+	color:#fff;
+	text-align:center;
+	line-height:1.7;
+	border:0px solid red;
+	padding-top:10px;
+	padding-bottom:40px;
+	
+}
+section#contents div.inner div.last dl.last_1 dd.btn{
+	border:1px solid #fff;
+	margin:0 auto;
+	text-align:center;
+	width:198px;
+	padding-top:7px;
+	padding-bottom:7px;
+}
+section#contents div.inner div.last dl.last_1 dd.btn a{
+	font-size:12px;
+	font-family:'seoul-namsan-jung-m';
+	display:block;
+	color:#fffefe;
+	
+}
+section#contents div.inner div.last p.up{
+	margin-top:178px;
+	text-align:right;
+}
+
+/* 컨텐츠 영역 반응형 (태블릿) */
+
+ /* inner 사이즈 변화 */
+ @media all and (min-width:1280px) and (max-width: 1439px) {/*1439~1280일때까지*/
+   section#visual{ width:100%; background:url(../images/main/main-color.png) no-repeat center top; }
+   section#contents{ width:100%; height:1029px; border:1px solid green; box-sizing:border-box; }
+   section#contents div.inner{ width:1200px; margin:0 auto; }	
+  }
+
+ @media all and (min-width: 600px) and (max-width: 1279px) {
+	body{background:#eeeeee;}
+	
+	section#contents{ width:100%; height:auto; padding-bottom:0px; }
+	section#contents div.inner{ width:92.5%; margin:0 auto;}
+		
+	/* 첫번째 줄 박스들 감싸는 부분 */
+	section#contents div.inner div.contents_box{
+	width:100%;
+	height:auto;
+	border:0px solid red;
+	padding-top:0px;
+	}
+	
+	/* 첫번째 줄 박스들 안의 두개의 box */
+	section#contents div.inner div.contents_box dl{ margin-bottom:34px; padding-bottom:114px;} 
+	
+	section#contents div.inner dt.film_text1, section#contents div.inner dt.book_text1{
+	font-size:34px;
+	font-family:'seoul-namsan-jung-b';
+	color:#000;
+	border:0px solid green;
+	text-align:center;
+	padding-top:100px;
+    }
+	section#contents div.inner dd.film_text2, section#contents div.inner dd.book_text2{
+		font-size:18px;
+		font-family:'seoul-namsan-jung-b';
+		color:#000;
+		border:0px solid blue;
+		text-align:center;
+		padding-top:5px;
+		padding-bottom:5px;
+	 }
+    section#contents div.inner dd.film_box, section#contents div.inner dd.book_box{
+	
+	  border:1px solid #000;
+	  text-align:center;
+	  padding-top:8px;
+	  padding-bottom:8px;
+	  width:198px;
+	  margin:0 auto;
+	  background-color:rgba(255,255,255,0.2);
+    }
+    
+	/* 두번째 줄 박스들 안의 세개의 박스를 감싸는 부분 */
+    section#contents div.inner div.boxs{
+	  width:100%;
+	  height:auto;
+	  border:1px solid green;
+	  box-sizing:border-box;
+	  background:black;
+    }
+  
+    section#contents div.inner div.boxs dl.box1, section#contents div.inner div.boxs dl.box2{
+	 margin-bottom:50px;
+	 margin-right:5%;
+	 width:30%;
+	 height:100%;
+	 padding-bottom:26px;
+     }
+
+    section#contents div.inner div.boxs dl.box3{
+     width:30%;
+	 height:100%;
+	 float:left;
+	 padding-bottom:26px;
+    }
+  
+
+	  section#contents div.inner div.boxs dd.img{ border:0px solid pink;}
+	  section#contents div.inner div.boxs dt.t{
+	   font-size:2vw;
+	   font-family:'seoul-namsan-jang-l';
+	   color:#f5f5f5;
+	   border:0px solid red;
+	   text-align:center;
+	   /* padding-top:80%;*/
+      }
+	  
+	  section#contents div.inner div.boxs dd.s{
+		font-size:16px;
+		font-family:'seoul-namsan-jang-l';
+		color:#f5f5f5;	
+		 border:0px solid blue;
+		 text-align:center;
+		 padding-top:10px;
+		 padding-bottom:10px;
+      }
+    
+	section#contents div.inner div.boxs dd.btn{
+	 text-align:center;
+	 border:1px solid #f5f5f5;
+	 width:133px;
+	 padding-top:4px;
+	 padding-bottom:8px;
+	 margin:0 auto;
+	/* background:yellow;*/
+    }
+	 
+   /* 세번째 줄 박스들 안의 한개의 박스를 감싸는 부분 */
+   section#contents div.inner div.last{
+	 clear:both;
+	 width:100%;
+	 height:auto;
+	 border:0px solid cyan;
+	 box-sizing:border-box;
+	 margin-top:100px;
+	 padding-top:107px;
+	 padding-bottom:50px;
+	 background:url(../images/main/last_img.png) no-repeat 0 0;
+	 }
+	 
+	section#contents div.inner div.last dl.last_1{
+	width:50%;
+	background:rgba(0,57,111,0.85);
+	margin:0 auto;
+	}
+	
+	/*
+	section#contents div.inner div.last p.up{
+	margin-top:178px;
+	text-align:right;
+    }
+	*/
+} /* 태블릿 반응형 끝 */

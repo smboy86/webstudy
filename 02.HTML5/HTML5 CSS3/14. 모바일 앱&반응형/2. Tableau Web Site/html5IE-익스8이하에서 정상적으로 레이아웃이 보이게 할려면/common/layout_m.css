@@ -1,0 +1,5 @@
+@charset "utf-8";
+/* min-width:761px ~ max-width:1024px */
+@import url("layout2.css");
+@import url("layout_main2.css");
+@import url("layout_sub2.css");

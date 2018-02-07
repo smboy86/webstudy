@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title> width&max-width  활용 </title>
+<meta charset="utf-8">
+<style>
+   *{margin:0; padding:0; }
+   ol,ul{list-style:none;}
+   html,body{height:100%;}
+   img{vertical-align:top;max-width:100%;}
+   
+   #contents{ width:80%; height:auto; border:0px solid red;margin:0 auto;} 
+   /* 높이는 일시적으로 넣어줌 */
+   #contents ul{border:0px solid blue;}
+   #contents ul li{border:0px solid black; box-sizing:border-box; float:left; width:25%;}
+   
+   /*★ %단위는 한단계 부모의 크기를 따라감 */
+   #contents ul li img{ width:100%;}
+   
+   #event{ width:80%; height:500px; background:red; margin:0 auto;clear:both;}
+</style>
+</head>
+<body>
+      <div id="contents">
+	       <ul>
+		       <li><a href="#"><img src="./images/img01.gif" /></a></li>
+			   <li><a href="#"><img src="./images/img02.gif" /></a></li>
+			   <li><a href="#"><img src="./images/img03.gif" /></a></li>
+			   <li><a href="#"><img src="./images/img04.gif" /></a></li>
+			   <li><a href="#"><img src="./images/img05.gif" /></a></li>
+			   <li><a href="#"><img src="./images/img06.gif" /></a></li>
+			   <li><a href="#"><img src="./images/img07.gif" /></a></li>
+			   <li><a href="#"><img src="./images/img08.gif" /></a></li>
+		   </ul>
+	  </div>
+	  
+	 <div id="event"></div>
+</body>
+</html>

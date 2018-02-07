@@ -1,0 +1,35 @@
+/* media_study.css */
+
+@charset "utf-8";
+
+#container h2 {color:#0e484a;font:bold 13px "NGothic";}
+#container p {font:12px "굴림",Gulim;}
+.floats {float:left;}
+.floats h2 {padding:10px 0 0 10px;}
+.floats p {padding:5px 10px; letter-spacing:-1px;}
+
+#centertab {position:relative;}
+#centertab dt {position:absolute;top:20px;}
+.t1 {right:60px;}
+.t2 {right:20px;}
+
+#centertab dd.kind {background:url("../images/ruwoo.png") no-repeat -80px -30px;}
+#centertab dd.method {background:url("../images/weddingdress.png") no-repeat -10px -50px;}
+
+#centertab dd h3 {color:#0e484a;font:bold 13px "NGothic";}
+#centertab dd p {color:#666; padding:20px 0 0 0;line-height:1.5em;}
+#centertab dd p a { color:#522; }
+.hidetab {display:none;}
+
+.loginbtn a {
+	border:1px solid #aaa;border-radius:5px;font:bold 13px "NGothic";color:#000;display:block;text-align:center;
+	background:#ccc; 
+	background-image:-webkit-gradient(linear, left top, left bottom,
+	color-stop(0,rgb(238,238,238)),
+	color-stop(0.49,rgb(238,238,238)),
+	color-stop(0.50,rgb(204,204,204)),
+	color-stop(1,rgb(204,204,204)) );
+	background-image:-moz-linear-gradient(top, rgb(238,238,238) 0%, rgb(238,238,238) 49%,  rgb(204,204,204) 50%,  rgb(204,204,204) 100%);
+	background-image:-ms-linear-gradient(top, rgb(238,238,238) 0%, rgb(238,238,238) 49%,  rgb(204,204,204) 50%,  rgb(204,204,204) 100%);
+	background-image:-o-linear-gradient(top, rgb(238,238,238) 0%, rgb(238,238,238) 49%,  rgb(204,204,204) 50%,  rgb(204,204,204) 100%);
+	}

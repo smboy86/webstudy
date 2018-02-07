@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>예약 문의</title>
+        <meta charset="UTF-8" />
+    </head>
+    
+    <body>
+        <h1>예약 문의</h1>
+        <form action="login.php" method="post">
+          <p>
+            <label for="userName">작성자 </label>
+            <input id="userName" name="userName" type="text" />
+          </p>
+          <p>
+            <label for="userPWD">비밀번호</label>
+            <input id="userPWD" name="userPWD" type="password" />
+          </p>
+          <p>
+            <label for="userTitle">제목</label>
+            <input id="userTitle" name="userTitle" type="text" />
+          </p>
+          <p>예약하실 객실을 선택하세요.
+            <label>
+              <input name="userRoom" type="radio" value="Single" checked />
+              Single</label>
+            /
+            <label>
+              <input name="userRoom" type="radio" value="Double" />
+              Double </label>
+            /
+            <label>
+              <input name="userRoom" type="radio" value="Twin" />
+              Twin</label><br />
+			<input name="btn_gogllery" type="image" src="images/btn_gallery.gif" alt="방 둘러보기">
+          </p>
+          <p>기타 패키지 옵션을 선택하세요<br />
+            <label>
+              <input name="userOption1" type="checkbox" value="조식" checked />
+              조식</label>
+            <label>
+              <input name="userOption2" type="checkbox" value="바베큐" />
+              바베큐</label>
+            <label>
+              <input name="userOption3" type="checkbox" value="픽업 서비스" />
+              픽업 서비스</label>
+          </p>
+          <p>
+						<input name="btn1" type="submit" value="전송" />
+						<input name="btn2" type="reset" value="취소" />
+						<input name="btn3" type="button" value="이전 페이지" />
+					</p>
+        </form>
+
+		<!-- 
+          label 요소
+
+		  input, textarea, select 요소와 같은 폼 요소의 제목을 달때 사용, 
+		  for 속성을 이용하여 name 속성이나 id속성을 지정하여 서로 떨어져 마크업된 폼 요소를 연결시킬수 있음
+            
+			아래 2개의 마크업 소스는 같은 역할입니다.
+
+		   <label for="userName">작성자 </label>
+            <input id="userName" name="userName" type="text" />
+
+			 <label>작성자
+            <input id="userName" name="userName" type="text" /> </label>
+
+			레이블은 글자 부분만 클릭해도 텍스트 필드의 경우에는 연결된 폼 요소에 자동으로 커서가 위치하고, 라디오 버튼과 체크 박스 요소의 경우에는 선택과 해제가 이루어집니다.
+		-->
+    </body>
+</html>

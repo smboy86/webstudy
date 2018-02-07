@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <style>
+        div {
+            width: 30px;
+            height: 30px;
+            background: red;
+			border-radius : 15px;
+            position:relative;
+            animation: 5s ball;
+            animation-iteration-count: 1;
+            /*왼쪽에서 오른쪽으로 왔다갔다한다. */
+        }
+
+        @keyframes ball
+        {
+            0%   {left:0px; top:0px;}
+            25%  {left:100px; top:300px; }
+            50%  {left:200px; top:100px; }
+            75%  {left:500px; top:50px;}
+            100% {left:300px; top:200px;}
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

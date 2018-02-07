@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title> 배경그림 적용</title>
+<meta charset="utf-8">
+<style>
+   *{margin:0; padding:0; }
+    html,body{height:100%;}
+	ol,ul {list-style:none;}
+    .inner{width:80%;border:1px solid black;margin:0 auto;position:relative;}
+	header{width:100%;height:150px; background:yellow;}
+	
+	header .inner h1.logo1{ border:1px solid red;position:absolute;left:0;top:20px;}
+	header .inner h1.logo2{ border:1px solid blue; display:none;}
+	header .inner nav{ border:1px solid green;margin-left:200px;padding-top:30px;}
+	header .inner nav ul li{ border:1px solid cyan; display:inline; padding:5px 30px;}
+	header .inner div.qnb{ border:1px solid black;background:yellow;display:none;}
+	header .inner div.share{ border:1px solid pink;display:none;}
+	
+	@media all and (min-width: 600px) and (max-width: 1199px) {
+        .inner{width:94%;border:1px solid black;margin:0 auto;position:relative;}
+	   header{width:100%;height:100px; background:pink;}
+	   
+	   header .inner h1.logo1, header .inner nav{ display:none; }
+		
+		header .inner h1.logo2{ border:1px solid blue; display:block; text-align:center; padding:20px 0;}
+		header .inner div.qnb{ border:1px solid black;display:block; width:50px; height:50px; background:red; position:absolute;left:0;top:0;}
+	    header .inner div.share{ border:1px solid pink;display:block;width:50px; height:50px; background:blue; position:absolute;right:0;top:0;}
+	}
+	
+	
+	#s01{height:1000px;background:green;}
+	#s02{height:1500px;background:blue;}
+	#s03{height:2000px;background:orange;}
+	footer{width:100%; height:200px; background:#666;}
+</style>
+</head>
+<body>
+    <main>
+       <header>
+		   <div class="inner">
+		       <h1 class="logo1">logo(pc)</h1>
+			   <h1 class="logo2">logo(태블릿)</h1>
+			   
+			   <nav>
+			       <ul>
+				        <li><a href="#">menu1</a></li>
+						<li><a href="#">menu2</a></li>
+						<li><a href="#">menu3</a></li>
+						<li><a href="#">menu4</a></li>
+						<li><a href="#">menu5</a></li>
+						<li><a href="#">menu6</a></li>
+				   </ul>
+			   </nav>
+			   
+			   <div class="qnb">qnb</div>
+			   <div class="share">share</div>
+		   </div>
+	   </header>
+	   <section id="s01"><div class="inner">섹션안쪽</div></section>
+	   <section id="s02"><div class="inner">섹션안쪽</div></section>
+	   <section id="s03"><div class="inner">섹션안쪽</div></section>
+	   <footer><div class="inner">하단안쪽</div></footer>
+	</main>	
+</body>
+</html>

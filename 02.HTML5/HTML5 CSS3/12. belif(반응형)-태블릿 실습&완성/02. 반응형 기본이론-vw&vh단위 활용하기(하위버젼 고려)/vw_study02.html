@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title> vw, vh단위 테스트 </title>
+<meta charset="utf-8">
+<style>
+   *{margin:0; padding:0; box-sizing:border-box;}
+   html,body,main{height:100%;}
+   #contents{ width:100%; height:auto; border:1px solid red;overflow:hidden;}
+   
+   #contents .s01{width:90%; height:auto; margin:0 auto; border:5px solid pink; overflow:hidden;}
+   
+   #contents .s01 dl{width:50%; height:100%; border:5px solid green;float:left; margin-bottom:9.76vh; font-size:3vw;}
+   
+   #contents .s01 dl dt{background:yellow; padding:0.97vh 0;}
+   #contents .s01 dl dd{background:gray; padding:0.97vh 0 9.76vh;}
+   
+   #contents .s02{width:90%; height:auto; margin:0 auto; border:5px solid orange;overflow:hidden;}
+   
+   #contents .s02 dl{width:30%; height:100%; border:5px solid green;float:left; margin-right:5%; font-size:2vw;}
+   #contents .s02 dl:last-child{margin-right:0;}
+   
+   #contents .s02 dl dt{background:yellow; padding:0.97vh 0;}
+   #contents .s02 dl dd{background:gray; padding:0.97vh 0 9.76vh;}
+   
+</style>
+</head>
+<body>
+   <section id="contents"><!-- contents-->
+        <!-- 두개의 박스를 담는 섹션-->
+        <section class="s01">
+		     <dl>
+			     <dt> 주제 </dt>
+				 <dd> 내용 </dd>
+			 </dl>
+			 <dl>
+			     <dt> 주제 </dt>
+				 <dd> 내용 </dd>
+			 </dl>
+		</section>
+		<!-- 세개의 박스를 담는 섹션-->
+        <section class="s02">
+		     <dl>
+			     <dt> 주제 </dt>
+				 <dd> 내용 </dd>
+			 </dl>
+			 <dl>
+			     <dt> 주제 </dt>
+				 <dd> 내용 </dd>
+			 </dl>
+			  <dl>
+			     <dt> 주제 </dt>
+				 <dd> 내용 </dd>
+			 </dl>
+		</section>
+   </section><!-- //contents-->
+</body>
+</html>

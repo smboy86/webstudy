@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head> 
+<title>html5 요소 살펴보기 </title>
+<meta charset="utf-8">
+<style>
+   *{margin:0; padding:0;}
+   html,body{height:100%;} /* 높이에 %적용되도록 하기 위해 */
+   header, section, footer{ width:100%; display:block;}
+   .inner{width:1000px; height:100%; margin:0 auto; border:5px solid black;}
+   
+   header{
+      height:200px;
+	  background:yellow;
+	  position:absolute;
+   }
+   
+   section#visual{
+      height:100%;
+	  background:orange;
+   }
+   
+   footer{
+      height:150px;
+	  background:gray;
+   }
+</style>
+</head>
+<body>
+    <header>
+	     <div class="inner"> 로고와 내비게이션 </div>
+    </header>
+	
+	<section id="visual">
+	     <div class="inner"> 비주얼 안쪽 </div>
+	</section>
+	
+	 <footer>
+	     <div class="inner"> 하단</div>
+    </footer>
+	
+	
+</body>
+</html>

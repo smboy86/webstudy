@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> 반응형 레이아웃 단위변화</title>
+		<meta charset="UTF-8" />
+		<style type="text/css">
+         <!--
+          *{margin:0; padding:0;}
+		  .inner{width:1200px;border:1px solid red;margin:0 auto;}
+		  header{  width:100%; height:150px; background:yellow; }
+		  #contents{  width:100%; height:1500px; background:orange; }
+		  footer{  width:100%; height:100px; background:green; }
+		  
+		  @media all and (min-width:600px) and (max-width:1279px){
+		      .inner{width:92.5%;border:5px solid blue;margin:0 auto;}
+		  }
+		  
+		  @media all and (min-width:300px) and (max-width:599px){
+		      .inner{width:80%;border:5px solid black;margin:0 auto;}
+		  }
+         -->		 
+		</style>
+	</head>
+    <body>
+	<header>
+	    <div class="inner">로고와 메뉴들</div>
+	</header>
+	<section id="contents">
+	    <div class="inner">컨텐츠 안쪽</div>
+	</section>
+	<footer>
+	    <div class="inner">하단</div>
+	</footer>
+   
+	</body>
+</html>

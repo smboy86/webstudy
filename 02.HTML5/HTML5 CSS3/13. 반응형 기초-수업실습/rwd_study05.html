@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>반응형 기본실습</title>
+<meta charset="utf-8">
+<style>
+    *{margin:0; padding:0;}
+	html,body,main{height:100%;}
+	ol,ul{list-style:none;}
+	header{
+	    width:100%;
+		height:150px;
+		background:yellow;
+	}
+	
+	header div.inner{
+	   width:1000px;
+	   height:100%;
+	   background:red;
+	   margin:0 auto;
+	   position:relative;
+	}
+	
+	header div.inner h1{
+	   border:1px solid black;
+	   text-align:center;
+	   padding:10px 0;
+	}
+	header div.inner ul{
+	   border:1px solid green;
+	   text-align:center;
+	   padding:20px 0;
+	}
+	header div.inner ul li{
+	   border:1px solid cyan;
+	   display:inline; /*수평구조 */
+	}
+	header div.inner #qnb{
+	   border:1px solid yellow;
+	   position:absolute;
+	   right:0;
+	   top:5%;
+	   width:50px;
+	   height:50px;
+	   background:pink;
+	   display:none;
+	}
+	@media all and (min-width:600px) and (max-width:1024px){
+	    header{
+	    width:100%;
+		height:80px;
+		background:cyan;
+	   }
+	   header div.inner{
+	   width:92.5%;
+	   height:100%;
+	   background:pink;
+	   margin:0 auto;
+	   position:relative;
+	   }
+	   header div.inner #qnb{
+	   border:1px solid yellow;
+	   position:absolute;
+	   right:0;
+	   top:5%;
+	   width:50px;
+	   height:50px;
+	   background:pink;
+	   display:block;
+	   }
+	   header div.inner nav{
+	    display:none;
+	   }
+	}
+	
+	@media all and (max-width:599px){
+	    header{
+	    width:100%;
+		height:100px;
+		background:gray;
+	   }
+	   
+	   header div.inner h1{
+	     position:absolute;
+		 left:0;
+		 top:0;
+	   }
+	   
+	   header div.inner nav{
+	    display:none;
+	   }
+	   
+	   header div.inner{
+	   width:92.5%;
+	   height:100%;
+	   background:pink;
+	   margin:0 auto;
+	   position:relative;
+	   }
+	   
+	   header div.inner #qnb{
+	   border:1px solid yellow;
+	   position:absolute;
+	   right:0;
+	   top:0;
+	   width:50px;
+	   height:50px;
+	   background:pink;
+	   display:block;
+	   }
+	}
+</style>
+</head>
+<body>
+      <header>
+	       <div class="inner">
+		       <h1>로고</h1>
+			   <nav>
+			       <ul>
+				       <li><a href="#">menu</a></li>
+					   <li><a href="#">menu</a></li>
+					   <li><a href="#">menu</a></li>
+					   <li><a href="#">menu</a></li>
+					   <li><a href="#">menu</a></li>
+				   </ul>
+			   </nav>
+			   <div id="qnb">qnb</div>
+		   </div>  
+	  </header>
+</body>
+</html>

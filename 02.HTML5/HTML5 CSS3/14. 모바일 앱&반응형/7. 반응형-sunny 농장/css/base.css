@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+   @font-face{	font-family:'NGothic'; 
+				src:url('../font/NanumGothic.eot');
+				src:url('../font/NanumGothic.eot?#iefix') format('embedded-opentype'),
+				    url('../font/NanumGothic.woff') format('woff'),
+					url('../font/NanumGothic.ttf') format('truetype');}
+
+   @font-face{	font-family:'NGothicB'; 
+				src:url('../font/NanumGothicBold.eot');
+				src:url('../font/NanumGothicBold.eot?#iefix') format('embedded-opentype'),
+				    url('../font/NanumGothicBold.woff') format('woff'),
+					url('../font/NanumGothicBold.ttf') format('truetype');}
+
+   @font-face{font-family:'NGothicEB'; 
+				src:url('../font/NanumGothicExtraBold.eot');
+				src:url('../font/NanumGothicExtraBold.eot?#iefix') format('embedded-opentype'),
+				    url('../font/NanumGothicExtraBold.woff') format('woff'),
+					url('../font/NanumGothicExtraBold.ttf') format('truetype');}
+
+a {color:#666; text-decoration:none;}
+a:hover {text-decoration:underline;}
+.tbox {border:1px solid #ccc;}
+h1,h2,h3,h4,h5,h6 {font-size:100%;}

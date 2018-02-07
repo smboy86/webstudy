@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>인라인 프레임에서 하이퍼링크 연결하기</title>
+	<meta charset="UTF-8" />
+</head>
+
+<body>
+	<header>
+		<h1>인라인 프레임에서 하이퍼링크 연결하기</h1>
+	</header>
+	<!-- navi 요소를 삽입합니다. -->
+	<nav>
+		<ul>
+			<li><a href="home.html" target="test">Home</a></li>
+			<li><a href="cooking.html" target="test">요리소개</a></li>
+			<li><a href="https://www.youtube.com/embed/wKrySZZ7i3U" target="movie">동영상 보기</a></li>
+		</ul>
+	</nav>
+	<section style="border:5px solid red;text-align:center;">
+		<!-- iframe 요소를 삽입합니다. -->
+		<iframe width="80%" height="400" src="home.html" name="test" frameborder="0"></iframe>
+	</section>
+	
+	<p style="border:5px solid blue;text-align:center">
+	  <iframe width="800" height="600" src="https://www.youtube.com/embed/QTdHo9HCA7k" frameborder="0" allowfullscreen name="movie"></iframe>
+	</p>
+</body>
+</html>

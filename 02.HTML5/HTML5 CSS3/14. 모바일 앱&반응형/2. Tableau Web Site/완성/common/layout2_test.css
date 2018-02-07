@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* Layout */
+body {
+	background:url(../images/stripe_pattern.png) repeat-x;
+	margin-top:50px;
+	}
+header { 
+	display:none;
+	}
+#wrapper {
+	width:960px;
+	margin:0 auto;
+	}
+#sidebarNav {
+	float:left;
+	background:url(../images/logo.png) no-repeat ;
+	width:320px;
+	padding-top:210px;
+	position:fixed;
+	z-index:10;
+	}
+#sidebarNav ul li a {
+	display:block;
+	font-weight:bold;
+	font-size:1.2em;
+	text-align:center;
+	padding:25px 0px 10px 0px ;
+	border-bottom:1px solid #eee;
+	}
+#sidebarNav ul li a:hover, #sidebarNav ul li a.activeLi {
+	background:url(../images/painting_pink.png) no-repeat center top;
+	}
+#contentsMain {
+	float:right;
+	width:630px;
+	padding-top:50px;
+	}
+footer {
+	clear:both;
+	padding:20px 0px 30px 0px;
+	background:url(../images/stripe_pattern.png) repeat-x left bottom;
+	border-top:1px solid #333;
+	}
+footer p {
+	width:960px;
+	position:relative;
+	left:350px;
+	margin:0px auto;
+	padding-bottom:20px;
+	}
+footer p span {
+	display:block;
+	}

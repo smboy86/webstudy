@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title> vw 단위를 텍스트에 적용해 보기 </title>
+<meta charset="utf-8">
+<style>
+    *{margin:0; padding:0; box-sizing:border-box;}
+	html,body,main{height:100%;}
+	#box01{width:100vw; height:auto; overflow:hidden; border:5px solid red;}
+	#box01 dl{width:50%; height:100%; border:5px solid black; float:left;}
+	#box01 dl dt{padding:0.97vh 0; background:yellow;font-size:2vw;}
+	#box01 dl dd{padding:4.88vh 0; background:green;font-size:1.5vw;}
+</style>
+</head>
+<body>
+   <section id="box01">
+        <dl>
+		    <dt>주제</dt>
+			<dd>내용</dd>
+		</dl>
+		 <dl>
+		    <dt>주제</dt>
+			<dd>내용</dd>
+		</dl>
+   </section>
+</body>
+</html>

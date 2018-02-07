@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<title>로고를 배경그림으로 설정후 링크걸기(1)</title>
+<meta name="viewport" content="width=device-width">
+<style>
+    *{margin:0; padding:0;}
+	img{border:0;}
+	a{text-decoration:none; font-size:1.8em; color:#333;}
+	
+	#header{ width:100%; height:150px; border:3px solid black; }
+	
+	#header .inner{ width:80%; height:150px; border:3px solid red; position:relative; margin:0 auto; }
+	
+	#header .inner h1.logo{border:1px solid green;float:left;margin-top:20px;margin-left:30px;}
+	
+	#header .inner h1 span{display:none;} /* 글씨 숨기게(넓이/높이 없음)*/
+	#header .inner h1 a{ width:178px; height:49px; 
+	background:url(./img/logo_bk.png) no-repeat; display:block;}
+	
+	@media all and (max-width:500px) {
+	    #header .inner h1.logo{border:1px solid green; width:100%;
+		float:left;margin-top:0px;margin-left:0px; padding-top:50px;}
+	
+	    #header .inner h1 a{ width:178px; height:49px; margin:0 auto;
+	    background:url(./img/logo_wh.png) no-repeat; display:block;}
+	}
+</style>
+</head>
+
+<body>
+<div id="header">
+     <div class="inner">
+	    <h1 class="logo"><a href="#" title="logo"><span>로고는 여기에 있네요</span></a></h1>
+	 </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+﻿body{
+   font-size:2em;
+   color:red;
+   font-family:"나눔고딕","맑은고딕",굴림,돋움,sans-serif;
+ }
+ 
+ p{
+	 border:10px ridge blue;
+	 letter-spacing:1em;
+	 color:black;
+ }
