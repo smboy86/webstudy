@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>html5 시맨틱 요소들</title>
+    <style>
+        * {margin:0;padding:0;}
+        html,body,main {height:100%;}
+
+        header {height:120px;background:yellow;}
+        #visual {height:100%;background:green;}
+        #contents {height:2000px;background:orange;}
+        footer {height:120px;background:black;}
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <div class="inner">
+                <h1>로고</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#">메뉴</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section id="visual">section</section>
+        <section id="contents">
+            <article>기사내용</article>
+            <article>기사내용</article>
+            <article>기사내용</article>
+        </section>
+        <footer>footer</footer>
+    </main>
+    <div id="footer"></div>
+</body>
+</html>
