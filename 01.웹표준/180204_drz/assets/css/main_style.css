@@ -1,0 +1,7 @@
+#header {height:179px;border:1px solid red;}
+#container {height:3908px;border:1px solid red;}
+#footer {height:347px;border:1px solid red;}
+
+#header .header_1{height:36px;border:1px solid orange;}
+#header .header_2{height:88px;border:1px solid yellow;}
+#header .header_3{height:55px;border:1px solid green;}
