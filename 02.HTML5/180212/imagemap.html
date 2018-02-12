@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title> 한 개의 이미지에 여러개의 링크걸기 : 이미지 맵 </title>
+    <meta charset="UTF-8" />
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+    <!--
+        usemap : # 현재 페이지 의미
+    -->
+    <img src="./images/imgmap_1.gif" alt="imgmap.gif" usemap="#shape" border="0">
+    <map name="shape">
+        <area shape="circle" coords="69,96,30" href="http://www.naver.com" target="_blank"> 
+        <area shape="rect" coords="137,64,179,131" href="http://www.daum.net" target="_blank">
+        <area shape="poly" coords="205,87, 239,67, 269,94, 253,130, 213,126" href="http://yahoo.com" target="_blank">
+    </map>
+</body>
+</html>
