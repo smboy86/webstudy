@@ -21,6 +21,19 @@ http://image.kyobobook.co.kr/ink/html/guide/index.html
 글자 : text font color
 기타 : cursor
 
+/*
+1) 속성은 형태 - 흐름 - 위치 - 크기 - 박스모델 - 배경 - 글자 - 기타 순으로 지정한다.
+a {
+    display: inline-block; float: left; clear: both; 
+    position: left; left:10px; right:10px; top:10px; bottom: 10px; z-index:10px;
+    width:10px;height:10px;overflow: hidden;
+    margin:0 auto; padding: 0 0 0 0; border: 1px solid red;
+    background: url('./test.gif');
+    text-align:center; font-size:10px;
+    /// 기타 ///
+}
+*/
+
 
 -- 디비컷 - 웹디자인 평가 및 우수 웹사이트 모음
 https://www.dbcut.com/bbs/index.php

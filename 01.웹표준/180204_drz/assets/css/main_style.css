@@ -1,7 +1,40 @@
-#header {height:179px;border:1px solid red;}
-#container {height:3908px;border:1px solid red;}
-#footer {height:347px;border:1px solid red;}
+/*
+1) 속성은 형태 - 흐름 - 위치 - 크기 - 박스모델 - 배경 - 글자 - 기타 순으로 지정한다.
+a {
+    display: inline-block; float: left; clear: both; 
+    position: left; left:10px; right:10px; top:10px; bottom: 10px; z-index:10px;
+    width:10px;height:10px;overflow: hidden;
+    margin:0 auto; padding: 0 0 0 0; border: 1px solid red;
+    background: url('./test.gif');
+    text-align:center; font-size:10px;
+    /// 기타 ///
+}
+*/
 
-#header .header_1{height:36px;border:1px solid orange;}
-#header .header_2{height:88px;border:1px solid yellow;}
-#header .header_3{height:55px;border:1px solid green;}
+#header {height:179px;border:0px solid red;}
+#container {height:3908px;border:0px solid red;}
+#footer {height:347px;border:0px solid red;}
+
+#header .header_top1 {position: relative; height:36px;border:0px solid orange;}
+#header .header_top1 .left {position: absolute; left:0px; top:12px; height:36px;border:0px solid blue;}
+#header .header_top1 .left span {padding:7px 0 0 5px;} /* 잘 작동하지 않음 */
+#header .header_top1 .right {position: absolute; right:0px; top:13px; width:167px; height:36px;border:0px solid blue;}
+#header .header_top1 .right ul {width:167px;}
+#header .header_top1 .right ul li {display: inline-block;padding:0 9px;background: url('../images/top_bar.gif') no-repeat 0 center;}
+#header .header_top1 .right ul li:first-child {padding-left:0;background:none;}
+#header .header_top1 .right ul li:last-child {padding-right:0;border-right:0px;}
+#header .header_top1 .right ul li a {font-size:11px;letter-spacing:-1px;}
+
+#header .header_top2 {position: relative;height:88px;border:0px solid yellow;}
+#header .header_top2 .left {position: absolute; left:0px;top:13px;height:88px;border:0px solid blue;}
+#header .header_top2 .search_bar {position: absolute; top:20px;left:392px;width:431px; height:43px;margin:0 auto;border:1px solid #4eb000;}
+#header .header_top2 .search_bar input {float:left;width:373px;height:100%;border: 0px;}
+#header .header_top2 .search_bar img {float:right;margin:7px 14px 0 0;}
+
+#header .header_top2 .right {position: absolute; right:0px;width:280px; height:88px;border:0px solid blue;}
+#header .header_top2 .right a:first-child {padding-right: 35px;}
+#header .header_top2 .right a:last-child {padding-right: 0px;}
+#header .header_top2 .right img {padding-top: 25px;}
+
+#header .header_top3 {float:left;width:100%;height:55px;border:1px solid #f1f3f6;}
+#header .header_top3 img {float:left;}
