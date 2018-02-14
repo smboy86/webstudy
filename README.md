@@ -102,6 +102,7 @@ http://darum.daum.net/
 [1] 자주 사용하는 포토샵 단축키 및 환경설정 팁
 
   - 환경
+  Views > Snap 기능 활성화   : 1px 씩 이동
   ctrl + r                  : 눈금자 보기
   View > Clear Guide        : 가이드라인 모두 지우기
 
@@ -112,7 +113,7 @@ http://darum.daum.net/
   ctrl + n                  : 새파일
   ctrl + ;                  : 가이드 라인 감추기/보이기
   ctrl + shift + alt + s    : Save for Web
-  ctrl + 0                  : 전체 화면으로 비율 맞추기
+  ctrl + 0                  : 전체 화면으로 비율 맞추기 (Ctrl + 1 : 비율 100%)
 
 [2] 포토샵 각종 팁
   1. 포토샵 이미지 따기
