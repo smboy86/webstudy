@@ -105,6 +105,9 @@ http://darum.daum.net/
   Views > Snap 기능 활성화   : 1px 씩 이동
   ctrl + r                  : 눈금자 보기
   View > Clear Guide        : 가이드라인 모두 지우기
+  Ctrl + h                  : 가이드 & 슬라이스 라인 감추기
+  Ctrl + ;                  : 가이드 라인만 감추기
+  Views > Show > Slice      : 슬라이스 라인만 감추기 (단축키가 없음)
 
   - 기능 & 편집
   space                     : 손잡이 이동
@@ -115,15 +118,35 @@ http://darum.daum.net/
   ctrl + shift + alt + s    : Save for Web
   ctrl + 0                  : 전체 화면으로 비율 맞추기 (Ctrl + 1 : 비율 100%)
 
+  - 자주 사용하는 도구 단축키
+
+
 [2] 포토샵 각종 팁
   1. 포토샵 이미지 따기
     1) 슬라이스 툴 사용
+      - 슬라이스 툴 선택 > 대략적인 크기로 자르기
+      - fit 하게 맞추기 (선택상자에 가로세로 눈금자 이용)
+      - 이름 설정 (ctrl + 왼클릭 한 상태에서 왼쪽 위 모서리 숫자 더블클릭)
+      - 전체 저장 (File > Save for web)
     2) 한 건씩 저장
       - 마퀴툴로 해당 이미지 영역지정
       - Edit > 카피 머지
       - Ctrl + n 새창 띄우가 (자동으로 크기 조절되어있음)
       - Ctrl + v (붙여넣기)
-      - File > Save for Web 
+      - File > Save for Web
       - Git, Jpg 등 선택 후 저장
-  # 180212 css3 
-  http://css3generator.com/
+# 180212 css3 
+http://css3generator.com/
+
+# 메뉴 정렬하는 방법
+- 기본 DOM 구조
+<nav><ul><li></li><li></li></ul></nav>
+
+1) li 정렬 주기
+  - 사이여백이 0인 경우!! float:left;
+  - 사이여백이 6px 이상인 경우!! display:inline-block;
+
+2) li 안에 a 태그 폰트 정보 선입력 (이걸 해야 뭐가 먹는다고 하던데..)
+
+3) li 사이 간격 넣기
+  

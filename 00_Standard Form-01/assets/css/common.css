@@ -1,0 +1,5 @@
+/* main 꾸미기 */
+header {width:1920px;height:148px;border:1px solid red;}
+#visual {width:1920px;height:599px;border:1px solid orange;}
+#contents {width:1920px;height:1840px;border:1px solid yellow;}
+footer {width:1920px;height:213px;border:1px solid green;}

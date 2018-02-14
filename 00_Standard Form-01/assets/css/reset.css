@@ -1,5 +1,6 @@
 /* reset : 초기화 작업 */
 * {margin:0;padding:0;box-sizing:border-box;}
+html,body,main {height:100%;}
 ol,ul {list-style:none;}
 fieldset,img {border:none;}
 input,img {vertical-align:top;}

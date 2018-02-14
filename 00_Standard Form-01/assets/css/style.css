@@ -1,0 +1,16 @@
+/*
+1) 속성은 형태 - 흐름 - 위치 - 크기 - 박스모델 - 배경 - 글자 - 기타 순으로 지정한다.
+a {
+    display: inline-block; float: left; clear: both; 
+    position: left; left:10px; right:10px; top:10px; bottom: 10px; z-index:10px;
+    width:10px;height:10px;overflow: hidden;
+    margin:0 auto; padding: 0 0 0 0; border: 1px solid red;
+    background: url('./test.gif');
+    text-align:center; font-size:10px;
+    /// 기타 ///
+}
+*/
+
+#header {height:200px;border:1px solid red;}
+#container {height:900px;border:1px solid blue;}
+#footer {height:150px;border:1px solid green;}
