@@ -139,9 +139,11 @@ http://darum.daum.net/
 http://css3generator.com/
 
 # 메뉴 정렬하는 방법
-- 기본 DOM 구조
+- 기본 DOM 구조 (그러나 케이스가 정말 다양하다...)
 <nav><ul><li></li><li></li></ul></nav>
 
+
+[ type A ]
 1) li 정렬 주기
   - 사이여백이 0인 경우!! float:left;
   - 사이여백이 6px 이상인 경우!! display:inline-block;
@@ -149,4 +151,23 @@ http://css3generator.com/
 2) li 안에 a 태그 폰트 정보 선입력 (이걸 해야 뭐가 먹는다고 하던데..)
 
 3) li 사이 간격 넣기
+  - PSD 사이 간격 체크 ex) 100px
+  - 좌 50, 우 50 으로 생각됨
+  - 브라우저 고유 사이값(초기화 안됨) 빼고 적용 ex) 47 48
+  - first, last child padding 0
+
+4) a 크기 키우기 (a 등)
+  - a display:inline-block
+  - a padding 상하좌우 줘서 화살표 메뉴창 맞추기
+
+------------
+[ type B ]
+ul 
+  - width 고정하지 않음 위치 가운데
+li 
+  - width 고정 px
+  - float:left
+a
+  - display:block;  (가로로 가득참)
+  - padding 위아래 채우기
   

@@ -24,8 +24,10 @@ header div.inner nav ul {width:1200px;border:1px solid red;}
     즉 수평구조로 변경 > 내용 감싸기 유형의 영역으로 바뀜
     사이에 여백이 기본적으로 4-6 존재 따라서, 딱 붙는 형태라면 float:left 를 사용해야함
 */ 
-header div.inner nav ul li {display:inline; border:1px solid pink;background:green;}
-header div.inner nav ul li a {border:1px solid yellow;font-family:Corbel; font-size:20px; color:#fffefe;}
+header div.inner nav ul li {display:inline-block; padding:0 66px 0 65px;border:1px solid pink;background:green;}
+header div.inner nav ul li:first-child {padding-left:0;}
+header div.inner nav ul li:last-child {padding-right:0;}
+header div.inner nav ul li a {display:block;padding:5px 0;border:1px solid yellow;font-family:Corbel; font-size:20px; color:#fffefe;}
 
 
 
