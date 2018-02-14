@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    /* reset */
+    ol,ul {list-style:none;}
+    fieldset,img {border:none;}
+    input,img {vertical-align:top;}
+    hr {display:none;}
+    h1,h2,h3,h4,h5,h6 {font-size:100%;font-family:"맑은 고딕";color:#333;font-weight:normal;}
+
+    /* css */
+    .gnb {float:left;margin:36px 0 0 50px;}
+    .gnb ul li {float:left;padding:0 15px;}
+    .gnb ul li a {padding:0 25px; background:yellow;}
+    </style>
+</head>
+<body>
+    <div class="gnb">
+        <h2 class="blind">메인메뉴</h2>
+        <ul class="clearfix">
+            <li>
+                <dl class="wrap_listGnb">
+                    <dt class="gnb_tit">
+                        <a href="#none" class="tit_gnb">솔루션</a>
+                    </dt>
+                    <dd class="gnb_menu" style="display: none;">
+                        <ul class="list_gnb">
+                            <li class="gnb_list"><a href="/solution/smarthome?locale=ko" class="link_gnb">스마트홈 서비스</a></li>
+                            <li class="gnb_list"><a href="/solution/offering?locale=ko" class="link_gnb">서비스 오퍼링</a></li>
+                        </ul>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl class="wrap_listGnb">
+                    <dt class="gnb_tit">
+                        <a href="#none" class="tit_gnb">제품정보</a>
+                    </dt>
+                    <dd class="gnb_menu" style="display: none;">
+                        <ul class="list_gnb">
+                            <li class="gnb_list">
+                                <h4 class="gnb_subTit"><strong>스마트홈</strong></h4>
+                                <ul class="list_gnb2Depth">
+                                    
+                                        <li class="gnb_list2Depth"><a href="/smarthome/product/list?searchCateId1=1&amp;locale=ko" class="link_list2Depth">스마트 월패드</a></li>
+                                    
+                                        <li class="gnb_list2Depth"><a href="/smarthome/product/list?searchCateId1=2&amp;locale=ko" class="link_list2Depth">세대내 부가 제품</a></li>
+                                    
+                                        <li class="gnb_list2Depth"><a href="/smarthome/product/list?searchCateId1=3&amp;locale=ko" class="link_list2Depth">단지내 공용 제품</a></li>
+                                    
+                                </ul>
+                            </li>
+                            <li class="gnb_list">
+                                <h4 class="gnb_subTit"><strong>스마트 도어록</strong></h4>
+                                <ul class="list_gnb2Depth">
+                                    
+                                        <li class="gnb_list2Depth"><a href="/doorlock/product/list?searchCateId1=4&amp;locale=ko" class="link_list2Depth">Push Pull</a></li>
+                                    
+                                        <li class="gnb_list2Depth"><a href="/doorlock/product/list?searchCateId1=5&amp;locale=ko" class="link_list2Depth">주키</a></li>
+                                    
+                                        <li class="gnb_list2Depth"><a href="/doorlock/product/list?searchCateId1=6&amp;locale=ko" class="link_list2Depth">보조키</a></li>
+                                    
+                                        <li class="gnb_list2Depth"><a href="/doorlock/product/list?searchCateId1=11&amp;locale=ko" class="link_list2Depth">액세서리</a></li>
+                                    
+                                </ul>
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
+

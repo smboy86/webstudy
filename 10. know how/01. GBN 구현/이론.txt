@@ -1,0 +1,115 @@
+# 메뉴 정렬하는 방법
+  - GNB 혹은 메뉴 혹은 네비게이션이라 불리는 구역을 정의하는 방법
+  - 보통 가로로 or 세로로 정렬되어 있으며 
+  - 마우스를 오버했을때 디테일 메뉴가 보여지지거나 전체 메뉴가 보여지는 형태가 일반적 (마우스 이벤트 존재)
+  - 가변형 / 창 크기에 위치가 따라가는 형태이거나
+  - 해당 위치고정되어 구현되는 경우등 사이트 형태마다 여러가지이다.
+  - a 태그가 거의 무조건 들어가서 사용자가 클릭할 수 있는 기능이 존재, 요즘엔 Text만 범위가 아니라 박스 전체 범위가 되는것이 일반적이다.
+  - ul, li 형태가 일반적이나 모던웹의 경우 다양한 디바이스 및 시멘틱 요소로 인해 종류가 다양해지는 것 같다.
+
+
+[ 분석 ] 
+- 가이드
+[n] type x  :::: 
+  0. 샘플 : 
+  1. HTML 구조
+  2. css
+  3. 노하우 정리
+
+
+[1] type a   :::: div ul li 구조
+  0. 샘플 : 180202_practice
+  1. HTML 구조
+    <div class="inner">
+        <ul id="navigation">
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">인테리아</a></li>
+            <li><a href="#">견적상담</a></li>
+            <li><a href="#">커뮤니티</a></li>
+        </ul>
+    </div>
+
+  2. css
+    #header div.inner.inner {width:1000px;height:100%;border:0px solid black;margin:0 auto;}
+    #header div.inner ul#navigation {float:left;padding-top:32px;border:0px solid fuchsia;}
+    #header div.inner ul#navigation li {display:inline;background:url('../images/common/dot.gif') no-repeat 0 center;border:0px solid red;}
+    #header div.inner ul#navigation li:first-child {background:none;}
+    #header div.inner ul#navigation li a {display:inline-block;padding:6px 35px 6px 34px;font-family: 'Nanum Gothic', sans-serif;font-size: 18px;color:#434343;}
+    #header div.inner ul#navigation li:first-child a{padding-left:0px;}
+    #header div.inner ul#navigation li:last-child a{padding-right:0px;}
+    
+  3. 노하우 정리
+    1) 메뉴의 상위 div.inner width 지정후 margin:0 auto; 
+    2) ul --> float:left; 지정  (왼쪽으로 정렬)
+    3) ul li --> display:inline; 지정 (수평으로 정렬)
+    4) a --> padding 지정 (클릭 가능하게)
+    5) a first / last 여백 삭제 (좌우 끝 크기 조절을 위한)
+
+
+[2] type b  :::: so simple
+  0. 샘플 : https://smarthome.samsungsds.com/
+  1. HTML 구조
+    <div class="gnb">
+      <h2 class="blind">메인메뉴</h2>
+      <ul class="clearfix">
+          <li>
+              <dl class="wrap_listGnb">
+                  <dt class="gnb_tit">
+                      <a href="#none" class="tit_gnb">솔루션</a>
+                  </dt>
+                  <dd class="gnb_menu" style="display: none;">
+                      <ul class="list_gnb">
+                          <li class="gnb_list"><a href="/solution/smarthome?locale=ko" class="link_gnb">스마트홈 서비스</a></li>
+                          <li class="gnb_list"><a href="/solution/offering?locale=ko" class="link_gnb">서비스 오퍼링</a></li>
+                      </ul>
+                  </dd>
+              </dl>
+          </li>
+      </ul>
+    </div>
+  2. css
+    .gnb {float:left;margin:36px 0 0 50px;}
+    .gnb ul li {float:left;padding:0 15px;}
+    .gnb ul li a {padding:0 25px; background:yellow;}
+  3. 노하우 정리
+    1) div float:left;
+    2) ul li float:left;
+    3) a padding ...
+    4) 끝...?!
+
+[3] type c  :::: 
+  0. 샘플 : 
+  1. HTML 구조
+  2. css
+  3. 노하우 정리
+
+
+## 노하우 정리 전
+[ type A ]
+1) li 정렬 주기
+  - 사이여백이 0인 경우!! float:left;
+  - 사이여백이 6px 이상인 경우!! display:inline-block;
+
+2) li 안에 a 태그 폰트 정보 선입력 (이걸 해야 뭐가 먹는다고 하던데..)
+
+3) li 사이 간격 넣기
+  - PSD 사이 간격 체크 ex) 100px
+  - 좌 50, 우 50 으로 생각됨
+  - 브라우저 고유 사이값(초기화 안됨) 빼고 적용 ex) 47 48
+  - first, last child padding 0
+
+4) a 크기 키우기 (a 등)
+  - a display:inline-block
+  - a padding 상하좌우 줘서 화살표 메뉴창 맞추기
+
+------------
+[ type B ]
+ul 
+  - width 고정하지 않음 위치 가운데
+li 
+  - width 고정 px
+  - float:left
+a
+  - display:block;  (가로로 가득참)
+  - padding 위아래 채우기
+  
