@@ -1,0 +1,3 @@
+2 어린장미~ : SeoulNamsanEB, 38px, #000000, line-height:1.2
+3 Rose ~ : SeoulNamsanEB, 24px
+4 한 장 ~  : SeoulNamsanM, 16px, #010101, 1.4
