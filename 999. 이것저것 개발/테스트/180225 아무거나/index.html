@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>메뉴 그리기 연습</title>
+</head>
+<style>
+    * {margin:0px; padding:0px}
+    ol, ul {list-style:none;}
+    a {text-decoration: none;}
+    /* 
+        ul overflow:hidden; -- height 를 채우기 위해 안그럼 float:left 때문에 height 값이 0
+        li float:left
+        a 적절한 padding
+    */
+    #wrap {width:1200px;margin:0 auto;border : 1px solid red;}
+    ul {overflow:hidden;}
+    ul li {float:left;padding:0 5px;border:1px solid orange;}
+    ul li:first-child {padding-left:0px;}
+    ul li:last-child {padding-right:0px;}
+
+    li a {padding:0px 25px;border:1px solid yellow;}
+</style>
+<body>
+    <div id="wrap">
+        <div id="gnb">
+            <ul>
+                <li><a href="">메뉴</a></li>
+                <li><a href="">1번 GBN</a></li>
+                <li><a href="">2번 GBN</a></li>
+                <li><a href="">바로가기</a></li>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>

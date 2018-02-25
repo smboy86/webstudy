@@ -18,35 +18,32 @@
 
 
 [1] type a   :::: div ul li 구조
-  0. 샘플 : 180202_practice
+  0. 샘플 : type_a.html
   1. HTML 구조
-    <div class="inner">
-        <ul id="navigation">
-            <li><a href="#">회사소개</a></li>
-            <li><a href="#">인테리아</a></li>
-            <li><a href="#">견적상담</a></li>
-            <li><a href="#">커뮤니티</a></li>
-        </ul>
+    <div id="wrap">
+        <div id="gnb">
+            <ul>
+                <li><a href="">메뉴</a></li>
+                <li><a href="">1번 GBN</a></li>
+                <li><a href="">2번 GBN</a></li>
+                <li><a href="">바로가기</a></li>
+            </ul>
+            <h2>안녕하세요?</h2>
+        </div>
     </div>
 
   2. css
-    #header div.inner.inner {width:1000px;height:100%;border:0px solid black;margin:0 auto;}
-    #header div.inner ul#navigation {float:left;padding-top:32px;border:0px solid fuchsia;}
-    #header div.inner ul#navigation li {display:inline;background:url('../images/common/dot.gif') no-repeat 0 center;border:0px solid red;}
-    #header div.inner ul#navigation li:first-child {background:none;}
-    #header div.inner ul#navigation li a {display:inline-block;padding:6px 35px 6px 34px;font-family: 'Nanum Gothic', sans-serif;font-size: 18px;color:#434343;}
-    #header div.inner ul#navigation li:first-child a{padding-left:0px;}
-    #header div.inner ul#navigation li:last-child a{padding-right:0px;}
+    #wrap {width:1200px;height:100px;margin:0 auto;border : 1px solid red;}
+    ul li {display:inline;padding:0 5px;border:1px solid orange;}
+    li a {padding:0px 25px;border:1px solid yellow;}
     
   3. 노하우 정리
-    1) 메뉴의 상위 div.inner width 지정후 margin:0 auto; 
-    2) ul --> float:left; 지정  (왼쪽으로 정렬)
-    3) ul li --> display:inline; 지정 (수평으로 정렬)
-    4) a --> padding 지정 (클릭 가능하게)
-    5) a first / last 여백 삭제 (좌우 끝 크기 조절을 위한)
+    0) row 별 height: px 지정하여 한 줄씩 작성 - 매우 쉽고 직관적
+    1) li display:none;
+    2) a 적절한 padding
 
 
-[2] type b  :::: so simple
+[2] type b  :::: div ul li
   0. 샘플 : https://smarthome.samsungsds.com/
   1. HTML 구조
     <div class="gnb">
@@ -68,14 +65,14 @@
       </ul>
     </div>
   2. css
-    .gnb {float:left;margin:36px 0 0 50px;}
+    .gnb {margin:36px 0 0 50px;}
+    .gnb ul {overflow: hidden;}
     .gnb ul li {float:left;padding:0 15px;}
     .gnb ul li a {padding:0 25px; background:yellow;}
   3. 노하우 정리
-    1) div float:left;
+    1) ul overflow:hidden;
     2) ul li float:left;
     3) a padding ...
-    4) 끝...?!
 
 [3] type c  :::: 
   0. 샘플 : 
