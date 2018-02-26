@@ -28,22 +28,26 @@
         */
         #contents .outer .inner .box01 {width:100%;height:auto;overflow:hidden;border:5px solid cyan;}
         #contents .outer .inner .box01 dl {float:left;width:50%;height:100%;border:1px solid pink;}
-        #contents .outer .inner .box01 dl:first-child {background:url('./images/1111.jpg') no-repeat center top; background-size:cover;}
-        #contents .outer .inner .box01 dl:last-child {background:url('./images/2222.jpg') no-repeat center top; background-size:cover;}
+        #contents .outer .inner .box01 dl:first-child {background:url('./images/bg01.png') no-repeat center top; background-size:cover;}
+        #contents .outer .inner .box01 dl:last-child {background:url('./images/bg02.png') no-repeat center top; background-size:cover;}
         
         #contents .outer .inner .box01 dt {padding:20px 0;}
         #contents .outer .inner .box01 dd {padding:20px 0 150px}
 
         #contents .outer .inner .box02 {width:100%;height:auto;overflow:hidden;border:5px solid cyan;}
-        #contents .outer .inner .box02 dl {float:left;width:31%;height:100%;margin-right:3.5%;margin-top:50px;border:1px solid pink;}
+        #contents .outer .inner .box02 dl {float:left;width:31%;height:100%;margin-right:3.5%;margin-top:50px;background:black;border:1px solid pink;}
         #contents .outer .inner .box02 dl:last-child {margin-right:0;}
-        #contents .outer .inner .box02 dt {background:yellow;padding:20px 0;}
-        #contents .outer .inner .box02 dd {background:black;padding:20px 0 150px}
+        #contents .outer .inner .box02 dt {padding:20px 0;}
+        #contents .outer .inner .box02 dd {padding:20px 0 150px}
 
-        #contents .outer .inner .box03 {width:100%;height:auto;overflow:hidden;margin-top:50px;padding:100px 0;border:5px solid cyan;}
-        #contents .outer .inner .box03 dl {width:40%;height:auto;overflow:hidden; background:blue;margin:0 auto;}
+        #contents .outer .inner .box03 {width:100%;height:auto;overflow:hidden;margin-top:50px;padding:100px 0;background:url('./images/bg03.png');border:5px solid cyan;}
+        #contents .outer .inner .box03 dl {width:40%;height:auto;overflow:hidden; margin:0 auto;}
         #contents .outer .inner .box03 dt {padding:20px 0;}
         #contents .outer .inner .box03 dd {padding:20px 0 150px}
+
+        #contents .outer .inner .box03 dl dd:nth-child(3) {border:3px solid red; padding:0;}
+        #contents .outer .inner .box03 dl dd:nth-child(3) a {width:150px;padding:10px 0;background:yellow;display: block;text-align: center;margin:0 auto;}
+        
     </style>
 </head>
 <body>
@@ -51,25 +55,33 @@
         <div class="outer">
             <div class="inner">
                 <div class="box01">
-                    <dl>
-                        <dt></dt>
-                        <dd></dd>
-                    </dl>
-                    <dl>
-                        <dt></dt>
-                        <dd></dd>
-                    </dl>                
+                    <!-- html5에서 문단태그를 감싸는 형태의 a태그를 허용했다. (모바일등의 이유인듯)-->
+                    <a href="#">
+                        <dl>
+                            <dt></dt>
+                            <dd></dd>
+                        </dl>
+                    </a>
+                    <a href="">
+                        <dl>
+                            <dt></dt>
+                            <dd></dd>
+                        </dl>
+                    </a>
                 </div>
                 <div class="box02">
                     <dl>
+                        <dd><img src="./images/p01.png" alt=""></dd>
                         <dt>주제</dt>
                         <dd>내용</dd>
                     </dl>
                     <dl>
+                        <dd><img src="./images/p02.png" alt=""></dd>
                         <dt>주제</dt>
                         <dd>내용</dd>
                     </dl>    
                     <dl>
+                        <dd><img src="./images/p03.png" alt=""></dd>
                         <dt>주제</dt>
                         <dd>내용</dd>
                     </dl>              
@@ -78,6 +90,7 @@
                     <dl>
                         <dt>주제</dt>
                         <dd>내용</dd>
+                        <dd><a href="#">바로가기</a></dd>
                     </dl>
                 </div>
             </div>

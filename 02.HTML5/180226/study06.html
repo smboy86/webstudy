@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>width:100%와 max-width:100%;</title>
+    <style>
+    * {margin:0; padding:0; box-sizing: border-box;}
+    ol, ul {list-style: none;}
+    img {vertical-align: top;}
+
+    ul {height:auto;overflow: hidden; border:3px solid red;}
+    ul li {width:25%; float:left;}
+    ul li img {width:100%;border:3px solid black;}
+
+/*
+    ul li img {border:3px solid black;}
+    ul li:nth-child(1) {border:3px solid green;}
+    ul li:nth-child(1) img {max-width:100%;}
+
+    ul li:nth-child(2) {border:3px solid green;}
+    ul li:nth-child(2) img {max-width:100%;}
+*/
+    </style>
+</head>
+<body>
+    <ul>
+        <li><img src="./images/1111.jpg" alt="포로리"></li>
+        <li><img src="./images/1111.jpg" alt="포로리"></li>
+        <li><img src="./images/1111.jpg" alt="포로리"></li>
+        <li><img src="./images/1111.jpg" alt="포로리"></li>
+    </ul>
+</body>
+</html>
