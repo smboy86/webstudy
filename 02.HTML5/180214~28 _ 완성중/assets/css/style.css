@@ -2,8 +2,6 @@
 #visual .outer {width:1440px;height:100%;background:url('../images/visual/pc_background.png') no-repeat ;margin:0 auto;}
 #visual .inner {width:1200px; height:100%;margin:0 auto;}
 #visual .inner p {float:left;}
-#visual .inner dl:nth-child(1) {display:block;}
-#visual .inner dl:nth-child(2) {display:none;}
 #visual .inner dl{float:right;width:360px;margin-right: 50px;padding-top:113px;border:0px solid green;}
 #visual .inner dl dd:nth-child(1) {border:0px solid green;}
 #visual .inner dl dt:nth-child(2) {border:0px solid cyan;padding-top:19px;font-family: 'seoul-namsan-jung-eb';font-size: 38px;}
@@ -18,8 +16,6 @@
     #visual .inner {width:98%; height:100%;margin:0 auto;text-align: center;}
 
     #visual .inner p img {display:none;}
-    #visual .inner dl:nth-child(1) {display:none;}
-    #visual .inner dl:nth-child(2) {display:block;}
 }
 
 
