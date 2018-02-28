@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> 컨텐츠 유형의 box 구조 생성해보기 </title>
+		<meta charset="utf-8">
+		<style>
+		*{margin:0; padding:0; box-sizing:border-box;}
+        html,body,main{height:100%;} /*높이에 %적용되게 할려면*/
+        #contents{width:80%; height:2000px; border:5px solid red; margin:0 auto;}
+        #contents .box01{border:5px solid green; height:auto;overflow: hidden;} <!-- overflow hidden 의 활용-->
+		#contents .box01 dl{border:3px solid blue; height:100%; width:50%; float:left;}
+		#contents .box01 dl dt {background:yellow; padding:30px 0;}
+		#contents .box01 dl dd {background:orange; padding:30px 0;}
+
+        #contents .box02{display:none;}
+        #contents .box03{display:none;}
+		</style>
+	</head>
+
+	<body>
+		<section id="contents">
+			<div class="box01">
+				<dl>
+					<dt>주제</dt>
+					<dd>설명</dd>
+				</dl>
+				<dl>
+					<dt>주제</dt>
+					<dd>설명</dd>
+				</dl>
+			</div>
+			<div class="box02">
+				<dl>
+					<dt></dt>
+					<dd></dd>
+				</dl>
+				<dl>
+					<dt></dt>
+					<dd></dd>
+				</dl>
+				<dl>
+					<dt></dt>
+					<dd></dd>
+				</dl>
+			</div>
+			<div class="box03">
+				<dl>
+					<dt></dt>
+					<dd></dd>
+				</dl>
+			</div>
+		</section>
+	</body>
+</html>
