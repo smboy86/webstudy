@@ -1,0 +1,6 @@
+/*reset(초기화 작업)*/
+*{margin:0; padding:0;box-sizing:border-box;} /*모든 태그들 바깥/안쪽 여백 초기화 */
+h1,h2,h3,h4,h5,h6 { font-size:1em; color:#000; font-family:"맑은 고딕",돋움,Dotum,sans-serif;font-weight:normal;}
+ol,ul{list-style:none; }
+hr{display:none;}
+fieldset, img { border:0;}

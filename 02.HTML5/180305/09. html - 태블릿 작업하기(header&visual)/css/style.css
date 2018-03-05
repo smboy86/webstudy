@@ -1,0 +1,78 @@
+/*main 꾸미기 */
+#visual{
+	/*display:none;*/
+	width:90%;/*1920~1440까지 90%*/
+	height:599px;
+	margin:0 auto;
+	background:url(../images/main/main-color.png) no-repeat center top;
+	background-size:cover;
+	border:0px solid red;
+}
+
+@media all and (max-width: 1440px) {/*1440이하일때*/
+#visual{
+	width:100%;
+	background:url(../images/main/main-color.png) no-repeat center top;
+	background-size:cover;
+	}
+}
+#visual div.inner{
+	width:1200px;
+	height:100%;
+	border:1px soild black;
+	margin:0 auto;
+}
+
+#visual div.inner dl{
+	border:0px solid red;
+	float:right;
+	padding-top:113px;
+/*	margin-left:904px;*/
+}
+#visual div.inner p.img{
+	float:left;
+	border:0px solid red;
+}
+#visual div.inner dl dd:nth-child(1){
+	border:0px solid blue;
+	padding-bottom:16px;
+}
+#visual div.inner dl dt:nth-child(2){
+	border:0px solid cyan;
+	font-family:'seoul-namsan-jung-eb';
+	font-size:38px;
+	color:#000;
+	line-height:1.2;
+}
+#visual div.inner dl dt:nth-child(3){
+	border:0px solid pink;
+	font-family:'seoul-namsan-jung-eb';
+	font-size:24px;
+	color:#000;
+	padding-top:4px;
+	padding-bottom:14px;
+	background:url(../images/main/green_bar.gif) repeat-x 0 bottom;
+}
+#visual div.inner dl dd:nth-child(4){
+	border:0px solid orange;
+	font-family:'seoul-namsan-jung-m';
+	font-size:16px;
+	color:#010101;
+	padding-top:12px;
+	padding-bottom:35px;
+	line-height:1.5;
+}
+#visual div.inner dl dd:nth-child(5){
+	border:0px solid #000;
+}
+#visual div.inner dl dd:nth-child(5) a{
+	border:1px solid #000;
+  font-size:12px;
+	font-family:'seoul-namsan-jung-m';
+	color:#000;
+	padding:10px 0;
+	display:block;
+	width:132px;
+	/*background:yellow;*/
+	text-align:center;
+}

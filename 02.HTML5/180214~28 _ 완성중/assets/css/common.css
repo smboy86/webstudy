@@ -5,8 +5,21 @@ a {text-decoration:none;color:#666;}
 html,body,main {height:100%;}
 
 /* main 꾸미기 */
-header {width:100%;height:148px;border:1px solid red; background:#000000;}
-header div.outer {width:1440px;height:100%;margin:0 auto;}
+header {width:100%;height:148px;border:0px solid red; background:#000000;}
+header div.outer {width:1440px;height:100%;margin:0 auto;position: relative;}
+header div.outer .info {position:absolute;top:40px; right:20px;}
+header div.outer .info ul#infoMenu {float:left;}
+header div.outer .info ul#infoMenu li {float:left;}
+header div.outer .info ul#infoMenu li a {font-size: 12px;padding:0px 7px;}
+header div.outer .info ul#infoMenu li:last-child a {background: url('../images/common/info.png') no-repeat;padding-right:28px;}
+
+header div.outer .info .search {display:inline;}
+header div.outer .info .search form {float:left;}
+header div.outer .info .search fieldset {float:left;border-bottom:1px solid #a2a2a2;}
+header div.outer .info .search fieldset legend {display: none;}
+header div.outer .info .search fieldset input {float:left;background:black;border:0px;padding-top:15px;}
+
+
 header div.inner {width:1200px;height:100%;margin:0 auto;}
 
 header div.inner h1:nth-child(1) {padding:29px 0 19px 0;border:0px solid black;text-align:center;}
@@ -37,7 +50,7 @@ header div.inner #share {display:none;}
     header div.inner #qnb {display:block;position: absolute; top:27px;left:31px;}
     header div.inner #share {display:block;position: absolute; top:26px;right:31px;}
 
-    header {width:100%;height:90px;border:1px solid red; background:#000000;}
+    header {width:100%;height:90px;border:0px solid red; background:#000000;}
     header div.outer {width:100%;height:100%;margin:0 auto;}
     header div.inner {width:95%;height:100%;margin:0 auto;}
 }

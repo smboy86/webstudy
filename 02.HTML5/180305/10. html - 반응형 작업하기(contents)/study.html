@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> 컨텐츠 구조 작업해보기 </title>
+		<meta charset="utf-8">
+		<style>
+		   *{margin:0; padding:0; box-sizing:border-box;}
+             html,body,main{height:100%;}
+             body {width:800px;}
+			 #contents{width:90%; background:gray; margin:0 auto; height:auto;overflow:hidden;}
+			 #contents div.inner{width:92.5%; height:auto;overflow:hidden; border:5px solid red; margin:0 auto;}
+             
+             #contents div.inner .box01{width:100%; height:auto; overflow:hidden; border:3px solid black;margin-bottom: 50px;}
+			 #contents div.inner .box01 dl{width:50%; float:left; height:auto; border:3px solid green;}
+			 #contents div.inner .box01 dl dt{ padding:30px 0; background:yellow;}
+             #contents div.inner .box01 dl dd{ padding:20px 0 100px; background:orange;}
+             
+             #contents div.inner .box02{width:100%; height:auto; overflow:hidden; border:3px solid black;}
+             #contents div.inner .box02 dl{width:31%; float:left; height:auto; border:3px solid green; margin-right:3.5%;margin-bottom: 50px;}
+             #contents div.inner .box02 dl:last-child {margin-right:0;}
+			 #contents div.inner .box02 dl dt{ padding:30px 0; background:yellow;}
+             #contents div.inner .box02 dl dd{ padding:20px 0 100px; background:orange;}
+             
+             #contents div.inner .box03{width:100%; height:auto; overflow:hidden; border:3px solid black;padding:100px 0;}
+             #contents div.inner .box03 dl{width:40%; height:auto; border:3px solid green; margin-right:3.5%; background:blue; margin:0 auto;}
+			 #contents div.inner .box03 dl dt{ padding:30px 0; width:50%; margin:0 auto;}
+             #contents div.inner .box03 dl dd{ padding:20px 0 100px;}
+             
+             /* 태블릿 (컨텐츠 작업) */
+             /* @media all and (min-width:600px) and (max-width:1279px) { */
+            @media all and (max-width:1279px) {
+                #contents {width:100%;background:gray;height:auto;overflow:hidden;}
+                #contents div.inner { width:92.5%; height:auto;overflow:hidden; }
+                 
+             }
+		</style>
+	</head>
+	<body>
+        <section id="contents">
+                <div class="inner">
+                    <!--첫번째 줄 박스들(두개)-->
+                    <div class="box01">
+                        <dl>
+                                <dt>주제</dt>
+                                    <dd>내용</dd>
+                            </dl>
+                            <dl>
+                                <dt>주제</dt>
+                                    <dd>내용</dd>
+                            </dl>
+                    </div>
+                    <!--두번째 줄 박스들(세개)-->
+                    <div class="box02">
+                        <dl>
+                            <dt>주제</dt>
+                                <dd>내용</dd>
+                        </dl>
+                        <dl>
+                            <dt>주제</dt>
+                                <dd>내용</dd>
+                        </dl>
+                        <dl>
+                            <dt>주제</dt>
+                                <dd>내용</dd>
+                        </dl>
+                    </div>
+                    
+                    <!--두번째 줄 박스들(세개)-->
+                    <div class="box03">
+                        <dl>
+                            <dt>주제</dt>
+                            <dd>내용</dd>
+                        </dl>
+                    </div>
+                    </div><!--//inner-->
+            </section>
+	</body>
+</html>
