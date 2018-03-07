@@ -1,0 +1,318 @@
+		/* common(공통영역내, body등)*/
+
+		/* 웹폰트(서울남산체)*/
+		@font-face {
+				font-family: 'seoul-namsan-jang-l';
+				src: url('../font/SeoulNamsanJangL/seoulnamsanjangl.eot');
+				src: url('../font/SeoulNamsanJangL/seoulnamsanjangl.eot?#iefix') format('embedded-opentype'),
+						 url('../font/SeoulNamsanJangL/seoulnamsanjangl.woff2') format('woff2'),
+						 url('../font/SeoulNamsanJangL/seoulnamsanjangl.woff') format('woff'),
+						 url('../font/SeoulNamsanJangL/seoulnamsanjangl.ttf') format('truetype'),
+						 url('../font/SeoulNamsanJangL/seoulnamsanjangl.svg#seoul-namsan-jang-l') format('svg');
+				font-weight: normal;
+				font-style: normal;
+		}
+
+		@font-face {
+				font-family: 'seoul-namsan-jang-m';
+				src: url('../font/SeoulNamsanJangM/seoulnamsanjangm.eot');
+				src: url('../font/SeoulNamsanJangM/seoulnamsanjangm.eot?#iefix') format('embedded-opentype'),
+						 url('../font/SeoulNamsanJangM/seoulnamsanjangm.woff2') format('woff2'),
+						 url('../font/SeoulNamsanJangM/seoulnamsanjangm.woff') format('woff'),
+						 url('../font/SeoulNamsanJangM/seoulnamsanjangm.ttf') format('truetype'),
+						 url('../font/SeoulNamsanJangM/seoulnamsanjangm.svg#seoul-namsan-jang-m') format('svg');
+				font-weight: normal;
+				font-style: normal;
+
+		}
+
+		@font-face {
+				font-family: 'seoul-namsan-jung-b';
+				src: url('../font/SeoulNamsanJungB/seoulnamsanjungb.eot');
+				src: url('../font/SeoulNamsanJungB/seoulnamsanjungb.eot?#iefix') format('embedded-opentype'),
+						 url('../font/SeoulNamsanJungB/seoulnamsanjungb.woff2') format('woff2'),
+						 url('../font/SeoulNamsanJungB/seoulnamsanjungb.woff') format('woff'),
+						 url('../font/SeoulNamsanJungB/seoulnamsanjungb.ttf') format('truetype'),
+						 url('../font/SeoulNamsanJungB/seoulnamsanjungb.svg#seoul-namsan-jung-b') format('svg');
+				font-weight: normal;
+				font-style: normal;
+
+		}
+
+		@font-face {
+				font-family: 'seoul-namsan-jung-eb';
+				src: url('../font/SeoulNamsanJungEB/seoulnamsanjungeb.eot');
+				src: url('../font/SeoulNamsanJungEB/seoulnamsanjungeb.eot?#iefix') format('embedded-opentype'),
+						 url('../font/SeoulNamsanJungEB/seoulnamsanjungeb.woff2') format('woff2'),
+						 url('../font/SeoulNamsanJungEB/seoulnamsanjungeb.woff') format('woff'),
+						 url('../font/SeoulNamsanJungEB/seoulnamsanjungeb.ttf') format('truetype'),
+						 url('../font/SeoulNamsanJungEB/seoulnamsanjungeb.svg#seoul-namsan-jung-eb') format('svg');
+				font-weight: normal;
+				font-style: normal;
+
+		}
+
+
+		@font-face {
+				font-family: 'seoul-namsan-jung-m';
+				src: url('../font/SeoulNamsanJungM/seoulnamsanjungm.eot');
+				src: url('../font/SeoulNamsanJungM/seoulnamsanjungm.eot?#iefix') format('embedded-opentype'),
+						 url('../font/SeoulNamsanJungM/seoulnamsanjungm.woff2') format('woff2'),
+						 url('../font/SeoulNamsanJungM/seoulnamsanjungm.woff') format('woff'),
+						 url('../font/SeoulNamsanJungM/seoulnamsanjungm.ttf') format('truetype'),
+						 url('../font/SeoulNamsanJungM/seoulnamsanjungm.svg#seoul-namsan-jung-m') format('svg');
+				font-weight: normal;
+				font-style: normal;
+
+		}
+
+
+	/*header영역*/
+	body{font-family:글꼴체; font-size:0.8em; color:#333; line-height:1.2; background:url(../images/common/body_bg.gif) repeat;}
+	a{font-family:글꼴체; font-size:0.8em; color:#666; text-decoration:none;}
+	img{vertical-align:top;}
+	input,select,label{vertical-align:middle;}
+	html,body,main{height:100%;}
+
+	/*공통 layout(header영역및 footer영역)*/
+	header{
+		/*display:none; */
+		width:100%;
+		height:148px;
+		background:#000;
+	}
+	header div.outer{
+		width:90%;
+		height:100%;
+		margin:0 auto; /*가운데 정렬*/
+	}
+	header div.inner{
+		width:1200px;
+		border:0px solid cyan;
+		height:100%;
+		margin:0 auto; /*가운데 정렬*/
+		position:relative;
+	}
+	@media all and (min-width: 1280px) and (max-width: 1440px) {/*1440이하일때*/
+			header div.outer{
+				width:100%;
+				height:100%;
+				margin:0 auto; /*가운데 정렬*/
+			}
+			header div.inner{
+				width:1200px;
+				/*background:red;*/
+				}
+	}
+	header div.inner h1.logo{
+		border:0px solid red;
+		padding:29px 0 19px 0;
+		text-align:center;
+	}
+	header div.inner nav ul#navi{
+		border:0px solid blue;
+		text-align:center;/*ul안의 li요소들을 가운데 정렬*/
+	}
+	header div.inner nav ul#navi li{
+		border:0px solid green;
+		box-sizing:border-box;
+		display:inline;/*문단요소인 li들을 인라인화->수평구조로 변경*/
+		padding-left:66px;
+		padding-right:67px;
+		background:url(../images/common/menu_line.gif) no-repeat 0 4px;
+	}
+
+	header div.inner nav ul#navi li:first-child{/*첫번째 요소*/
+		padding-left:0;
+		background:none;
+	}
+	header div.inner nav ul#navi li:last-child{/*마지막 요소 */
+		padding-right:0;
+	}
+	header div.inner nav ul#navi li a{
+		font-family:Corbel;
+		font-size:20px;
+		color:#fffefe;
+		border:0px solid gray;
+		padding-top:11px;
+		padding-bottom:11px;
+		/*padding-left:10px;
+		padding-right:10px;
+		background:#999;*/
+		display:inline-block;
+	}
+
+	header div.outer div.info{
+		border:0px solid cyan;	
+		position:absolute;
+		right:30px;
+		top:40px;
+	}
+	header div.outer div.info ul#infoMenu{
+		border:0px solid yellow;
+		float:left;
+		
+	}
+	header div.outer div.info ul#infoMenu li{
+		border:0px solid cyan; 
+		display:inline;
+		padding:0 3px 0 8px;
+		background:url(../images/common/bar.gif) no-repeat 0 5px;
+	}
+	header div.outer div.info ul#infoMenu li:first-child{
+		background:none;
+	}
+	header div.outer div.info ul#infoMenu li:last-child{
+		padding-right:21px;
+	}
+	header div.outer div.info ul#infoMenu li a{
+		border:0px solid blue;
+		font-family: 'seoul-namsan-jang-l';
+		font-size:12px;
+		color:#ccc;
+		
+
+	}
+	header div.outer div.info div.search{
+		float:left;
+		border:0px solid green;
+	}
+	header div.outer div.info div.search form{
+		border:0px solid gray;
+
+	}
+	header div.outer div.info div.search form legend{
+		display:none;
+	}
+	header div.outer div.info div.search form input#search-box{
+		width:155px;
+		height:19px;
+		background:#000;
+		border-top:0px solid #a2a2a2;
+		border-right:0px solid #a2a2a2;
+		border-left:0px solid #a2a2a2;
+		border-bottom:1px solid #a2a2a2;
+		font-size:13px;
+		color:#ffffff;
+		font-family:"맑은 고딕",돋움,sans-serif;
+	}
+
+	/*pc에서 안보이게(태블릿)*/
+	header div.inner h1.t-logo{display:none;}
+	header div.inner div#qnb{display:none;}
+	header div.inner div#share{display:none;}
+	header div.inner h1.m-logo{display:none;}
+
+/*태블릿(상단)*/
+@media all and (min-width:600px) and (max-width:1279px){
+	  header{
+			width:100%;
+			height:80px;
+			background:#000;
+		}
+		/*★★★★★추가됨*/
+		header div.outer{
+			width:100%; 
+			height:100%;
+			background:#000;
+		}
+		header div.inner{
+		  width:92.5%;
+			border:0px solid cyan;
+			height:100%;
+			margin:0 auto; /*가운데 정렬*/
+			position:relative;
+		}
+		header div.inner h1.logo{
+	    display:none;
+		}
+		header div.inner nav{
+			 display:none;
+		}
+		header div.outer div.info{
+			 display:none;
+		}
+		header div.inner h1.m-logo{
+			display:none;
+			}
+		
+		/*태블릿에서 보이게*/
+		header div.inner h1.t-logo{display:block;padding-top:24px;text-align:center;}
+		header div.inner div#qnb{display:block;position:absolute;left:0;top:27px;}
+		header div.inner div#share{display:block;position:absolute;right:0;top:27px;}
+} /*태블릿 종료*/
+
+ /*footer영역*/
+	footer{ width:100%; height:213px; border:0px solid black;background:#0084d9;}
+	footer .inner{width:1200px; height:100%; border:0px solid yellow;position:relative;margin:0 auto;}
+	footer .inner ul{border:0px solid black;padding-top:50px; padding-bottom:14px;background:url(../images/common/bottom_line.gif) repeat-x bottom;}
+	footer .inner ul li{border:0px solid black;display:inline;padding-left:10px; padding-right:10px;background:url(../images/common/info_line.gif) no-repeat 0 6px;}
+	footer .inner ul li:first-child{padding-left:19px;background:none;}
+	footer .inner ul li a{/*background:yellow;*/font-family: 'seoul-namsan-jang-l';font-size:14px;color:#fff;}
+	footer .inner ul li:nth-child(3) a{font-weight:bold;}
+	footer .inner form{border:0px solid cyan;position:absolute;right:0;top:34px;}
+	footer .inner form select{border:1px solid #fff;width:198px; padding:7px 0;font-family: 'NanumBarunGothic'; font-size:12px; color:#fff; background:#0084d9;}
+	footer .inner dl{border:0px solid green;padding-top:14px;/*padding-left:29px;*/}
+	footer .inner dl dd{border:0px solid green;display:inline; font-size:14px; color:#fefefe;background:url(../images/common/info_line.gif) no-repeat 0 3px; padding-left:10px; padding-right:10px;}
+	footer .inner dl dd:nth-child(1){font-family: 'seoul-namsan-jung-eb';
+	padding-left:19px;background:none;}
+	footer .inner dl dd:nth-child(2){font-family: 'seoul-namsan-jang-l';}
+
+@media all and (min-width:600px) and (max-width:1279px) {
+	/*footer영역*/
+	footer{ width:100%; height:190px; border:0px solid black;background:#0084d9;}
+	footer .inner{width:92.5%; height:100%; border:0px solid yellow;position:relative;margin:0 auto;}
+	footer .inner ul{text-align:center;border:0px solid black;padding-top:24px; padding-bottom:20px;background:url(../images/common/bottom_line.gif) repeat-x bottom;}
+	footer .inner ul li{border:0px solid black;display:inline;background:url(../images/common/info_line.gif) no-repeat 0 6px;}
+	footer .inner ul li:first-child{padding-left:19px;background:none;}
+	footer .inner ul li a{/*background:yellow;*/font-family: 'seoul-namsan-jang-l';font-size:14px;color:#fff;}
+	footer .inner ul li:nth-child(3) a{font-weight:bold;}
+	/*
+	footer .inner form{border:0px solid cyan;position:absolute;left:40%; bottom:41px;}
+	*/
+	footer .inner form{position:static;padding-top:30px;text-align: center;} /* postion:static  >>> absolute 처리된 태그를 본래대로 돌린다. */
+	footer .inner form select{border:1px solid #fff;width:142px; padding:7px 0;font-family: 'NanumBarunGothic'; font-size:12px; color:#fff; background:#0084d9;}
+	footer .inner dl{border:0px solid green;padding-top:14px;text-align: center;}
+	footer .inner dl dd{border:0px solid green;display:inline; font-size:14px; color:#fefefe;background:url(../images/common/info_line.gif) no-repeat 0 3px;}
+	footer .inner dl dd:nth-child(1){font-family: 'seoul-namsan-jung-eb';background:none;}
+	footer .inner dl dd:nth-child(2){font-family: 'seoul-namsan-jang-l';}
+}
+
+/*모바일(상단)*/
+@media all and (max-width:599px) {
+	header{
+		  width:100%;
+		  height:80px;
+		  background:#000;
+	  }
+
+	  header div.outer{
+		  width:100%; 
+		  height:100%;
+		  background:#000;
+	  }
+	  header div.inner{
+		width:92.5%;
+		  border:0px solid cyan;
+		  height:100%;
+		  margin:0 auto; /*가운데 정렬*/
+		  position:relative;
+	  }
+	  header div.inner h1.logo{
+	  display:none;
+	  }
+	  header div.inner h1.t-logo{
+		display:none;
+	  }
+	  header div.inner nav{
+		   display:none;
+	  }
+	  header div.outer div.info{
+		   display:none;
+	  }
+	  
+	  /*모바일에서 보이게*/
+	  header div.inner h1.m-logo{display:block;padding-top:24px;text-align:center;}
+	  header div.inner div#qnb{display:block;position:absolute;left:0;top:27px;}
+	  header div.inner div#share{display:block;position:absolute;right:0;top:27px;}
+} /*태블릿 종료*/

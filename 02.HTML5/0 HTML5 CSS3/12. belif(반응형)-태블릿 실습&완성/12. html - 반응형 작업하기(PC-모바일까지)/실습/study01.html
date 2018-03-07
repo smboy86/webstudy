@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>태블릿에서 모바일 유형으로 변경</title>
+    <style>
+        * {margin:0; padding:0; box-sizing: border-box;}
+        html, body, section {height:100%;}
+        #contents {width:90%; height:1000px;border:3px solid red; margin:0 auto;}
+        
+        #contents .box01 {width:100%;height:auto;overflow: hidden;border:5px solid cyan;}
+        #contents .box01 dl {width:50%; border:3px solid blue; float:left; height:100%;}
+        #contents .box01 dl dt {padding:30px 0; background:yellow;}
+        #contents .box01 dl dd {padding:30px 0 150px; background: green;}
+
+        #contents .box02 {width:100%;height:auto;overflow: hidden;border:5px solid cyan;}
+        #contents .box02 dl {float:left;width:31%; border:3px solid blue; height:100%;margin-right:3.5%}
+        #contents .box02 dl:last-child {margin-right:0;}
+        #contents .box02 dl dt {padding:10px 0; background:yellow;}
+        #contents .box02 dl dd {padding:10px 0 120px; background: green;}
+
+        @media all and (max-width:599px) {
+            #contents {width:100%; height:auto;overflow: hidden; border:3px solid red;}
+            #contents .box01 {width:100%;height:auto;overflow: hidden;border:5px solid cyan;}
+            #contents .box01 dl {width:100%; border:3px solid blue; float:left; height:100%;}
+            #contents .box01 dl dt {padding:30px 0; background:yellow;}
+            #contents .box01 dl dd {padding:30px 0 150px; background: green;}
+
+            #contents .box02 {width:100%;height:auto;overflow: hidden;border:5px solid cyan;}
+            #contents .box02 dl {width:100%; border:3px solid blue; height:100%;margin-right:0%;text-align: center;}
+            
+            #contents .box02 dl dd {padding-bottom: 0px;}
+
+            #contents .box02 dl dd:nth-child(1) {float:left; padding:10px 0; background:none;;}
+            #contents .box02 dl dt:nth-child(2) {padding-top:52px; background:none;}
+            #contents .box02 dl dd:nth-child(3) {padding-top:15px; background: none;}
+            #contents .box02 dl dd:nth-child(3) a {color:black;border:1px solid black;padding:10px 30px 15px 30px;}
+        }
+    </style>
+</head>
+<body>
+    <section id="contents">
+        <div class="box01">
+            <dl>
+                <dt>주제</dt>
+                <dd>내용</dd>
+            </dl>
+            <dl>
+                <dt>주제</dt>
+                <dd>내용</dd>
+            </dl>
+        </div>
+        <div class="box02">
+            <dl>
+                <dd style="width:50%;height:170px;background:pink;">이미지</dd>
+                <dt>빌리프 모이스춰 밤 쿠션</dt>
+                <dd><a href="#">VIEW DETAILS</a></dd>
+            </dl>
+            <dl>
+                <dd style="width:50%;height:170px;background:pink;">이미지</dd>
+                <dt>클래식 에센트<br />인크리멘트</dt>
+                <dd><a href="#">VIEW DETAILS</a></dd>
+            </dl>
+            <dl>
+                <dd style="width:50%;height:170px;background:pink;">이미지</dd>
+                <dt>슈어 베스트 오<br>뷰티 어워드</dt>
+                <dd><a href="#">VIEW DETAILS</a></dd>
+            </dl>
+        </div>
+    </section>
+</body>
+</html>
