@@ -1,0 +1,14 @@
+18.3.12 - 1일차
+ 1) 수업설명, javascript & jquery
+ 2) javascript 최초 작성
+    document.write("자바스크립트");
+    산술연산자
+    연결자 +
+    관계연산자 >, <, ==, !=
+    논리연산자 && || ^ ?
+
+
+
+
+## 번외
+https://www.zerocho.com/category/JavaScript  :: 자바스크립트 강의 참고
