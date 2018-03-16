@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>햄버거 메뉴 기본실습</title>
+<meta charset="utf-8">
+<script src="./jquery-3.2.1.js"></script>
+<style>
+html,body,main{height:100%;}
+.cate_btn{width:50px; height:50px;border:1px solid green;}
+.cate_btn a{ width:100%; height:100%;display:block; background:url(./btn_infositemap.png) no-repeat center center; }
+.cate_btn a span{ display:none; } /* 영역자체가 안보여짐 */
+
+.cate_btn a.on{ background:url(./btn_closesitemap.png) no-repeat center center; }
+
+.cate_layer{border:1px solid red;}
+</style>
+
+<script type="text/javascript">
+	// <![CDATA[
+		$(document).ready(function(){
+			$('.cate_layer').hide();
+			
+			$('.cate_btn').toggle (
+				function(){
+					$('.cate_layer').slideDown("fast");
+					$(".cate_btn a").addClass("on");
+				},
+				function(){
+					$('.cate_layer').slideUp("fast");
+					$(".cate_btn a").removeClass("on");
+				}
+			);
+		});
+	// ]]>
+</script>
+
+</head>
+<body>
+   <div class="cate_btn"><a href="#"><span> 열기/닫기</span></a></div>
+   <div class="cate_layer"> 펼쳐지면 보이는 영역 </div>
+   
+</body>
+</html>

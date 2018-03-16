@@ -1,0 +1,47 @@
+<script>
+//return 값:함수안에서 사용함, 자신을 호출했던 함수로 결과값을 되돌림
+
+document.write(gab());//함수호출
+
+function gab(){
+k=prompt("값을 입력해 보세요","")
+if(k>10){
+return "10보다 큰 수이군요"
+}else{
+return "10보다 작은 수이군요"
+}
+}
+
+//★재귀적 호출귀법:자신의 함수내에서 자신의 함수를 호출하는 형태
+
+
+/*
+a();
+function a(){
+실행문장
+a()//재귀적 호출귀법
+}
+*/
+
+jumsu();//함수호출
+
+function jumsu(){
+j=prompt("자신의 점수 입력","나의 점수는")
+if(j>100){
+alert("100이상이군요, 다시 입력");jumsu()
+}else if(j>=90){
+alert("A학점")
+}else if(j>=80){
+alert("B학점")
+}else if(j>=70){
+alert("C학점")
+}else if(j>=60){
+alert("D학점")
+}else if(j>0){
+alert("F학점")
+}else{
+alert("잘못된 점수... 다시입력");jumsu()
+}
+}
+
+ </script>

@@ -8,7 +8,24 @@
     논리연산자 && || ^ ?
 
 
+18.3.14 - 2일차
+  1) javascript의 역사와 현재 모습
+     javascript 변수 설명
+     연산자(산술연산자, 비교연산자)
+  2) 값의 유형
+     함수의 선언, 호출, 의미 등등
+     javascript & jquery 샘플 설명
+     샘플 하드코딩 (htlm, css, javascript, jquery)
+
+18.3.46 - 3일차
+  1) 
 
 
 ## 번외
 https://www.zerocho.com/category/JavaScript  :: 자바스크립트 강의 참고
+
+## php 프레임웤
+https://github.com/gshn/cpfs
+
+## 안규의 공부방
+http://ankyu.entersoft.kr/board_Lecture/lecture_content.asp?lecture_idx=7&gubun_type=javascript

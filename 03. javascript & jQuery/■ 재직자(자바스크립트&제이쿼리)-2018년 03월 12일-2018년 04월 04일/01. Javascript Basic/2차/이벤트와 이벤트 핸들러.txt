@@ -1,0 +1,14 @@
+■ 이벤트와 이벤트 핸들러
+
+이벤트 : 사건발생 신호(click, mouseover, mouseout, focus,....)
+이벤트 핸들러 : 이벤트를 처리하는 처리 문장(onclick, onmouseover..)
+
+ex) 
+<img src="" onclick="함수()" />
+<img src="" onclick="객체.특성='값' " />
+<img src="" onclick="객체.메소드()" />
+
+click은 이벤트
+onclick="" : 이벤트 핸들러
+
+

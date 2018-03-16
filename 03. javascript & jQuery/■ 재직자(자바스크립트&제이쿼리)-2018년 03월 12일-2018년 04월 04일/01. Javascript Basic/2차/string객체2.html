@@ -1,0 +1,36 @@
+<meta charset="utf-8">
+<script>
+//문자열 관련 객체 : String객체
+//특성과 메소드 살펴보기
+
+//string 객체변수="문자(열)";
+var s="★java script#";
+document.write(s.length,"<br>"); //문자개수(13)
+document.write(s.charAt(2),"<br>"); //a
+document.write(s.indexOf("a"),"<br>"); //왼쪽부터 검색
+document.write(s.lastIndexOf("a"),"<br>"); //오른쪽부터 검색
+
+//부분적인 문자 추출
+document.write(s.substring(0,1),"<br>"); //0위치만 추출(★)
+document.write(s.substring(0,4),"<br>"); //0,1,2,3 (★jav)
+document.write(s.substring(6,8),"<br>"); //시작:6, 끝:8-1=7(sc)
+
+//마지막 문자 추출
+document.write(s.substring(12,13),"<br>");
+document.write(s.substring(s.length-1,s.length),"<br>");  
+
+//대문자로 변경
+document.write(s.toUpperCase(),"<br>");
+//소문자로 변경
+document.write("AAA".toLowerCase(),"<br>");    
+
+
+var m1="@@@@@@&$$%%%%%%*";
+var m2="@@@@@@&$$%%%%%%@@@@@*";
+document.write(m1.substring(m1.length-1,m1.length),"<br>");
+document.write(m2.substring(m2.length-1,m2.length),"<br>");
+
+//객체.특성
+//객체.메소드()
+
+</script>

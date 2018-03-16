@@ -1,0 +1,68 @@
+<script>
+
+
+function a(i){ //매개변수 1개
+alert(i+"님 안녕")
+}
+
+a("★");a("☆");a(100);//실인수 1개
+
+ 
+//실인수2개, 매개변수 2개
+
+
+kim("해",20);kim("달",30);kim("구름",20);
+
+ 
+
+//출력결과: 예:해님의 나이는 20세(글씨색상과 글자크기 적용)
+
+ function kim(a,b){
+document.write("<font color=red size=3>",a,"님의 나이는 ",b,"세</font><br />")
+}
+
+</script>
+
+
+ 
+
+<!--
+출력결과
+
+차의 목록과 색상(가운데 정렬,굵게, 크기)
+
+★★★★★★★★★★★★★★★★★★★(for문 활용)
+
+나의 자동차는 아반떼이고 색상은 녹색이다.(함수활용)
+너의 자동차는 티코이고 색상은 노란색이다.(함수활용)
+철수의 자동차는 그랜저이고 색상은 빨강이다.(함수활용)
+
+★★★★★★★★★★★★★★★★★★★(for문 활용)
+-->
+
+
+<script>
+document.write("<p align=center><b>차의 목록과 색상</b><br /><br />")
+
+for(i=1;i<=30;i++){
+document.write("☆")
+}
+
+
+document.write("<br /><br />")
+
+car("나","아반떼","녹색");
+car("너","티코","노란색");
+car("철수","그랜저","빨강색");
+
+function car(a1,a2,a3){
+document.write(a1,"의 차동차는 ",a2,"이고",a3,"이다<br /><br />")
+}
+
+for(i=1;i<=30;i++){
+document.write("☆")
+}
+
+document.write("</p>")
+
+</script>

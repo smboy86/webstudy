@@ -1,0 +1,81 @@
+<html>
+<head>
+
+<script language="javascript">
+
+//기본요소1,자료형 익히기
+//변수=값
+
+a=1 //정수형(5,0,-4)
+b=2.5; //실수형(부동소수점)
+c=true;  //boolean형(true:1/false:0)
+d=null;  //아무값도 없다
+e="";  //널값
+f='4444'; //큰따옴표,작은따옴표안의 값은 무조건 문자 또는 문자열
+//NaN(Not a number) ,infinity(무한대의 값)
+document.write(a+b);
+document.write(a,"<br />",b,"<br />",c,"<br />",d,"<br />",e,"<br />",f,"<br />");
+document.write(a,"<br />",b+"<br />"+c+"<br />"+d+"<br />"+e+"<br />"+f+"<br />");
+
+
+//산술연산자
+a=7,b=4
+document.write(a+b,"<br />");
+document.write(5-6,"<br />");
+document.write(5*6,"<br />");
+document.write(5/6,"<br />");
+document.write(5%6,"<br />");
+
+ 
+
+//관계연산자 :  왼쪽<오른쪽(왼쪽이 오른쪽보다 작다)
+document.write(5<10,"<br />");
+document.write(5>10,"<br />");
+document.write(5<=10,"<br />");
+document.write(5>=10,"<br />"); //5가 10보다 크거다 같다
+document.write("☆"=="＠","<br />"); //같다
+document.write(5!=10,"<br />");  //서로다르다
+
+ 
+
+//논리연산자:&&,||,^,!,?
+document.write(true && true,"<br />");
+document.write(0 && 0,"<br />");
+document.write(1 || 1,"<br />");
+document.write(true || false,"<br />");
+document.write(true ^ true,"<br />");
+document.write(!true,"<br />");
+
+ 
+
+//?연산자
+// 변수=(조건식)?6:"*"
+
+document.write(str=(10<5)?"#":"*")
+
+
+str2=("☆"!="★")?"다른별":"같은별"
+document.write(str2,"<br />")
+
+//대입연산자:=, 복합대입연산자:+=,-=,*=,/=,%=
+
+s=1;
+s*=1 //s=s+1;
+document.write(s,"<br />")
+
+//증감연산자->1증가:++, 1감소:--
+
+t=1;
+t++; //1증가
+t--;  //1감소
+t++;   //1증가
+t+=2
+document.write(t,"<br />")
+t=2
+document.write(t,"<br />")
+
+ 
+
+</script>
+</head>
+</html>

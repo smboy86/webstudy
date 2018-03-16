@@ -1,0 +1,47 @@
+<HTML>
+	<HEAD>
+		<TITLE>
+			접속때마다 다른 광고 보여주기
+		</TITLE>
+		<SCRIPT LANGUAGE="JavaScript">
+			<!--
+			img = new Array();
+			text = new Array();
+			link = new Array();
+			img[0] = "CMBanner_01.gif";
+			img[1] = "CMBanner_02.gif";
+			img[2] = "CMBanner_03.gif";
+			
+			text[0] = "금연 캠페인";
+			text[1] = "인터나루";
+			text[2] = "대우 그랜드 월드";
+			
+			link[0] = "http://www.naver.com";
+			link[1] = "http://www.nate.com";
+			link[2] = "http://www.daum.net";
+			
+			r=Math.round(Math.random()*2);
+			document.write(r,"<br>");
+			
+		    //r=Math.round(2*Math.random());
+			//document.write(r,"<br>");
+			//-->
+		</SCRIPT>
+		
+		<style>
+		   p{ text-align:center;}
+		</style>
+	</HEAD>
+	<BODY>
+	
+		<h2> 새로고침할때마다 배너가 달라져요 </h2>
+		
+		<script>
+	    document.write("<img src='",img[r],"' />");
+        document.write(text[r],"<br>");  
+        document.write(link[r],"<br>");  		
+		
+		</script>
+		
+	</BODY>
+</HTML>

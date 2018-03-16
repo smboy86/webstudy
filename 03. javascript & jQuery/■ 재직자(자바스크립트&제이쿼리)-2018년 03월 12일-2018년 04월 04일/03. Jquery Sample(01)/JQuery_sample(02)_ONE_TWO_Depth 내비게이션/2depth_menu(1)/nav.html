@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>내비게이션</title>
+
+<style type="text/css">
+	*{margin:0; padding:0;}
+	.header{width:100%;}
+	#topnav{margin:100px 0 0 0; float:left; width:100%; list-style:none; position:relative; font-size:12px; font-family:돋움, dotum; letter-spacing:-1px; background:#666;}
+	#topnav li{float:left; width:142px; border-right:1px solid #999; height:35px;}
+	#topnav li a{display:block; text-align:center; color:#fff; text-decoration:none; font-weight:bold; line-height:35px;font-family:"맑은 고딕",나눔고딕,돋움,sans-serif;}
+	#topnav li span{display:none; width:100%; float:left; padding:10px 0; background:#f1f1f1; position:absolute; left:0; top:35px; color:#fff;}
+	#topnav li:hover span{display:block;}
+	#topnav li span a{display:inline; font-size:11px; color:#999; }
+	#topnav li span a:hover{text-decoration:none; background:#ededed; color:#000;}
+	#topnav li span em{color:#999; padding:0 10px;}
+</style>
+
+<script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+</head>
+
+<body>
+
+<div class="header">
+	<ul id="topnav">
+		<li><a href="#">Menu01</a></li>
+		<li>
+			<a href="#">Menu02</a>
+			<span>
+				<a href="#">Sub Menu02_01</a> <em>|</em>
+				<a href="#">Sub Menu02_02</a> <em>|</em>
+				<a href="#">Sub Menu02_03</a> <em>|</em>
+				<a href="#">Sub Menu02_04</a>
+			</span>
+		</li>
+		<li>
+			<a href="#">Menu03</a>
+			<span>
+				<a href="#">Sub Menu03_01</a> <em>|</em>
+				<a href="#">Sub Menu03_02</a> <em>|</em>
+				<a href="#">Sub Menu03_03</a>
+			</span>
+		</li>
+		<li>
+			<a href="#">Menu04</a>
+			<span>
+				<a href="#">Sub Menu04_01</a> <em>|</em>
+				<a href="#">Sub Menu04_02</a> <em>|</em>
+				<a href="#">Sub Menu04_03</a>
+			</span>
+		</li>
+		<li>
+			<a href="#">Menu05</a>
+			<span>
+				<a href="#">Sub Menu05_01</a> <em>|</em>
+				<a href="#">Sub Menu05_02</a> <em>|</em>
+				<a href="#">Sub Menu05_03</a> <em>|</em>
+				<a href="#">Sub Menu05_04</a> <em>|</em>
+				<a href="#">Sub Menu05_05</a>
+			</span>
+		</li>
+		<li><a href="#">Menu06</a></li>
+		<li>
+			<a href="#">Menu07</a>
+			<span>
+				<a href="#">Sub Menu07_01</a> <em>|</em>
+				<a href="#">Sub Menu07_02</a> <em>|</em>
+				<a href="#">Sub Menu07_03</a> <em>|</em>
+				<a href="#">Sub Menu07_04</a>
+			</span>
+		</li>
+	</ul>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$("ul#topnav li").hover(function() {
+		$(this).css({ 'background' : '#333333'}); 
+		$(this).find("span").show();
+	} , function() {
+		$(this).css({ 'background' : 'none'});
+		$(this).find("span").hide();
+	});
+
+});
+</script>
+
+</body>
+</html>

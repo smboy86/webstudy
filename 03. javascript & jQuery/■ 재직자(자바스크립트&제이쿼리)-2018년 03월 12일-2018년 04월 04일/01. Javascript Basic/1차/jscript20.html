@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta charset="utf-8">
+<script>
+   function info(){
+     var s1=document.myForm.ID.value;
+	 var s2=document.myForm.PW.value;
+	 alert("당신의 아이디는 "+s1+"이고 비번은 "+s2);
+   }
+</script>
+</head>
+<body>
+  <form name="myForm">
+  <input type="text" name="id" id="ID" value="아이디" />
+  <input type="password" name="pw" id="PW" value="12345" />
+  <input type="button" value="클릭" onclick="info()" />
+  </form>
+  
+</body>
+</html>

@@ -1,0 +1,21 @@
+<meta charset="utf-8">
+<script>
+  var i=3; //전역변수
+  var j=4; //전역변수
+  document.write(i,"<br>"); //3
+  document.write(j,"<br>"); //4
+  a(); //함수호출
+  function a(){ //함수호출됨
+     var i=2;  //지역변수
+	  document.write(i,"<br>"); //2
+  }
+  document.write(i,"<br>"); //3
+  
+  /*
+     function내에서 var 변수명; 입력시 지역변수
+	 즉 함수내에서만 효력 발생하고 함수를 벗어나면 효력 상실
+	 
+	 전역변수 : 전체 영역에 영향을 끼치는 변수
+  */
+  
+</script>

@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta http-equiv="Content-Script-Type" content="text/javascript" />
+		<title>MENU</title>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		<style type="text/css">
+
+		body{
+			background:#252422;
+		}
+		div{
+			width:800px;
+			height:300px;
+			margin:50px auto;
+			overflow:hidden;
+		}
+		dl{
+			width:900px;
+			height:300px;
+		}
+		dt{
+			width:35px;
+			height:300px;
+			float:left;
+		}
+		dt span{
+			display:block;
+			width:100%;
+			height:100%;
+			text-indent:-9999px;
+		}
+		dt span.over{
+			cursor:pointer;
+		}
+		dt span.selected{
+			cursor:default;
+		}
+		dt#step1 span{
+			background:url("images/background-1.jpg");
+		}
+		dt#step1 span.over{
+			background:url("images/background-1-over.jpg");
+		}
+		dt#step1 span.selected{
+			background:url("images/background-1-selected.jpg");
+		}
+		dt#step2 span{
+			background:url("images/background-2.jpg");
+		}
+		dt#step2 span.over{
+			background:url("images/background-2-over.jpg");
+		}
+		dt#step2 span.selected{
+			background:url("images/background-2-selected.jpg");
+		}
+		dt#step3 span{
+			background:url("images/background-3.jpg");
+		}
+		dt#step3 span.over{
+			background:url("images/background-3-over.jpg");
+		}
+		dt#step3 span.selected{
+			background:url("images/background-3-selected.jpg");
+		}
+		dd{
+			margin:0;
+			width:695px;
+			height:300px;
+			float:left;
+			background:#D4D0C8;
+			overflow:hidden;
+		}
+		dd  p{
+			width:655px;
+			text-indent:1em;
+			padding:20px;
+		}
+
+	 </style>
+	<script type="text/javascript">
+		$(function(){
+			$("dd:not(:first)").css("width","0px");
+			$("dt:first span").addClass("selected");
+			$("dl dt").click(function(){
+				if($("+dd",this).css("width")=="0px"){
+					$("dt:has(.selected) +dd").animate({"width":"0px"});
+					$("+dd",this).animate({"width":"695px"});
+					$("dt span").removeClass("selected");
+					$("span",this).addClass("selected");
+				}
+			}).mouseover(function(){
+				$("span",this).addClass("over");
+			}).mouseout(function(){
+				$("span",this).removeClass("over");
+			});
+		});
+				</script>
+	</head>
+	<body>
+		<div>
+			<dl>
+				<dt id="step1"><span>Step.1</span></dt>
+				<dd><p>1</p></dd>
+				<dt id="step2"><span>Step.2</span></dt>
+				<dd><p>2</p></dd>
+				<dt id="step3"><span>Step.3</span></dt>
+				<dd><p>3 </p></dd>
+			</dl>
+		</div>
+	</body>
+</html>

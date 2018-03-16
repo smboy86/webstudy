@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>반응형 유형의 햄버거 메뉴</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" type="text/css" href="./css/style.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript">
+	// <![CDATA[
+		$(document).ready(function(){
+			$('.cate_layer').hide();
+			$('.cate_btn').toggle (
+				function(){
+					$('.cate_layer').slideDown("fast");
+					$(".cate_btn").addClass("on");
+				},
+				function(){
+					$('.cate_layer').slideUp("fast");
+					$(".cate_btn").removeClass("on");
+				}
+			);
+		});
+	// ]]>
+</script>
+</head>
+<body>
+  <header>
+        <div class="inner">
+		    <h1>로고</h1>
+			<nav>
+			    <ul>
+				<li><a href="#">menu</a></li>
+				<li><a href="#">menu</a></li>
+				<li><a href="#">menu</a></li>
+				<li><a href="#">menu</a></li>
+				<li><a href="#">menu</a></li>
+				</ul>
+			</nav>
+			
+			<div id="qnb"><!-- qnb-->
+			   <div class="cate_btn"><a href="#"><span>카테고리열림/닫힘버튼</span></a></div>
+			   <div class="cate_layer"> 펼쳐지는 부분 </div>
+			</div><!--//qnb-->
+		</div>
+  </header>
+  
+  <section id="visual"></section>
+  <footer></footer>
+</body>
+</html>

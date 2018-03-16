@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+@import url(common.css);
+
+/* layout*/
+#wrapper{position:absolute;  width: 100%; height:800px; overflow:hidden; }
+
+.headerWrap{width:100%; background:#fff url("common/img/bg_main01.jpg") 50% 0 no-repeat;}
+#wrapper.blue .headerWrap{background:#fff url("common/img/bg_main02.jpg") 50% 0 no-repeat;}
+#wrapper.kiwi .headerWrap{background:#fff url("common/img/bg_main03.jpg") 50% 0 no-repeat;}
+
+.header{position:relative; width:1080px; height:700px; z-index:1; margin:0 auto; }
+.header img{position:absolute; }
+.header .vstxt{top:130px; left:500px; }
+
+.header .vs01{top:70px; left:-60px;}/*물튀김*/
+.header .vs11{top:90px; left:-20px;}/*블루베리*/
+.header .vs21{top:70px; left:-70px;}/*키위*/
+
+.header .vs03{top:90px; left:140px;}/*병*/
+
+.header .vs04{top:250px; left:361px;}/*오른쪽캐릭*/
+.header .vs14{top:240px; left:360px;}/*블루베리*/
+.header .vs24{top:250px; left:340px;}/*키위*/
+
+.header .vs05{top:420px; left:30px;}/*왼른쪽캐릭*/
+.header .vs15{top:370px; left:50px;}/*블루베리*/
+.header .vs25{top:420px; left:160px;}/*키위*/
+
+.logo{position:absolute; left:50%;  top:30px; margin-left:-540px; z-index:1000; cursor:pointer;}
+
+.mainL{position:absolute; left:0; top:25%; z-index:5; overflow:hidden; cursor:pointer;}
+.mainR{position:absolute; right:0; top:25%; z-index:5; overflow:hidden; cursor:pointer;}
+
+.storyBtn{position:absolute; top:460px;  left:50%; margin-left:100px; z-index:1000; cursor:pointer;}
+
+.menuWrap{position:absolute; top:250px; left:50%; margin-left:152px; width:385px; height:530px; z-index:100; overflow:hidden;  }
+
+.menubg{position:absolute; top:0; left:0; z-index:100; overflow:hidden;}
+.menubar{position:absolute; top:100px; left:175px; z-index:101; width:75px; height:205px; overflow:hidden;}
+
+.menu{position:absolute; top:3px; right:0; z-index:1000;}
+.menu>ul{float:right; margin-top:88px; cursor:pointer; }
+.menu>ul>li{min-height:38px;}
+.menu ul ul{ margin-left:20px; height:70px;}
+.menu li ul{display: none;}
+.menu li ul li{height:20px; }
+.menu li ul li.sub01{margin-top:5px;}
+
+.menu00{position:relative; top:0px; right:0px;}
+.menu01{position:relative; top:0px; right:10px;}
+
+.menu02{position:relative; top:0px; right:20px;}
+
+.menu02 li{padding-left:10px;}
+.menu02 .sub02{padding-left:5px;}
+.menu02 .sub03{padding-left:0px;}
+
+.menu03{position:relative; top:0px; right:30px;}
+.menu04{position:relative; top:0px; right:40px;}
+
+.container{position:absolute; width:100%; height:700px; 
+background: url("common/img/bg_cont.png") 50% 0 no-repeat; z-index:15; margin-top:-180px; overflow:hidden;}
+
+.contbg01{position:absolute; top:18px; left:50%; margin-left:-100px;}
+.contbg02{position:absolute; top:0px; left:50%; margin-left:200px}
+.contbgMk{position:absolute; top:102px; left:50%; margin-left:-500px;}
+
+.contWrap{position:absolute; top:0; left:50%; margin-left:-540px;  text-align:left; width:1150px; height:590px;  padding-top:170px; overflow:hidden; z-index:100;}
+.contWrap .copy{text-align:center; }
+
+.mainCopy{position:absolute; top:262px; left:50%; margin-left:-350px; z-index:100; }
+
+.famliy{position:absolute; top:-101px; left:280px; width:113px; height:120px;}
+.famliy .open{position:absolute; bottom:0; left:0; z-index:10; cursor:pointer;}
+.famIn{display:none;position:absolute; top:0; left:0; z-index:1; width:113px; height:91px; z-index:1; }
+.famIn a{display:block; height:30px; overflow:hidden;}
+.famIn a:hover img{margin-top:-30px;}
+
+.corver{background:#fff;position:absolute; top:160px; left:0; margin-left:0px; width:1180px; height:590px; text-align:left;  margin-bottom:70px; z-index:50;}
+
+/*product sub*/
+.subtxt{position:absolute; top:160px; left:0; width:1080px; height:590px; text-align:left;  margin-bottom:70px; }
+.subtab{position:absolute; top:0; left:0; overflow:hidden; z-index:10}
+
+.subtab li{float:left; width:49px; height:59px; line-height:59px; margin-top:0; overflow:hidden; cursor:pointer; }
+
+.subtab li.on {width:200px;}
+.subtab li.on img{margin-top:-59px;}
+
+.subtabCont{height:370px; margin-bottom:30px; overflow:hidden;  }
+.subtabCont div{position:absolute; top:0; left:0; z-index:1}
+
+.buy01{position:absolute; top:264px; left:355px;}
+.buy02{position:absolute; top:212px; left:300px;}
+.buy03{position:absolute; top:212px; left:405px;}
+
+/*board*/
+.subboard{position:absolute; top:160px; left:0; width:660px;  height:590px; text-align:left; margin-bottom:70px;  overflow:hidden;}
+.subboard .copy{margin-top:30px}
+.borlist{ z-index:1; width:660px;  }
+.borview{ z-index:2;  width:660px;  background:#fff;}
+.borview .tbl .scroll.txt{height:200px;}
+.borview .btnC{position:absolute; top:-10px; right:0;}
+/* brand  story*/
+.brand{position:absolute; top:160px; left:0; width:1110px; height:590px; text-align:left;  margin-bottom:70px; }
+.brandtab{position:absolute; top:20px; left:0; overflow:hidden;  z-index:10}
+.brandtab li{float:left;height:41px; height:59px; line-height:59px; overflow:hidden; cursor:pointer;}
+
+.brandtab li.on a img{margin-top:-41px;}
+
+.subtabBrand{height:370px; margin-bottom:30px; overflow:hidden; }
+.subtabBrand div{ position:absolute; top:38px; left:0; }
+
+.popClose {width:109px; height:163px; position:absolute; top:48px; right:-40px; z-index:40; cursor:pointer;}
+
+/*
+@media screen and (max-width:1024px) {
+	.logo{margin-left:-520px;}
+	.menuWrap{margin-left:100px;}
+}*/

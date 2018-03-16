@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+<title> Date객체</title>
+<meta charset="utf-8">
+<script>
+  // Date객체: 년월일/시분초 구할때 활용
+  // ex)달력 또는 시계, 요일 구할때
+  var day=new Date();
+  //년월일
+  document.write((day.getYear()+1900),"년<br>");
+  document.write((day.getMonth()+1),"월<br>");
+  document.write(day.getDate(),"일<br>");
+  
+  document.write(day.getDay(),"요일<br>");
+  //0:일, 1:월~6:토 ->switch~case문장으로 처리
+  
+  //시분초
+  document.write(day.getHours(),"시<br>");
+  document.write(day.getMinutes(),"분<br>");
+  document.write(day.getSeconds(),"초<br>");
+  
+  
+  
+</script>
+</head>
+<body>
+   
+</body>
+</html>

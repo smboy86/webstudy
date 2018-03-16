@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+/* base */
+*{margin:0px; padding:0px;}
+html,body{width:100%;height:100%}
+html{overflow-y:scroll; }
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,p,button,span, a{margin:0;padding:0}
+body,h1,h2,h3,h4,h5,h6,input,button,textarea,select,table,a,p{font-size: 12px; color:#777; line-height:1.5; font-family:'돋움', dotum, Helvetica, sans-serif; }
+
+img,fieldset,iframe{border:0 none}
+li{list-style:none}
+input,select,textarea{vertical-align:middle}
+img{vertical-align:top;}
+i,em,address{font-style:normal}
+label{cursor:pointer}
+a{color:#777;text-decoration:none;}
+a:hover{color:#777;}
+option{padding-right:6px}
+legend,caption {font-size:0; height:0; width:1px; line-height:0; overflow:hidden; text-indent:-9999px;}
+table{clear:both; border-collapse:collapse;border-spacing:0}
+th,dt {font-weight:normal; text-align:left;}
+
+/* font 
+@font-face{
+font-family:NanumGothic;
+src:url('../font/NanumGothic.eot');
+src:url('../font/NanumGothic.eot?#iefix') format('embedded-opentype'),
+	url('../font/NanumGothic.woff') format('woff'),
+	url('../font/NanumGothic.ttf') format('truetype');
+src:local(※), url('../font/NanumGothic.woff') format('woff');}
+*/
+
+.h2tit{height:47px; }
+.h2tit h2{float:left;}
+.h2tit a{float:right;}
+
+.tbl{width:100%; border-top:2px solid #716662; border-bottom:2px solid #9c9793}
+.tbl table{width:980px;}
+.tbl th{color:#716662; font-weight:bold;}
+.tbl th, .tbl td{padding:13px 0; text-align:center}
+.tbl thead th{border-bottom:1px solid #6d6865 }
+.tbl tbody td{font-family:Verdana; font-size:11px; border-bottom:1px solid #e5e5e5 }
+.tbl .txL{font-size:12px; text-align:left; /*text-indent:15px;*/}
+
+.tbl.row th, .tbl.row td{padding:10px;border-bottom:1px solid #716662}
+.tbl input{height:25px;}
+.tbl input, .tbl textarea{line-height:25px; width:97%; padding-left:10px; background-color:#f2f2f2; border:none;}
+.tbl .vert{vertical-align:top; padding-top:20px;}
+.tbl .txt{ font-size:12px; vertical-align:top; padding:20px 0; line-height:28px; text-align:left; }
+.tbl .tit{position:relative;  }
+.tbl .tit p{padding-right:90px; text-align:center; line-height:18px; font-size:14px; color:#716662}
+.tbl .day{position:absolute; top:2px; right:12px; font-family:Verdana; font-size:11px; color:#716662}
+.tbl .txt.scroll{height:180px; overflow-y:auto}
+
+
+input{height:25px; line-height:25px;background-color:#f2f2f2; border:none;}
+
+.pageing{width:300px; margin:25px auto; overflow:hidden;}
+.pageing a{float:left; line-height:20px; width:20px; height:20px; text-align:center; margin:0 4px; font-family:Verdana; font-size:10px; border:1px solid #d9d9d9}
+.pageing a img{float:left; vertical-align:middle; margin:5px;}
+.pageing a.on{ color:#fff;  background-color:#49382e;}
+.pageing .prev{margin-right:10px}
+.pageing .next{margin-left:10px}
+
+.btnC{text-align:center; margin-top:20px;}

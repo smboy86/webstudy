@@ -1,0 +1,41 @@
+■ 객체 : Object
+
+1. 태그를 객체로 선언하는 방법 : name 속성 활용
+<img src="" name="객체명" />
+
+<img src="" name="dog" />  : document.dog.   -> this
+<div name="box"> : document.box.  ->this
+
+★  this 키워드 : 자기자신을 객체화!!
+
+2. DOM 모델유형 : name 속성없이 접근하는 유형의 객체구조도
+<a href="#"></a> : document.links[0].
+<a href="#"></a> : document.links[1].
+
+<a name="#"></a> : document.anchors[0].
+<a name="#"></a> : document.anchors[1].
+
+<img src=""> : document.images[0].
+<img src=""> : document.images[1].
+
+<form></form> : document.forms[0].
+<form></form> : document.forms[1].
+
+<form>
+   <input type="text" />    -> document.forms[0].elements[0].
+   <input type="password" />-> document.forms[0].elements[1].
+</form>
+
+
+객체 ex
+다른 대상을 가르키는 방식 -> 스스로를 가리키는 방식
+철수야.놀자();   -> this.놀자()
+철수의.혈액형;   ->this.혈액형
+핸드폰.울린다();  -> this.울린다()
+핸드폰.해상도;    ->this.해상도
+
+
+    
+
+
+

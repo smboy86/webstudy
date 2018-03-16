@@ -1,0 +1,138 @@
+<script>
+
+
+//학점구하기-if문
+
+function hakjum(){  //학점 함수 시작
+
+i=prompt("점수를 입력하세요","점수입력");
+
+
+if(i>100){
+alert("100초과..다시입력");
+hakjum();
+}else if(i>=90){
+alert("A학점");
+}else if(i>=80){
+alert("B학점");
+}else if(i>=70){
+alert("C학점");
+}else if(i>=60){
+alert("D학점");
+}else if(i<60 && i>0){ // 0이상표현일때 F학점으로 무조건 처리 따라서 0보다 크다고 표현
+alert("F학점 재수강 필수!!");
+}else if(i=="0"){ // 주의-> 0처리를 문자로 처리 이유? 0을 문자로 인식!!
+alert("F학점 재수강 필수!!");
+}else if(i==""){
+alert("값이 없습니다. 다시 입력");
+hakjum();
+}else{
+alert("문자값입니다. 다시 입력");
+hakjum();
+}
+
+}//학점 함수 끝
+</script>
+
+<form>
+<input type="button" value="학점구하기" onclick="hakjum()">
+</form>
+
+ 
+
+<script> 
+
+/*
+
+반복제어문:while 문장
+
+초기변수;
+while(조건문){
+실행문장
+}
+
+*/
+
+
+i=1; //초기변수지정
+while(i<5){  //조건식
+document.write("<font color='red'>",i,"</font><br />"); //문장실행
+i++;
+}  
+
+ 
+
+/*
+반복제어문 : for문 형식
+
+for(초기변수;조건식;증감식){
+실행문장
+}
+*/
+
+
+for(i=1;i<5;i++){
+document.write("<font color='red'>",i,"</font><br />"); //문장실행
+}  
+
+
+i=50
+while(i>45){
+document.write("i변수의 값은",i,"입니다<br />")
+i--
+}
+
+ 
+
+i--;
+document.write("i변수의 값은",i,"입니다<br />");
+
+for(i=1;i<=5;i++){
+document.write("welcome ",i,"<br />")
+}
+
+ 
+
+//문제 for문,while 문을 활용하여 그림을 5개씩 출력
+
+ 
+
+i=0
+while(i<=4){
+i++
+document.write("<img src='images/Image_01.gif'>")
+}
+document.write("<p>")
+
+for(i=0;i<=4;i++){
+document.write("<img src='images/Image_01.gif'>")
+}
+
+ 
+/*
+for문 활용하여 <font size=1~7>W</font>
+
+<font size=1>w</font>
+<font size=2>w</font>
+<font size=3>w</font>
+<font size=4>w</font>
+<font size=5>w</font>
+<font size=6>w</font>
+<font size=7>w</font>
+*/
+
+document.write("<p>")
+
+for(i=1;i<=7;i++){
+document.write("<font size=",i,">w</font>")
+}
+
+document.write("<p>")
+
+for(i=1;i<=10;i++){
+document.write("<img src='images/Image_01.gif' width=",i,"% height=",i,"%>")
+}
+for(i=9;i>0;i--){
+document.write("<img src='images/Image_01.gif' width=",i,"% height=",i,"%>")
+}
+</script>

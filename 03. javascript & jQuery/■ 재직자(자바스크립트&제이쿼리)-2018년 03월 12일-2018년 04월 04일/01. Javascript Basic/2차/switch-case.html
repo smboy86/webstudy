@@ -1,0 +1,30 @@
+<script>
+/*
+switch~case 문장:여러개의 값을 처리하고자 할때 사용
+switch(조건문){
+case 값1:문장1;break;
+case 값2:문장2;break;
+case 값3:문장3;break;
+}
+*/
+
+//요일구하기
+//Date 객체변수=new Date객체
+
+day=new Date();  //년월일/시분초
+document.write(day.getDay()+"요일입니다");
+
+switch(day.getDay()){
+   case 0 : alert("일요일");break;
+   case 1 : alert("월요일");break;
+   case 2 : alert("화요일");break;
+   case 3 : alert("수요일");break;
+   case 4 : alert("목요일");break;
+   case 5 : alert("금요일");break;
+   case 6 : alert("토요일");break;
+}
+
+
+
+
+</script>

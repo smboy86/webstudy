@@ -1,0 +1,102 @@
+<script>
+
+//문자->정수 전환,문자->실수, 수식계산
+
+n=window.prompt("값입력","ex:5+4")
+document.write(eval(n),"<br>");
+
+//document.write(eval(n),"<br />")
+//수식계산,큰따옴표를 풀게해줌
+
+document.write(parseInt("5"),"<br />")
+document.write(parseFloat("3.5"),"<br />")
+document.write(parseInt("3")+parseFloat("2.3"))
+document.write("<br>");
+document.write(parseInt("5.4"));
+document.write("<br>");
+document.write(parseFloat("5.4"));
+document.write("<br>");
+</script>
+
+<script>
+/*
+객체유형
+1. 사용자 정의 객체
+2. 내장객체들
+3. 브라우저 내장객체
+*/
+
+//내장객체-날짜,시간 관련 객체:Date()객체
+
+ 
+
+a1=new Date()  //Date객체 정의
+document.write(a1.getYear(),"년<br />")
+document.write((a1.getMonth()+1)+"월<br />")
+document.write(a1.getDate(),"일<br />")
+document.write(a1.getHours(),"시<br />")
+document.write(a1.getMinutes(),"분<br />")
+document.write(a1.getSeconds(),"초<br />")
+
+ 
+//강제적인 날짜시간셋팅
+
+a1.setYear(2005);
+a1.setMonth(5);
+a1.setDate(5);
+a1.setHours(20);
+a1.setMinutes(15);
+a1.setSeconds(14);
+
+Date.prototype.week=null;
+a1.week="어린이날"
+
+//prototype:Date객체의 특성을 정의하기 위한 특성
+
+document.write(a1.getYear(),"년",a1.getMonth(),"월",a1.getDate(),"일은",a1.week,"입니다");
+
+ 
+//Array객체:배열
+
+//배열형식1
+
+s=new Array()  //Array 배열객체 정의
+s[0]="*";
+s[1]="&";
+s[2]="%";
+document.write(s[0]," ", s[1]," ",s[2],"<br />")
+
+ 
+
+//배열형식2
+s2=new Array(1,2,3)
+document.write(s2[0]," ", s2[1]," ",s2[2],"<br />")
+
+ 
+
+//배열형식3
+s3=["가","나",10]
+document.write(s3[0],"과", s3[1],"의 나이는 ",s3[2],"입니다.<br />")
+
+ 
+//Math객체 소개:복잡한 수식계산을 위한 객체
+document.write(Math.sin(0.5),"<br />");
+document.write(Math.cos(1),"<br />");
+document.write(Math.tan(2),"<br />");
+document.write(Math.asin(0.5),"<br />");
+document.write(Math.acos(0.5),"<br />");
+document.write(Math.atan(0.5),"<br />");
+document.write(Math.atan2(10,40),"<br />");
+document.write(Math.PI,"<br />");
+
+document.write(Math.round(3.8),"<br />");//4
+document.write(Math.round(3.2),"<br />");//3
+document.write(Math.floor(2.1),"<br />");//3
+document.write(Math.ceil(-2.2),"<br />");//4
+document.write(Math.random(),"<br />");
+document.write(Math.round(10*(Math.random())),"<br />");
+
+document.write(Math.max(3,5),"<br />");
+document.write(Math.min(3,5),"<br />");
+
+</script>

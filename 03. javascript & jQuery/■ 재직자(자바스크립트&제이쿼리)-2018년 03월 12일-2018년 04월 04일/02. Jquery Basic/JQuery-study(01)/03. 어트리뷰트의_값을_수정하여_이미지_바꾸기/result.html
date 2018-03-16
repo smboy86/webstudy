@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>어트리뷰트의_값을_수정하여_이미지_바꾸기</title>
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<style>
+			html * { margin:0; padding:0;box-sizing:border-box;}
+			ol,ul{list-style:none;}
+			section{margin:0 auto; text-align:center;margin-top:50px;}
+			#nav {width:600px; height:40px; margin: 0px auto 50px auto; }
+			#nav ul{text-align:center;}
+		    #nav ul li { float:left;width:123px; height:40px; margin-left:0px;}
+			#nav ul li.first { margin-left:0px; }
+			#nav ul li a {display:block;  width:123px;}
+			#nav img{width:100px;}
+			#big { margin:0 auto; border:5px solid red; }
+			
+		</style>
+		<script>
+			$(document).ready(function(){
+				$('#nav > ul > #btn1').bind('click', function(){
+					$('#big > img').attr({src:'images/1.png', alt:'예쁜배경1'});
+				});
+				
+				$('#nav > ul > #btn2').bind('click', function(){
+					$('#big > img').attr({src:'images/2.png', alt:'예쁜배경2'});
+				});
+				
+				$('#nav > ul > #btn3').bind('click', function(){
+					$('#big > img').attr({src:'images/3.png', alt:'예쁜배경3'});
+				});
+				
+				$('#nav > ul > #btn4').bind('click', function(){
+					$('#big > img').attr({src:'images/4.png', alt:'예쁜배경3'});
+				});
+	
+			});
+		</script>
+	</head>
+	
+	<body>
+	<section>
+		<div id="nav">
+			<ul>
+				<li id="btn1" class="first on">
+					<a href="#">
+						<img src="images/button.jpg" />
+					</a>
+				</li>
+				<li id="btn2">
+					<a href="#">
+						<img src="images/button.jpg" />
+					</a>
+				</li>
+				<li id="btn3">
+					<a href="#">
+						<img src="images/button.jpg" />
+					</a>
+				</li>
+				<li id="btn4">
+					<a href="#">
+						<img src="images/button.jpg" />
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!-- 버튼 클릭시 큰 그림을 보여주는 영역-->
+		<div id="big">
+			<img src="images/1.png" alt="예쁜배경1" />
+		</div>
+	</section>
+	</body>
+</html>

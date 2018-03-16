@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title> 자바스크립트 기본실습 </title>
+<meta charset="utf-8">
+<script type="text/javascript">
+<!--
+   //산술연산자 : +, -, *, /, %
+	 //연결자 : + 또는 ,(컴마)
+	 document.write((5+5),"<br>"); //10
+	 document.write((5-3),"<br>"); //2 
+	 document.write((5*5),"<br>"); //25
+	 document.write((5/4),"<br>"); //나누었을때 몫(1.25)
+	 document.write((5%4),"<br>");  //나누었을때 나머지(1)
+	 
+	 //관계연산자 : >, <, >=, <=, ==(같다), !=(서로다르다)
+	 //★왼쪽부터 해석할것!!
+	 document.write((5>4),"<br>"); //5가 4보다 크냐->참(true)
+	 document.write((5<4),"<br>"); //5가 4보다 작냐->거짓(false)
+	 document.write((5>=4),"<br>"); //5는 4보다 크거나 같냐(true)
+	 document.write((5<=4),"<br>");//5는 4보다 작거나 같나(false)
+	 document.write((5==5),"<br>"); //5와 5는 같냐(true)
+	 document.write((5!=4),"<br>");//5와 4는 서로 다르냐(true)
+	 //true(1) or false(0)
+	 
+	 //논리연산자 : &&(and연산자), ||(or연산자), ^(exclusive or), ?연산자
+	 //두개 이상의 조건에서 참과 거짓을 판별하고자 할때
+	 document.write((5==5)&&(10<6),"<br>");
+	 document.write((5==5)||(10<6),"<br>");
+	 document.write((5==5)^(10<6),"<br>");
+	 
+	 //?연산자
+	 /*
+	 [형식1] 
+	 var 변수=(조건식) ? 참값 : 거짓값 ;
+	 [형식2] 
+	 (조건식) ? 변수=참값 : 변수=거짓값 ;
+	 */
+	 var box=(10>5) ? "크다" : "작다" ;
+	 document.write(box,"<br>");
+	 
+	  ("★"=="☆") ? star="별이같다" : star="별이 같지 않다" ;
+		document.write(star,"<br>");
+-->
+</script>
+</head>
+<body>
+  
+</body>
+</html>

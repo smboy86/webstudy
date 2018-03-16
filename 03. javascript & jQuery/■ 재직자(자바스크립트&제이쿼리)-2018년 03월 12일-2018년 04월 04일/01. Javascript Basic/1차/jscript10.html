@@ -1,0 +1,34 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+   var i=20;
+   while(true){
+      i--; //19->18->11->10->9->8
+      if(i>10) continue; //if(19>10)->참->continue->while위치로 이동
+	  //if(18>10)->참->continue->while위치로 이동
+	  //...
+	  //if(11>10)->참->continue->while위치로 이동
+	  //if(10>10)->거짓->아래 문장으로 이동
+	  //if(9>10)->거짓->아래 문장으로 이동
+	  //if(9>10)->거짓->아래 문장으로 이동
+	  
+	  if(i==8) break;
+	  //if(10==8)->거짓->if문 실행안됨->아래로 이동
+	  //if(9==8)->거짓->if문 실행안됨->아래로 이동
+	  //if(8==8)->참->while종료!!!
+	  
+	  document.write(i,"<br>"); 
+	  //10출력->while(true)이동
+	  //9출력->while(true)이동
+   } //while 종료 위치
+ </script>
+
+
+
+
+
+
+
+
+
+
+

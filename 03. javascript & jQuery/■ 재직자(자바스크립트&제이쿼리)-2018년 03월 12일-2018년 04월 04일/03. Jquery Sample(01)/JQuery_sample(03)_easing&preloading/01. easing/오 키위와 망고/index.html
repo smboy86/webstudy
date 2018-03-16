@@ -1,0 +1,260 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=1230">
+<title>O-Juice</title>
+<link rel="stylesheet" type="text/css" href="http://www.o-juice.co.kr/common/css/user.css" />
+<script type="text/javascript" src="http://www.o-juice.co.kr/common/js/jquery.js"></script>
+<script type="text/javascript" src="http://www.o-juice.co.kr/common/js/design.js"></script>
+
+    <script src="http://www.o-juice.co.kr/common/js/greensock/TweenMax.min.js"></script>
+    <script src="http://www.o-juice.co.kr/common/js/greensock/TimelineLite.min.js"></script>
+    <script src="http://www.o-juice.co.kr/common/js/greensock/plugins/CSSPlugin.min.js"></script>
+    <script src="http://www.o-juice.co.kr/common/js/greensock/easing/EasePack.min.js"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+            mainStart();
+			//getList('1','','','');
+        });
+
+
+
+		function goview(idx, page){
+			$.ajax({
+			  type: "POST",
+			  url: "notice_view_ajax.asp",
+			  dataType: "html",
+			  data: "idx="+idx+"&page="+page,
+			  success: function(data) {
+				$("#noticeView").html(data);
+				//alert('Load :'+data);
+				
+			  }, error: function(request, status, error){
+				  alert(request.status);
+				  alert(request.responseText);
+			  }
+			});
+
+			$("#noticeList").hide();
+			$("#noticeView").show();			
+		}
+
+		function hideNview(){
+			$("#noticeView").hide();			
+			$("#noticeList").show();			
+			//document.getElementById("noticeView").style.display="none";
+			//document.getElementById("noticeList").style.display="block";
+		}
+
+		function getList(page, schType, schValue, orderby){
+			hideNview();
+			$.ajax({
+			  type: "POST",
+			  url: "notice_list_ajax.asp",
+			  dataType: "html",
+			  data: "page="+page+"&schType="+schType+"&schValue="+schValue+"&schorderby="+orderby,
+			  success: function(data) {
+				//alert('Load :'+data);
+				$("#noticeList").html(data);		
+			  }, error: function(request, status, error){
+				  alert(request.status);
+				  alert(request.responseText);
+			  }
+			});
+		}
+
+		function goDown(fnm){
+			var f = document.f;
+			f.attach1.value = fnm;
+			f.action = "http://www.o-juice.co.kr/common/filedown.asp";
+			f.submit();
+		}
+
+		function go_family(){
+		    $(".famIn").toggle();
+		}
+
+    </script>
+
+</head>
+ <body>
+ <form name="f" id="f" action="" method="post">
+ <input type="hidden" name="idx" id="idx" value="" />
+ <input type="hidden" name="attach1" id="attach1" value="" />
+ <form>
+
+	<div id="wrapper">
+		<div class="headerWrap" id="headerWrap">
+			<h1 class="logo" id="logo01" ><img src="http://www.o-juice.co.kr/common/img/img_logo01.png" alt="" /></h1>
+            <h1 class="logo" id="logo11"><img src="http://www.o-juice.co.kr/common/img/img_logo11.png" alt="" /></h1>
+            <h1 class="logo" id="logo21"><img src="http://www.o-juice.co.kr/common/img/img_logo21.png" alt="" /></h1>
+			<div class="header">
+				<img id="vs01" src="http://www.o-juice.co.kr/common/img/img_viC04.png" alt="물" class="vs01" />
+                <img id="vs05" src="http://www.o-juice.co.kr/common/img/img_viC02.png" alt="캐릭터왼쪽" class="vs05" />
+				<img id="vs0txt" src="http://www.o-juice.co.kr/common/img/img_txt01.png" alt="제주담은 오감귤과 한라봉 - 100% 무농약 제주산 감귤과 제주산 한라봉으로 맛을 더하다!"  class="vstxt"/>
+				<img id="vs03" src="http://www.o-juice.co.kr/common/img/img_viC00.png" alt="병" class="vs03" />
+				<img id="vs04" src="http://www.o-juice.co.kr/common/img/img_viC01.png" alt="캐릭터오른쪽" class="vs04" />
+
+                <img id="vs11" src="http://www.o-juice.co.kr/common/img/img_viC14.png" alt="물" class="vs11" />
+                <img id="vs15" src="http://www.o-juice.co.kr/common/img/img_viC12.png" alt="캐릭터왼쪽" class="vs15" />
+                <img id="vs1txt" src="http://www.o-juice.co.kr/common/img/img_txt11.png" alt="제주담은 오감귤과 한라봉 - 100% 무농약 제주산 감귤과 제주산 한라봉으로 맛을 더하다!"  class="vstxt"/>
+                <img id="vs13" src="http://www.o-juice.co.kr/common/img/img_viC10.png" alt="병" class="vs03" />
+                <img id="vs14" src="http://www.o-juice.co.kr/common/img/img_viC11.png" alt="캐릭터오른쪽" class="vs14" />
+
+                <img id="vs21" src="http://www.o-juice.co.kr/common/img/img_viC24.png" alt="물" class="vs21" />
+                <img id="vs2txt" src="http://www.o-juice.co.kr/common/img/img_txt21.png" alt="제주담은 오! 블루베리 - 100% 무농약 제주산 블루베리로 맛을 더하다!"  class="vstxt"/>
+                <img id="vs23" src="http://www.o-juice.co.kr/common/img/img_viC20.png" alt="병" class="vs03" />
+                <img id="vs24" src="http://www.o-juice.co.kr/common/img/img_viC21.png" alt="캐릭터오른쪽" class="vs24" />
+                <img id="vs25" src="http://www.o-juice.co.kr/common/img/img_viC22.png" alt="캐릭터왼쪽" class="vs25" />
+			</div>
+		</div>
+
+		<div class="storyBtn" id="story0Btn">
+			<img id="story0" src="http://www.o-juice.co.kr/common/img/btn_subUp01.png"  alt=""/>
+		</div>
+
+        <div class="storyBtn" id="story1Btn">
+            <img id="story1" src="http://www.o-juice.co.kr/common/img/btn_subUp11.png"  alt=""/>
+        </div>
+
+        <div class="storyBtn" id="story2Btn">
+            <img id="story2" src="http://www.o-juice.co.kr/common/img/btn_subUp21.png"  alt=""/>
+        </div>
+
+		<div class="mainL" id="arrowL"><img src="http://www.o-juice.co.kr/common/img/btn_mainL.png"  alt="" /></div>
+		<div class="mainR" id="arrowR"><img src="http://www.o-juice.co.kr/common/img/btn_mainR.png"  alt="" /></div>
+
+		<div class="menuWrap" id="menu">
+			<img id="mnBg" src="http://www.o-juice.co.kr/common/img/menu_bg01.png"  alt="" class="menubg" />
+            <div  alt="" class="menubar">
+                <img id="mnBar" src="http://www.o-juice.co.kr/common/img/bg_straw01.png" class="menubg"/>
+            </div>
+
+            <div class="menu">
+                <ul>
+					<li id="menu00" class="menu00">
+                        <img id="m00" src="http://www.o-juice.co.kr/common/img/menu_00.png"  alt="home"/>
+                    </li>
+                    <li id="menu01" class="menu01">
+                        <img id="m0" src="http://www.o-juice.co.kr/common/img/menu_01.png"  alt="BRAND STORY"/>
+                    </li>
+                    <li id="menu02" class="menu02">
+                        <img id="m1" src="http://www.o-juice.co.kr/common/img/menu_02.png"  alt="PRODUCT"/>
+                        <ul id="twoDep">
+                            <li class="sub01">
+                                <img id="subMn0" src="http://www.o-juice.co.kr/common/img/menu_0201.png"  alt="감귤과 한라봉" />
+                            </li>
+                            <li class="sub02" >
+                                <img id="subMn1" src="http://www.o-juice.co.kr/common/img/menu_0202.png"  alt="블루베리" />
+                            </li>
+                            <li class="sub03">
+                                <img id="subMn2" src="http://www.o-juice.co.kr/common/img/menu_0203.png"  alt="키위와 망고" />
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="menu03" class="menu03" >
+                        <img id="m2" src="http://www.o-juice.co.kr/common/img/menu_03.png"  alt="NEWS" />
+                    </li>
+                    <li id="menu04" class="menu04" style="display: none">
+                       <img id="m3" src="http://www.o-juice.co.kr/common/img/menu_04.png"  alt="EVENT" />
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container main" id="container">
+            <img id='obj01' src="http://www.o-juice.co.kr/common/img/img_viC03.png"  alt="" class="contbg01" />
+            <img id='obj02' src="http://www.o-juice.co.kr/common/img/bg_contup01.png"  alt="" class="contbg02" />
+
+            <img id='obj11' src="http://www.o-juice.co.kr/common/img/img_viC13.png"  alt="" class="contbg01" />
+            <img id='obj12' src="http://www.o-juice.co.kr/common/img/bg_contup11.png"  alt="" class="contbg02" />
+
+            <img id='obj21' src="http://www.o-juice.co.kr/common/img/img_viC23.png"  alt="" class="contbg01" />
+            <img id='obj22' src="http://www.o-juice.co.kr/common/img/bg_contup21.png"  alt="" class="contbg02" />
+
+            <img src="http://www.o-juice.co.kr/common/img/mask.png"  alt="" class="contbgMk" />
+            <div class="contWrap">
+                <div id="mainCopy" class="mainCopy">
+                    <img src="http://www.o-juice.co.kr/common/img/img_copy.png"  alt="" />
+					<div class="famliy">
+						<p class="open" id="open"><img src="http://www.o-juice.co.kr/common/img/btn_famliy.png"  alt="famliy site" /></p>
+						<div class="famIn">
+							<a href="https://hurum.co.kr:4434/" target="_blank" onClick="go_family()"><img src="http://www.o-juice.co.kr/common/img/btn_famliy01.png"  alt="휴럼" /></a>
+							<a href="https://hurum.co.kr:4434/sub.php?code=06_shop12" target="_blank" onClick="go_family()"><img src="http://www.o-juice.co.kr/common/img/btn_famliy02.png"  alt="제주파이" /></a>
+							<!--a href="https://hurum.co.kr:4434/sub.php?code=06_shop10" target="_blank" onClick="go_family()"><img src="http://www.o-juice.co.kr/common/img/btn_famliy03.png"  alt="닥터뮤뮤" /></a-->
+							<a href="http://www.vanafit.co.kr/" target="_blank" onClick="go_family()"><img src="http://www.o-juice.co.kr/common/img/btn_famliy04.png"  alt="바나피트" /></a>
+						</div>
+					</div>
+                </div>		
+
+                <div id="corver" class="corver">
+
+                </div>
+
+                <!-- brand sub -->
+                <div class="brand" id="brand">
+                    <div class="subtabBrand">
+                        <ul class="brandtab">
+                            <li><img id="brandTap01" src="http://www.o-juice.co.kr/common/img/teb01.png"  alt="탄생 배경" /></li>
+                            <li><img id="brandTap02" src="http://www.o-juice.co.kr/common/img/teb02.png"  alt="브랜드 소개" /></li>
+                        </ul>
+                        <div class="tabBrand01" id="brand01" style="display: block">
+                            <img src="http://www.o-juice.co.kr/common/img/sub_birth.png" style="width:100%"  alt="(주)휴럼 만의 건강 철학과 연구 노하우를 기반으로 탄생한 휴럼의 대표 브랜드입니다. 오주스는 맑은 바람과 햇살 머금은 제주의 진정한 자연을 담아 맛과 건강을 생각하는 프리미엄 주스입니다. 100% 무농약 제주산 감귤과 제주산 한라봉으로 맛을 더한 오 감귤과 한라봉 (180ml / 85kcal) 100% 무농약 제주산 블루베리로 맛을 더한 오 블루베리 (180ml / 90kcal) 100% 유기농 제주산 키위와 망고로 맛을 더한 오 키위와 망고 (180ml / 70kcal)" />
+                        </div>
+                        <div class="tabBrand02" id="brand02" style="display: none">
+                            <img src="http://www.o-juice.co.kr/common/img/sub_brand.png"  alt="오주스란? 제주도가 길러낸 좋은 야채, 과일로 만들어 *ORAC(활성산소흡수능력)을 다량 함유한 건강음료입니다.오천년의 섬 제주를 온전히 담은 오주스는 제주의 지형적 특징인 현무질 토양을 모티브 O는 '전부', '완전함', '순환'을 의미하며 건강과 환경을 생각하는 프리미엄 주스신선하고 맛있는 주스를 마시면 절로 나오는 감탄, 오!" />
+                        </div>
+                        <p class="popClose" id="popClose"><img src="http://www.o-juice.co.kr/common/img/btn_clase.png"  alt="닫기" /></p>
+                    </div>
+                </div>
+                <!-- brand End -->
+
+                <!-- product sub -->
+                <div class="subtxt" id="product">
+                    <div class="subtabCont">
+                        <ul class="subtab">
+                            <li id="subTab0" class="on"><img src="http://www.o-juice.co.kr/common/img/tab_p01.png"  alt="오! 감귤과 한라봉" /></li>
+                            <li id="subTab1"><img src="http://www.o-juice.co.kr/common/img/tab_p02.png"  alt="오! 블루베리" /></li>
+                            <li id="subTab2"><img src="http://www.o-juice.co.kr/common/img/tab_p03.png"  alt="오! 키위와 망고" /></li>
+                        </ul>
+                        <div id="tabCont0" class="tabCont01" style="display: block">
+                            <img src="http://www.o-juice.co.kr/common/img/sub_cont01.png"  alt="감귤과 한라봉이야기- 청정의 섬, 제주에서 해풍 맞고 자란 과일 제주를 닮은 감귤과 새콤달콤 한라봉이 만났습니다.건강하고 맛있는 오 감귤과 한라봉.100% 무농약 제주산 감귤과 제주산 한라봉을 그대로 착즙하여 새콤달콤함이 한 병 가득 담긴 깔끔한 맛의 프리미엄 주스입니다.합성보존료, 합성착향료를 첨가하지 않아 100% 제주산 감귤,한라봉 본연의 맛을 온가족이 함께 즐기실 수 있습니다." />
+                            <a href="https://hurum.co.kr:4434/sub.php?code=06_shop0102&mode=view&no=140&page=&" target="_blank" class="buy01"><img src="http://www.o-juice.co.kr/common/img/btn_buy01.png"  alt="구매하기" /></a>
+                        </div>
+                        <div id="tabCont1" class="tabCont02" style="display: none">
+                            <img src="http://www.o-juice.co.kr/common/img/sub_cont11.png"  alt="블루베리 이야기 - 제주의 맑은 햇살과 바람이 하루의 충전과 활력을 더 해줄 과일, 블루베리.100% 유기농 제주산 블루베리를 그대로 착즙하여 담긴 깔끔한 맛의 프리미엄 주스입니다.합성보존료, 합성착향료를 첨가하지 않아 100% 제주도 블루베리,본연의 맛을 온가족이 함께 즐기실 수 있습니다." />
+                            <a href="https://hurum.co.kr:4434/sub.php?code=06_shop0102&mode=view&no=141&page=&" target="_blank" class="buy02"><img src="http://www.o-juice.co.kr/common/img/btn_buy11.png"  alt="구매하기" /></a>
+                        </div>
+                        <div id="tabCont2" class="tabCont03" style="display: none">
+                            <img src="http://www.o-juice.co.kr/common/img/sub_cont21.png"  alt="키위와 망고 이야기 - 제주를 그대로 베어 물은 듯 과즙 그대로의 신선함을 더한 열매, 키위.100% 유기농 제주산 키위와 세계에서 가장 많이 재배되는열대과일인 망고를 그대로 착즙하여 담긴 깔끔한 맛의 프리미엄 주스 입니다.합성보존료, 합성착향료를 첨가하지 않아 100% 유기농 제주산 키위와 열대과일인 망고,제주산 감귤이 본연의 맛을 온가족이 함께 즐기실 수 있습니다." />
+                            <a href="https://hurum.co.kr:4434/sub.php?code=06_shop0102&mode=view&no=142&page=&" target="_blank" class="buy03"><img src="http://www.o-juice.co.kr/common/img/btn_buy21.png"  alt="구매하기" /></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- product end -->
+
+                <!-- board-->
+                <div class="subboard" style="display:none;" id="news">
+					<div class="h2tit">
+                        <h2><img src="http://www.o-juice.co.kr/common/img/admin/tit01.gif"  alt="공지사항" /></h2>
+                    </div>
+                    <!-- board list -->
+					<div class="borlist" id="noticeList"></div>
+
+					<!-- board view -->
+					<div class="borview" id="noticeView"></div>					
+                </div>
+                    <!--div class="copy">
+                        <img src="http://www.o-juice.co.kr/common/img/img_copy.png"  alt="" />
+                    </div-->                
+                <!-- board view end-->
+            </div>
+            </div>
+	    </div>
+    </div>
+ </body>
+</html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   

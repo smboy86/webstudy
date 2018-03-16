@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> 자바스크립트 기본이해 </title>
+<meta charset="utf-8">
+<script type="text/javascript">
+<!--
+  //[형식2] 변수=수식;
+  //다양한 수식 유형 소개
+  
+  //산술연산자 : +, -, *, /, %
+  var kim=5+2;
+  document.write(kim+"<br>"); //7
+  var kim=5-2; 
+  document.write(kim+"<br>"); //3
+  var kim=5*2;
+  document.write(kim+"<br>"); //10
+  var kim=5/2;  //나누었을때 몫
+  document.write(kim+"<br>");//2.5
+  var kim=5%2; //나누었을때 나머지
+  document.write(kim+"<br>"); //1
+  
+  //관계연산자 : >, <, >=, <=, ==(같다), !=(서로다르다)
+  //★왼쪽부터 해석
+  document.write((5>4)+"<br>");  //5는 4보다 크냐->true(1)
+  document.write((5<4)+"<br>");  //5는 4보다 작냐->false(0)
+  document.write((5>=4)+"<br>");  //5는 4보다 크거나 같냐->true(1)
+  document.write((5<=4)+"<br>");  //5는 4보다 작거나 같냐->false(0)
+  document.write((5==4)+"<br>");  //5와 4가 같냐->false(0)
+  document.write((5!=4)+"<br>");  //5와 4가 서로 다르냐->true(1)
+  
+  //논리연산자 : &&(and연산자), ||(or연산자), ^(exclusive or연산자)
+  //?연산자
+  
+  document.write((5!=4)&&("★"=="☆")+"<br>"); //false
+  document.write(((5!=4)||("★"=="☆"))+"<br>"); //true
+  document.write(((5!=4)^("★"=="☆"))+"<br>"); //true
+  
+  //논리연산자 : ?연산자
+  //[형식1] var 변수=(수식) ? 참 : 거짓;
+  // 수식에서 참이 발생하면 참위치로 이동하고 거짓이 발생하면 거짓위치로 이동하여 왼쪽 변수에 값을 넘겨줌
+  
+  //[형식2] (수식) ? 변수=참 : 변수=거짓;
+  
+  var star=("★"!="★")? "★입니다" : "별이 아닙니다";
+  document.write(star,"<br>");
+  
+  ("★"!="★")? star="★입니다" : star="별이 아닙니다";
+  document.write(star,"<br>");
+  
+  //대입 연산자 : 왼쪽=오른쪽;
+  //오른쪽에 있는 값 또는 수식을 왼쪽에 대입한다(집어넣는다, 같다아님!!)
+  //"="은 앞쪽에 값을 없애고(clear) 현재의 값을 넘겨줌
+  
+  //컴퓨터 언어는 오른쪽부터 해석해서 왼쪽으로 값을 넘김
+  var gift="장미";  //장미를 gift변수(공간)에 넘겨줌
+  var gift="안개꽃"; // 장미를 없애고 안개꽃을 gift에 넘겨줌
+  document.write(gift+"을 받았어요*^^*<br>"); //안개꽃
+  
+  var gift="장미";  //장미를 gift변수(공간)에 넘겨줌
+  var gift=gift+"안개꽃"; // gift(장미 안개꽃)=gift(장미)+"안개꽃"
+  document.write(gift+"을 받았어요*^^*<br>"); // 장미 안개꽃을 받았군요
+  
+  //복합대입 연산자 : +=, -=, *=, /=, %=
+  var a=1; // 변수의 초기값 지정
+  a+=2; //var a=a+2; 
+  document.write(a+"입니다<br>");
+  
+  //1증가 연산자 :++, 1감소 연산자 : --
+  var i=10;
+  i++; //11
+  i--; //10
+  ++i; //11
+  --i; //10
+  document.write(i+"입니다<br>"); //10
+  
+-->
+</script>
+</head>
+<body>
+  
+</body>
+</html>

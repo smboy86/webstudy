@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>http://www.blueb.co.kr</title>
+<meta charset="UTF-8">
+<script language="JavaScript">
+<!--
+function checkData(){
+	if (document.signup.TITLE.value == "") {
+		alert("제목을 입력하세요")
+		document.signup.TITLE.focus()
+		return false}
+	if (document.signup.NAME.value == "") {
+		alert("이름을 입력하세요.")
+		document.signup.NAME.focus()
+		return false}
+	if (document.signup.DATE_OF_BIRTH.value == "") {
+		alert("생일을 입력하세요.")
+		document.signup.DATE_OF_BIRTH.focus()
+		return false}
+	if (document.signup.HOME_TELEPHONE.value == "") {
+		alert("전화번호를 입력하세요")
+		document.signup.HOME_TELEPHONE.focus()
+		return false}
+	if (document.signup.MAILING_ADDRESS.value == "") {
+		alert("메일주소를 입력하세요")
+		document.signup.MAILING_ADDRESS.focus()
+		return false}
+	if (document.signup.CITY.value == "") {
+		alert("주소를 입력하세요")
+		document.signup.CITY.focus()
+		return false}
+	if (document.signup.STATE.value == "") {
+		alert("우편번호를 입력하세요")
+		document.signup.STATE.focus()
+		return false}
+}
+// -->
+</script>
+</head>
+<body>
+
+<form action="#" method="POST" enctype="text/plain" name="signup" onsubmit="return checkData()">
+<table border="0" cellpadding="2">
+<tr>
+	<td>제목</td>
+	<td><input type="text" size="5" name="TITLE"></td>
+</tr>
+<tr>
+	<td>이름</td>
+	<td><input type="text" size="20" name="NAME"></td>
+</tr>
+<tr>
+	<td>생일</td>
+	<td><input type="text" size="10" name="DATE_OF_BIRTH"></td>
+</tr>
+<tr>
+	<td>전화</td>
+	<td><input type="text" size="20" name="HOME_TELEPHONE"></td>
+</tr>
+<tr>
+	<td>메일주소</td>
+	<td><input type="text" size="41" name="MAILING_ADDRESS"></td>
+</tr>
+<tr>
+	<td>집주소</td>
+	<td><input type="text" size="20" name="CITY"></td>
+</tr>
+<tr>
+	<td>우편번호</td>
+	<td><input type="text" size="5" name="STATE"></td>
+</tr>
+	<td colspan=2><input type="submit" name="B1" value="Submit"><input type="reset" name="B2" value="Clear"></td>
+</tr>
+</table>
+</form>
+</body>
+</html>

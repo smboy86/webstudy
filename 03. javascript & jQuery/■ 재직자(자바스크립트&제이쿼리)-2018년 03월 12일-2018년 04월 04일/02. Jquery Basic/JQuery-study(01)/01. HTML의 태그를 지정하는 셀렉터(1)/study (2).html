@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
+ Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta http-equiv="Content-Script-Type" content="text/javascript" />
+		<title>제이쿼리 활용하기</title>
+		<script type="text/javascript" src="./jquery-3.1.1.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				//$("li").css("color","red");
+				//$("li").css("font-size","3em");
+				//$("li").css("font-family","바탕");
+				$("li:first-child").css({"color": "green", 'font-size' : '19px'});
+			});
+		</script>
+	
+	</head>
+	<body>
+	<ul>
+		<li> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
+		<li> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
+		<li> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
+		<li> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
+	</ul>
+
+	</body>
+</html>

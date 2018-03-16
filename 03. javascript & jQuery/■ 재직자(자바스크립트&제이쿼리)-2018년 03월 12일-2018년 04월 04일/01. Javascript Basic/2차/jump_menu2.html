@@ -1,0 +1,28 @@
+<HTML>
+<HEAD>
+<TITLE> 선택메뉴 </TITLE>
+<script>
+function link(){
+test=document.my.menu1;
+i=test.selectedIndex;
+url=test.options[i].value
+//location.href=url;
+//location.replace(url);
+if(i != 0) window.open(url,"","") //인덱스 번호가 0이 아닌 경우는 또 다른 웹 브라우저에 주소 보이게 함
+}
+
+</script>
+</HEAD>
+
+<BODY>
+<form name="my">
+ <select name="menu1" class="select" onChange="link()">
+              <option value=# >   바 로 가 기  </option>
+              <option value="http://www.naver.com">네이버</option>
+              <option value="http://www.daum.net">다음</option>
+  </select>
+</form>
+
+</BODY>
+</HTML>
+

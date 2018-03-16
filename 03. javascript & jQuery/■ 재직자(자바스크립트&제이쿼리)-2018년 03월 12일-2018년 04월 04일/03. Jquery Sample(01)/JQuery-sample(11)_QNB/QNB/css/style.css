@@ -1,0 +1,48 @@
+*{margin:0; padding:0; box-sizing:border-box;}
+ol,ul{list-style:none;}
+a{text-decoration:none; color:#fff; font-family:"맑은 고딕";}
+
+html,body,main{height:100%;}
+.inner{width:1200px; height:100%; border:1px solid red;margin:0 auto;position:relative;}
+header{width:100%; height:120px; background:#999;}
+header .inner h1{border:1px solid pink;text-align:center; padding:10px 0;}
+header .inner nav{border:1px solid cyan;}
+header .inner nav ul{border:1px solid green; text-align:center;}
+header .inner nav ul li{border:1px solid yellow;display:inline;}
+header .inner nav ul li a{padding:10px; /*background:yellow;*/ display:inline-block;}
+
+header .inner div#qnb{ display:none;}
+
+/* 태블릿 */
+@media all and (min-width:600px) and (max-width:1279px){
+	header .inner h1{border:1px solid pink;text-align:center; padding:50px 0 30px;}
+	 .inner{width:92.5%; margin:0 auto; border:5px solid red;}
+	 header .inner div#qnb{ display:block;width:50px;height:50px;border:1px solid red;position:absolute;right:0;top:30px;}
+	 header .inner nav{display:none;}
+	 div#qnb .cate_btn{display:inline-block; word-break:break-all; /*padding:20px;*/ height:50px;width:50px; background:url(../btn_infositemap.png) no-repeat 50% 50%;border:3px solid blue;}
+	div#qnb a{width:100%; height:100%; display:block; /*background:yellow;*/}
+	div#qnb .on{background:url(../btn_closesitemap.png) no-repeat 50% 50%;}
+	div#qnb .cate_layer{margin-top:0px; padding:20px; background:yellow;width:50%;height:200px;}
+    div#qnb .cate_btn span{visibility:hidden;}
+}
+
+/* 모바일 */
+@media all and (max-width:599px){
+	header .inner h1{border:1px solid pink;text-align:center; padding:50px 0 30px;}
+	 .inner{width:92.5%; margin:0 auto; border:5px solid red;}
+	 header .inner div#qnb{ display:block;width:50px;height:50px;border:1px solid red;position:absolute;left:0;top:30px;}
+	 header .inner nav{display:none;}
+	 div#qnb .cate_btn{display:inline-block; word-break:break-all; /*padding:20px;*/ height:50px;width:50px; background:url(../btn_infositemap.png) no-repeat 50% 50%;border:3px solid blue;}
+	div#qnb a{width:100%; height:100%; display:block; /*background:yellow;*/}
+	div#qnb .on{background:url(../btn_closesitemap.png) no-repeat 50% 50%;}
+	div#qnb .cate_layer{margin-top:0px; padding:20px; background:yellow;width:50%;height:200px;}
+    div#qnb .cate_btn span{visibility:hidden;}
+}
+
+
+
+#visual{width:100%; height:100%; background:#666;}
+footer{width:100%; height:100px; background:#000;}
+
+
+

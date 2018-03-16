@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<script>
+    function aaa(){
+	   //opener.location.href="http://www.naver.com";
+	   window.opener.location.replace("http://www.naver.com");
+	   self.close();
+	}
+</script>
+</head>
+<body style="background:yellow;">
+     <p>여기는 새창위치</p>
+	 
+	 
+	 <input type="button" onclick="aaa()" value="test"> 
+	 
+	 
+	 <p><a href="javascript:window.close()">창닫기1</a></p>
+	 <p><a href="javascript:self.close()">창닫기2</a></p>
+	 <p><a href="#" onclick="self.close()">창닫기3</a></p>
+</body>
+</html>

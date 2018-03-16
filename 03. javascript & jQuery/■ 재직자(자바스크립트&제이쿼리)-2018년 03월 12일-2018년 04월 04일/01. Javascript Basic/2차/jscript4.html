@@ -1,0 +1,59 @@
+<html>
+<head>
+<script language="javascript">
+<!--
+//반복제어문 안에서 break:반복제어문 빠져나감
+
+//break 실습
+i=10;
+while(i>5){
+i--;  //9->8->7
+if(i==7)break;
+document.write(i,"<br />");//9->8
+}
+
+//continue실습
+
+i=20
+while(true){
+i--  //19->18->17 -----10, -----5
+if(i>11) continue;
+if(i==5) break;
+
+document.write(i,"<br />")//11->10.....6
+}
+
+for(i=0,sum=0;i<=5;i++){
+sum=sum+i  //i->1 sum->1
+document.write("i의 변수값:",i," sum변수값:",sum,"<br />")//0
+}
+document.write("1부터 5까지의 합은:"+sum+"입니다<br />")
+
+
+/*
+switch~case 문장:여러개의 값을 처리하고자 할때 사용
+
+switch(조건문){
+case 값1:문장1;break;
+case 값2:문장2;break;
+case 값3:문장3;break;
+}
+
+*/
+document.write("<br />")
+d=new Date()
+document.write(d.getDay(),"요일")
+
+switch(d.getDay()){
+case 0:alert("***일요일***");break;
+case 1:alert("^^^^월요일^^^^");break;
+case 2:alert("화요일");break;
+case 3:alert("수요일");break;
+case 4:alert("목요일");break;
+case 5:alert("금요일");break;
+case 6:alert("토요일");break;
+}
+-->
+</script>
+</head>
+</html>

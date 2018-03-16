@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+ </head>
+
+ <body>
+  <!--sin곡선 만들어보기-->
+
+
+<pre>
+
+
+<script>
+
+ 
+
+document.write("\t-1...+....0....+....1<br><br>")
+
+ 
+
+for(x=0;x<=360;x+=20){
+ts=10*Math.sin(x*3.141592/180)+10;
+document.write(x,"\t",spc(ts),"<font color=#FF33CC>*</font><br>")
+}
+
+
+function spc(n){
+ s=""
+ for(i=0;i<n;i++){
+ s=s+" "
+ }
+ return s
+}
+
+
+</script>
+
+</pre>
+
+</body>
+</html>

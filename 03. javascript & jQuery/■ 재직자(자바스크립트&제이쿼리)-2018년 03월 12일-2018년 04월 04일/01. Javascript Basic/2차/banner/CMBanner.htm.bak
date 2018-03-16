@@ -1,0 +1,42 @@
+<HTML>
+	<HEAD>
+		<TITLE>
+			접속때마다 다른 광고 보여주기
+		</TITLE>
+		<SCRIPT LANGUAGE="JavaScript">
+			<!--
+			banner = new Array();
+			script = new Array();
+			link = new Array();
+			banner[0] = "CMBanner_01.gif";
+			banner[1] = "CMBanner_02.gif";
+			banner[2] = "CMBanner_03.gif";
+			banner[3] = "CMBanner_04.gif";
+			banner[4] = "CMBanner_05.gif";
+			script[0] = "금연 캠페인";
+			script[1] = "인터나루";
+			script[2] = "대우 그랜드 월드";
+			script[3] = "현대 산업개발";
+			script[4] = "인터넷 채용 박람회";
+			link[0] = "http://www.naver.com";
+			link[1] = "http://www.naver.com";
+			link[2] = "http://www.naver.com";
+			link[3] = "http://www.naver.com";
+			link[4] = "http://www.naver.com";
+			nowCM = Math.round(Math.random() * 4);
+			//-->
+		</SCRIPT>
+	</HEAD>
+	<BODY>
+		<CENTER>
+		<H1> 접속할때마다 광고가 달라져요.</H1>
+		<SCRIPT LANGUAGE = "JavaScript">
+			<!--
+			document.write("<p><IMG SRC = '" + banner[nowCM] + "'></p>");
+			document.write("<A HREF='" + link[nowCM] + "'>" + script[nowCM] + "</A>");
+			// -->
+		</SCRIPT>
+		<BR><BR><BR><BR>
+		<IMG SRC = "Image_04.gif">
+	</BODY>
+</HTML>

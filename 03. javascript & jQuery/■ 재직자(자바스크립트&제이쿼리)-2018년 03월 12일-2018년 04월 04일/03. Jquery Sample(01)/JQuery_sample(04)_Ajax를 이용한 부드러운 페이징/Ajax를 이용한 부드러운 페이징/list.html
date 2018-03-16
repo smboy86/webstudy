@@ -1,0 +1,122 @@
+﻿<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta http-equiv="Content-Script-Type" content="text/javascript" />
+		<title>sample1</title>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				
+				$("#content").load($("ul.pager li a:first").attr("href")+" #content");
+				//"data1.html #content"
+				$("ul.pager li a:first").addClass("selected");
+				
+				$("ul.pager li a").click(function(){
+					
+					$("#content").html('<p class="loading"><img src="images/loading.gif" alt="" /></p>');
+					
+					$("#content").data("file",$(this).attr("href"));
+					
+					$('html,body').animate({ scrollTop: $("h1").offset().top-20 }, 'slow','swing',function(){
+						$("#content").load($("#content").data("file")+" #content");
+					})
+					
+					$("ul.pager li a").removeClass("selected");
+					$(this).addClass("selected");
+					return false;
+				});
+				
+				
+			});
+		</script>
+		<style type="text/css">
+			#container{
+				width:500px;
+				margin:20px auto;
+				border:5px solid red;
+			}
+			div.colmun{
+				width:500px;
+				border-bottom:1px solid #CCC;
+				border:5px solid blue;
+			}
+			div.colmun:after{
+				content:".";
+				display:block;
+				clear:both;
+				visibility:hidden;
+				height:0;
+			}
+			div.colmun div.img{
+				float:left;
+				width:60px;
+				border:1px solid #ccc;
+				padding:5px;
+				margin:5px;
+				display:inline;
+			}
+			div.colmun div.img img{
+				border:0;
+			}
+			div.colmun div.info{
+				float:left;
+				padding:5px;
+				width:400px;
+			}
+			div.colmun div.info h2{
+				margin:0;
+				color:#009AFF;
+				font-size:small;
+			}
+			div.colmun div.info ul{
+				margin:0;
+				padding:15px 0 0 15px;
+			}
+			div.colmun div.info li{
+				margin:0;
+				font-size:small;
+			}
+			p.loading{
+				text-align:center;
+				margin:10px;
+			}
+			ul.pager{
+				text-align:center;
+				padding:10px;
+			}
+			ul.pager li{
+				display:inline;
+			}
+			ul.pager li a{
+				border:1px solid #009AFF;;
+				color:#009AFF;;
+				font-weight:bold;
+				margin:2px;
+				padding:5px;
+				text-decoration:none;
+			}
+			ul.pager li a.selected{
+				background:#73C7FF;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container"><!--container-->
+			
+			<h1>자유게시판</h1>
+			
+			<div id="content"><!-- content-->
+				<p class="loading"><img src="images/loading.gif" alt="" /></p>
+			</div><!-- //content-->
+			
+			<ul class="pager"><!-- pager -->
+				<li><a href="data1.html">1</a></li>
+				<li><a href="data2.html">2</a></li>
+				<li><a href="data3.html">3</a></li>
+			</ul><!-- //pager -->
+			
+		</div><!--//container-->
+	</body>
+</html>

@@ -1,0 +1,25 @@
+■ 논리연산자
+
+조건1       조건2      &&(and)      ||(or)        ^
+true         true         true           true         false
+true         false        false           true         true
+false         true        false           true         true
+false         false       false          false         false
+
+&& : 모두 참값을 가질때 참
+|| : 참값을 하나라도 가지면 참
+^ : 서로 다른 값을 가질때 참
+
+★변수(variable) : 변하는 값을 기억하는 기억장소
+[문장형식1] var 변수=값;
+[문장형식2] var 변수=수식;
+[문장형식3] var 변수=객체.특성 또는 메소드;
+
+■변수 만드는 규칙
+1. 사용자 정의 명칭
+2. 영어 대소문자 , 숫자결합 가능
+3. 대소문자 철저히 구분 : a변수와 A변수는 서로 다르다
+4. 띄어쓰기 안됨 : this is(x), this_is(o)
+5. 특수문자 안됨(언더바 가능) : this*is(x), this_is(o)
+6. 숫자로만 되어 있거나 앞쪽에 숫자 안됨 : 01(x), 123kim(x)
+7. 예약어 안됨 : if, for, while, null, window,document 
