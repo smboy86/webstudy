@@ -9,16 +9,31 @@
         var gift = "aaa";
 
         if(gift == "aaa"){
-            alert(gift + "ㅎㅇㅎ");
+            //alert(gift + "ㅎㅇㅎ");
         }
+        
         document.write('if문을 실행하지 않고 바로 여기의 문장을 실행<br>')
 
         var box = "연필";
         if(box == "자"){
-            alert(box + '를 선물로 받았군요');
+            //alert(box + '를 선물로 받았군요');
         }else{
-            alert(box + '를 선물로 받았군요')
+            //alert(box + '를 선물로 받았군요')
         }
+        
+        // if 형식 3
+        var jumsu = window.prompt("학점체크", "점수를 입력하세요");
+        alert(jumsu);
+        
+        if(jumsu > 100) alert("100보다 큰 수치, 다시 입력!!");
+        else if (jumsu >= 90) alert("A학점");
+        else if (jumsu >= 80) alert("B학점");
+        else if (jumsu >= 70) alert("C학점");
+        else if (jumsu >= 60) alert("D학점");
+        else if (jumsu >= 0) alert("F학점");
+        else alert("잘못된 문자입니다. 다시 입력!!");
+
+
     </script>
 </head>
 <body>
