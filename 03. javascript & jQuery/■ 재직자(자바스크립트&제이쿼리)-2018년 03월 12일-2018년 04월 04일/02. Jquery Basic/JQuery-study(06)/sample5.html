@@ -7,35 +7,24 @@
 		<meta http-equiv="Content-Script-Type" content="text/javascript" />
 		<title>sample5</title>
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-		<script type="text/javascript">
+		<style type="text/css">
+		div{
+			width:300px;
+			height:300px;
+			background:red;
+			display:none;
+		}
+				</style>
+				<script type="text/javascript">
 		$(function(){
-			$("a:eq(0)").click(function(){
-				$("img").attr("src","flower.jpg").attr("alt","꽃");
-				return false;
-			});
-			$("a:eq(1)").click(function(){
-				$("img").attr("src","sea.jpg").attr("alt","바다");
-				return false;
-			});
-			$("a:eq(2)").click(function(){
-				$("img").attr("src","Jellyfish.jpg").attr("alt","해파리");
-				return false;
-			});
-			$("a:eq(3)").click(function(){
-				$("img").attr("src","Building.jpg").attr("alt","건물");
-				return false;
+			$("button").click(function(){
+				$("div:not(:animated)").toggle("slow");
 			});
 		});
 		</script>
 	</head>
 	<body>
-	<ul>
-		<li><a href="flower.jpg">꽃</a></li>
-		<li><a href="sea.jpg">바다</a></li>
-		<li><a href="Jellyfish.jpg">해파리</a></li>
-		<li><a href="Building.jpg">건물</a></li>
-	</ul>
-	<p><img src="flower.jpg" alt="꽃" /></p>
-	
+		<button>표시・비표시</button>
+		<div></div>
 	</body>
 </html>

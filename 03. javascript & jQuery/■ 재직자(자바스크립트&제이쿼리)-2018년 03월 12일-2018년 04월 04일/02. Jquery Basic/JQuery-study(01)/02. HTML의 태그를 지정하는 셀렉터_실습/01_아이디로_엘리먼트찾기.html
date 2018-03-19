@@ -13,16 +13,12 @@
 			li { border:1px solid blue; list-style: none; margin:5px;}
 		</style>
 		<script>
-		$(function(){
-			var el = $('#element');
-			el.css('color', 'red');
-			el.css('fot-size', '3em');
-			el.css('background-color', 'yellow');
-
-			console.log(el);
-		});
+		   $(document).ready(function(){
+			     $("#element").css('color','red');
+					 $("#element").css('font-size','2em');
+					 $("#element").css('font-family','맑은 고딕');
+			 });
 		</script>
-	
 	</head>
 	<body>
 		<span>'element'아이디를 선택하여 해당 엘리먼트의 색을 바꿔 주세요.</span>

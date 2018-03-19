@@ -7,19 +7,25 @@
 		<meta http-equiv="Content-Script-Type" content="text/javascript" />
 		<title>sample1</title>
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		<style type="text/css">
+		div{
+			width:500px;
+			height:500px;
+			background:black;
+			display:none;
+		}
+		</style>
+
 		<script type="text/javascript">
 		$(function(){
 			$("button").click(function(){
-				$("img").attr("src","sea.jpg").attr("alt","바다");
+				$("div").show("fast");
 			});
 		});
-		</script>
+	   </script>
 	</head>
 	<body>
-	
-	<button>화면을 변경</button>
-	
-	<p><img src="flower.jpg" alt="꽃" /></p>
-	
+		<button>표시</button>
+		<div></div>
 	</body>
 </html>

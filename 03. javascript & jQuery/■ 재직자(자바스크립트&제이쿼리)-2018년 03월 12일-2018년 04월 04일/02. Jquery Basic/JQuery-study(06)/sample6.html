@@ -7,25 +7,41 @@
 		<meta http-equiv="Content-Script-Type" content="text/javascript" />
 		<title>sample6</title>
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		<style type="text/css">
+		dl{
+			width:300px;
+			margin:50px auto;
+		}
+		dl dt{
+			background:#7CADB6;
+			cursor:pointer;
+		}
+		dl dd{
+			border:1px solid #7CADB6;
+			height:250px;
+			margin:0;
+		}
+
+		</style>
 		<script type="text/javascript">
-	
 		$(function(){
-			$("a").click(function(){
-				$("img").attr("src",$(this).attr("href")).attr("alt",$(this).text());
-				return false;
+			$("dt").click(function(){
+				if($("dd").css("display")=="block"){
+					$("dd:not(:animated)").slideUp("slow");
+				}else{
+					$("dd").slideDown("slow");
+				}
 			});
 		});
-		
 		</script>
 	</head>
 	<body>
-	<ul>
-		<li><a href="flower.jpg">꽃</a></li>
-		<li><a href="sea.jpg">바다</a></li>
-		<li><a href="Jellyfish.jpg">해파리</a></li>
-		<li><a href="Building.jpg">건물</a></li>
-	</ul>
-	<p><img src="flower.jpg" alt="꽃" /></p>
-	
+		<dl>
+			<dt>슬라이딩 효과로 표시상태를 변경한다</dt>
+			<dd>
+					slideDown()/slideUp()는 show()/hide() 와는 다른 슬라이딩 애니메이션 효과로 표시/비표시를 변경하는 명령입니다.
+
+			</dd>
+		</dl>
 	</body>
 </html>

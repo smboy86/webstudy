@@ -1,74 +1,17 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-	<head>
-		<title> attr() 메소드를 활용하여 값 변경해보기 </title>
-        <meta charset="utf-8">
-        <style>
-        html * {margin:0;padding:0;box-sizing: border-box;}
-        ol,ul {list-style:none;}
-        section{margin:0 auto; text-align:center;margin-top:50px;}
-        #nav {width:600px; height:40px; margin: 0px auto 50px auto; }
-        #nav ul{text-align:center;}
-        #nav ul li { float:left;width:123px; height:40px; margin-left:0px;}
-        #nav ul li.first { margin-left:0px; }
-        #nav ul li a {display:block;  width:123px;}
-        #nav img{width:100px;}
-        #big { margin:0 auto; border:5px solid red; }
-        </style>
-        <!--js확장자를 가진 외부파일을 호출하여 적용하는 방식-->
-        <script src="./js/jquery-3.3.1.js" type="text/javascript"></script>
-        <script>
-        $(document).ready(function(){ //제이쿼리 콜백함수
-            $('#nav > ul > #btn1').bind('click', function(){
-					$('#big > img').attr({src:'images/1.png', alt:'예쁜배경1'});
-				});
-				
-				$('#nav > ul > #btn2').bind('click', function(){
-					$('#big > img').attr({src:'images/2.png', alt:'예쁜배경2'});
-				});
-				
-				$('#nav > ul > #btn3').bind('click', function(){
-					$('#big > img').attr({src:'images/3.png', alt:'예쁜배경3'});
-				});
-				
-				$('#nav > ul > #btn4').bind('click', function(){
-					$('#big > img').attr({src:'images/4.png', alt:'예쁜배경3'});
-				});
-        });
-        </script>
-	</head>
+<head>
+<title> attr() 메소드를 활용하여 값 변경해보기 </title>
+<meta charset="utf-8">
+<!-- js확장자를 가진 외부파일을 호출하여 적용하는 방식-->
+<script src="./js/jquery-3.3.1.js" type="text/javascript"></script>
+<script>
+ $(document).ready(function(){  //제이쿼리 콜백함수
+   alert("안녕하세요");
+ });
+</script>
+</head>
+<body>
 
-	<body>
-        <!-- 문서의 내용을 입력합니다. -->
-        <section>
-            <div id="nav">
-                <ul>
-                    <li id="btn1" class="first on">
-                        <a href="#">
-                            <img src="images/button.jpg" />
-                        </a>
-                    </li>
-                    <li id="btn2">
-                        <a href="#">
-                            <img src="images/button.jpg" />
-                        </a>
-                    </li>
-                    <li id="btn3">
-                        <a href="#">
-                            <img src="images/button.jpg" />
-                        </a>
-                    </li>
-                    <li id="btn4">
-                        <a href="#">
-                            <img src="images/button.jpg" />
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <!-- 버튼 클릭시 큰 그림을 보여주는 영역-->
-            <div id="big">
-                <img src="images/1.png" alt="예쁜배경1" />
-            </div>
-        </section>
-	</body>
+</body>
 </html>

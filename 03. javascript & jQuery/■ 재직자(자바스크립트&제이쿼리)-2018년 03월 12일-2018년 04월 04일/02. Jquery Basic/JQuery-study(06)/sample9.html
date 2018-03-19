@@ -9,22 +9,22 @@
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 		<script type="text/javascript">
 		$(function(){
-			$("a").mousedown(function(){
-				$("img").attr("src",$(this).attr("href")).attr("alt",$(this).text());
-			}).click(function(){
-				return false;
+			$("button#fade100").click(function(){
+				$("img:not(:animated)").fadeTo("slow",1);
+			});
+			$("button#fade50").click(function(){
+				$("img:not(:animated)").fadeTo("slow",0.5);
+			});
+			$("button#fade0").click(function(){
+				$("img:not(:animated)").fadeTo("slow",0);
 			});
 		});
 		</script>
 	</head>
 	<body>
-	<ul>
-		<li><a href="flower.jpg">꽃</a></li>
-		<li><a href="sea.jpg">바다</a></li>
-		<li><a href="Jellyfish.jpg">해파리</a></li>
-		<li><a href="Building.jpg">건물</a></li>
-	</ul>
-	<p><img src="flower.jpg" alt="꽃" /></p>
-	
+		<button id="fade100">표시</button>
+		<button id="fade50">반투명</button>
+		<button id="fade0">비표시</button>
+		<p><img src="flower.jpg" alt="flower" /></p>
 	</body>
 </html>

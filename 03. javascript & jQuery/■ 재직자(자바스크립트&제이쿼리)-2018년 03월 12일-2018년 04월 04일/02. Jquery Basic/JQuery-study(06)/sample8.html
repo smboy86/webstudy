@@ -7,25 +7,25 @@
 		<meta http-equiv="Content-Script-Type" content="text/javascript" />
 		<title>sample8</title>
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		<style type="text/css">
+		img{
+			display:none;
+		}
+		</style>
 		<script type="text/javascript">
 		$(function(){
-			$("a").dblclick(function(){
-				$("img").attr("src",$(this).attr("href")).attr("alt",$(this).text());
-			}).click(function(){
-				return false;
+			$("button#fadeIn").click(function(){
+				$("img:not(:animated)").fadeIn("slow");
+			});
+			$("button#fadeOut").click(function(){
+				$("img:not(:animated)").fadeOut("slow");
 			});
 		});
 		</script>
 	</head>
 	<body>
-	<ul>
-	<li><a href="flower.jpg">꽃</a></li>
-		<li><a href="sea.jpg">바다</a></li>
-		<li><a href="Jellyfish.jpg">해파리</a></li>
-		<li><a href="Building.jpg">건물</a></li>
-		
-	</ul>
-	<p><img src="flower.jpg" alt="꽃" /></p>
-	
+		<button id="fadeIn">표시</button>
+		<button id="fadeOut">비표시</button>
+		<p><img src="flower.jpg" alt="flower" /></p>
 	</body>
 </html>
