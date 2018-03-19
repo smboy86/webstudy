@@ -4,12 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> 이미지 </title>
+    <title> 반복문 </title>
     <script>
         document.write("<img src='1.png' width='10%' />");
+
+        for(var i = 1 ; i <= 10; i++){
+            document.write("<img src='1.png' width='"+ i + "%' />");
+        }
+        document.write("<br><br><br><br>");
+
+        for(var i = 9 ; i >= 1; i--){
+            document.write("<img src='1.png' width='"+ i + "%' />");
+        }
+
+        document.write("<br><br><br><br>");
+
+        for(var i = 1 ; i <= 100; i++){
+            document.write("<img src='1.png' width='5%' />");
+        }
+        
     </script>
 </head>
 <body>
-    <h1> 이미지 </h1>
+    <h1> 반복문 </h1>
 </body>
 </html>
