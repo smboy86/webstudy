@@ -9,15 +9,58 @@
         // 반복 제어문 : while, do~while, for
         var k = 10;
         while (k > 8){
-            k--;
-            document.write(k + "<br>");
+            k--; // 9
+            //document.write(k + "<br>");
         }
+        var m = 1;
+        do{
+            m++;
+            document.write(m + "<br>");
+        }while(m < 3)
+
+        // for
+        for(var i = 1;i<=5;i++){
+            document.write(i + "<br>");
+        }
+
+        for(var i = 1; i <= 50 ; i++){
+            if (i % 10 == 0) document.writeln("★");
+            else document.writeln("★");
+        }
+
+        // 왜 초기값 5가 안찍히지?? ;;
+        for(var q = 5; q >= 0 ; q-=1){
+            document.write(q + "<br>");
+        }
+
+        document.write("<br>");
+
+        for(var i = 5; i <= 10 ; i++){
+            document.write(i + "<br>");
+        }
+
+        document.write("<br>");
+
+        for(var s = 1; s <= 10 ; s += 2){
+            document.write(s + "<br>");
+        }
+
+        document.write("10부터 0일때까지 2씩 감소하는 식 for 문으로<br><br>");
+
+        for(var s = 10; s >= 0 ; s -= 2){
+            document.write(s + "<br>");
+        }
+
+        document.write("<br><br>");
+
+        // 왜 초기값 5가 안찍히지?? ;;
+        for(var q = 5; q >= 0 ; q-=1){
+            document.write(q + "<br>");
+        }
+
     </script>
 </head>
 <body>
     <h1>반복제어문 실습</h1>
-    <h2>바로 적용</h2>
-    저장하면 하면 바로 됨 <br>
-    새로고침 안해도 됨
 </body>
 </html>
