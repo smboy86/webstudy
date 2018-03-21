@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> 갤러리</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <!--
+      1. body 태그 작성
+      2. css 작업
+      3. javascript 작업
+    -->
+    <style>
+    *{
+        margin:0;
+        padding:0;
+        border:0;
+    }
+    body{
+        background:black;
+    }
+
+    #container {width:1024px;height:100%;position: relative;margin:0 auto;}
+    img:not(.btn) {border:3px solid white;}
+    
+
+    #navi {width:300px; position: absolute;top:20px;left:0px;}
+    #navi .pageWrap .page:nth-child(2) {display:none;}
+    #navi .pageWrap .page:nth-child(3) {display:none;}
+    #navi .pageWrap .page ul li {display:inline;}
+    #navi .pageWrap .page p {text-align:center;}
+    
+    #main {position: absolute;top:20px;right:0px;}
+    
+    </style>
+    <script>
+        $(function(){
+            $("a.btn01_next").click(function(){
+                $(".page:nth-child(1)").fadeOut('fast');
+                $(".page:nth-child(2)").fadeIn('slow');
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="container"><!-- container-->
+        <div id="navi"><!-- navi -->
+            <div class="pageWrap"><!--pageWrap-->
+                <div class="page"><!-- page -->
+                    <ul>
+                        <li><a href="images/photo1.jpg"><img src="images/photo1_thum.jpg" alt="샹제리아" /></a></li>
+                        <li><a href="images/photo2.jpg"><img src="images/photo2_thum.jpg" alt="장미" /></a></li>
+                        <li><a href="images/photo3.jpg"><img src="images/photo3_thum.jpg" alt="바다" /></a></li>
+                        <li><a href="images/photo4.jpg"><img src="images/photo4_thum.jpg" alt="문" /></a></li>
+                        <li><a href="images/photo5.jpg"><img src="images/photo5_thum.jpg" alt="바다" /></a></li>
+                        <li><a href="images/photo6.jpg"><img src="images/photo6_thum.jpg" alt="자양화" /></a></li>
+                        <li><a href="images/photo7.jpg"><img src="images/photo7_thum.jpg" alt="하늘" /></a></li>
+                        <li><a href="images/photo8.jpg"><img src="images/photo8_thum.jpg" alt="건물" /></a></li>
+                    </ul>
+                    <p><a class="btn01_next" href="#"><img class="btn" src="images/btn_next.jpg" alt="다음" class="next" /></a></p>
+                </div><!-- //page -->
+                <div class="page"><!-- page -->
+                    <ul>
+                        <li><a href="images/photo9.jpg"><img src="images/photo9_thum.jpg" alt="손" /></a></li>
+                        <li><a href="images/photo10.jpg"><img src="images/photo10_thum.jpg" alt="마루" /></a></li>
+                        <li><a href="images/photo11.jpg"><img src="images/photo11_thum.jpg" alt="나무" /></a></li>
+                        <li><a href="images/photo12.jpg"><img src="images/photo12_thum.jpg" alt="잎" /></a></li>
+                        <li><a href="images/photo13.jpg"><img src="images/photo13_thum.jpg" alt="꽃" /></a></li>
+                        <li><a href="images/photo14.jpg"><img src="images/photo14_thum.jpg" alt="해파리" /></a></li>
+                        <li><a href="images/photo15.jpg"><img src="images/photo15_thum.jpg" alt="풍선" /></a></li>
+                        <li><a href="images/photo16.jpg"><img src="images/photo16_thum.jpg" alt="꽃" /></a></li>
+                    </ul>
+                    <p><a href="#"><img class="btn" src="images/btn_prev.jpg" alt="이전" class="prev" /></a><a href="#"><img class="btn" src="images/btn_next.jpg" alt="다음" class="next" /></a></p>
+                </div><!-- //page -->
+
+                <div class="page"><!-- page -->
+                    <ul>
+                        <li><a href="images/photo17.jpg"><img src="images/photo17_thum.jpg" alt="꽃" /></a></li>
+                        <li><a href="images/photo18.jpg"><img src="images/photo18_thum.jpg" alt="꽃" /></a></li>
+                        <li><a href="images/photo19.jpg"><img src="images/photo19_thum.jpg" alt="꽃" /></a></li>
+                    </ul>
+                    <p><a href="#"><img class="btn" src="images/btn_prev.jpg" alt="다음" class="prev" /></a></p>
+                </div><!-- //page -->
+            </div><!--//pageWrap-->
+        </div><!-- //navi -->
+        <!-- 작은 그림 클릭시 큰 그림이 보여지는 영역 -->
+        <div id="main">
+            <img src="images/photo1.jpg" alt="" />
+        </div>
+    </div><!-- //container-->
+</body>
+</html>

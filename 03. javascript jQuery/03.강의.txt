@@ -25,7 +25,10 @@
   2) 반복문 실습
   3) 반복문 샘플 몇 개 + jQuery toggle, slideDown, slideUp
 
-
+18.3.24 - 5일차
+  1) 반복문 복습, 변수 심화(지역, 전역)
+  2) javascript return 사용법, jquery 샘플 확인, this 용법
+  
 
 
 

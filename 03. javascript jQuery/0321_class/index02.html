@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> 전역변수, 지역변수</title>
+    <script>
+    var a=1, b=5;
+    document.write("1 : " + a + "<br>");
+    document.write("1 : " + b + "<br>");
+ 
+    c();
+
+    function c(){
+        var a = 3;
+        document.write("2 : " + a + "<br>");
+        document.write("2 : " + b + "<br>");
+    }
+
+    document.write("3 : " + a + "<br>");
+    document.write("3 : " + b + "<br>");
+
+    /*
+    전역변수 : 문장 전체에 영향을 끼치는 변수
+    지역변수 : 함수내부처럼 로컬영역에서 영향을 끼친후 영역을 빠져나가면 효력상실됨
+    # 스크립트 문장 내부에서 변수에는 var를 넣거나 생략해도 됨
+      단 지역변수일때는 var를 선언하여 지역변수의 역할을 하도록 함
+    */
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

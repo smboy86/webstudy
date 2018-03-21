@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta charset="utf-8">
+<script>
+  function site(obj){
+       //document.myForm.link는 select객체를 의미
+	   //this가 document.myForm.link를 대신하게 됨
+	   //this(document.myForm.link)키워드를 obj변수(매개변수)가 받음	
+       var url=obj.options[1].value;
+	   alert(url);
+  }
+</script>
+</head>
+<body>
+    <form name="myForm">
+	    <select name="link" onchange="site(this)">
+		    <option value="#">바로가기</option>
+			<option value="http://www.naver.com">naver</option>
+			<option value="http://www.daum.net">daum</option>
+		</select>
+	</form>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> 반복문 </title>
+    <script>    
+    var i = 20;
+    while(true){
+        //document.write(i + "<br>");
+        i--;
+        if(i>=10) continue;
+        if(i==8) break;        
+    }
+    /*
+    강제 제어문 : continue, break
+    continue : 조건에 해당되면 제어문의 조건 위치로 이동(위로)
+    break : 조건문이 참이 되면 제어문 종료(아래로)
+    */
+
+    /*
+    switch~case
+
+    */
+
+    //요일구하기
+    var day = new Date();
+    var day = new Date();
+    document.write(day.getDay() + "요일 입니다.");
+
+    switch(day.getDay()){
+        case 0 : alert("일요일"); break;
+        case 1 : alert("월요일"); break;
+        case 2 : alert("화요일"); break;
+        case 3 : alert("수요일"); break;
+        case 4 : alert("목요일"); break;
+        case 5 : alert("금요일"); break;
+        case 6 : alert("토요일"); break;
+    }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
