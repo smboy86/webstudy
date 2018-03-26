@@ -1,0 +1,25 @@
+<script>
+var ANIMA = new Array(6); // 0 ~ 9
+for (i=0; i<6 ; i++) {
+ANIMA[i] = new Image(); // 이미지 객체를 생성
+ANIMA[i].src= "images/Count_0" + i + ".gif"; // 각각 이미지 객체의 주소는 image0.gif 이런식으로 1씩 증가시켜 만들어줌
+}
+
+function animateIt(nowIndex){ // 현재 적용되어 있는 이미지의 순서값을 받는다
+if(nowIndex == 5) // 지금 이미지 순서가 9라면 다시 첨으로..
+nowIndex = 0;
+else
+nowIndex++; // 9가 아니라면 다음 이미지를 위해서 1증가
+
+document.all.ani.src = ANIMA[nowIndex].src; // id=ani 인 img 의 src 를 1증가된 이미지순서로 바꿈..
+
+setTimeout("animateIt(" + nowIndex + ")",300); //0.3 초 후 자신을 다시실행시키되 1증가 된 값을 보내어 다음 작업이 수행되도록 함..
+}
+</script>
+<body onLoad="animateIt(0);"> 
+<h1>문서가 다 로딩되면 함수를 실행(id가 ani인 img)</h1>
+<p>
+  <img id="ani" src="images/Count_00.gif">
+</p>
+
+</body>

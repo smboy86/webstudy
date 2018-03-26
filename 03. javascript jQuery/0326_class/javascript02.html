@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>랜덤 유형의 배너 효과</title>
+    <script>
+    // 배너 이미지를 저장하는 공간으로 활용하기 위하여 배열선언
+    var img = [];
+    img[0] = "./CMBanner_01.gif";
+    img[1] = "./CMBanner_02.gif";
+    img[2] = "./CMBanner_03.gif";
+
+    //text담기 위해 배열선언;
+    var text = [];
+    text[0] = "배너1";
+    text[1] = "배너2";
+    text[2] = "배너3";
+
+    // 웹주소를 담기위한 공간
+    var link = [];
+    link[0] = "http://naver.com";
+    link[1] = "http://daum.net";
+    link[2] = "http://google.com";
+
+    var r = Math.round(Math.random() * 2);
+
+    var playBanner = setInterval(function() {
+        document.write("<img src=" + img[r] + " alt='' width='300px'><br>");
+        document.write(text[r] + "<br>");
+        document.write(link[r] + "<br>");
+
+        r = Math.round(Math.random() * 2);
+        document.write("<br>");
+    }, 1000);
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

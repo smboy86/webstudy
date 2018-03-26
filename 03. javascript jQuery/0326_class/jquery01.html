@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>객체들</title>
+    <style>
+    * {margin:0;padding:0;box-sizing: border-box;}
+    html, body, main {height:100%;}
+    
+    </style>
+    <script>
+
+    function writeArray(array, index){
+        for(var i = 0; i <index; i++){
+            document.write(array[i] + " <br>");
+        }
+
+        document.write("=============== <br>");
+    }
+
+    //배열객체
+    //배열객체 변수=new Array();
+    var box = new Array();
+    box[0] = "사과";
+    box[1] = "귤";
+    box[2] = "딸기";
+
+    writeArray(box, 3);
+
+    // 두 번째 방법
+    var box2 = new Array("사과","귤","딸기");
+
+    writeArray(box2, 3);
+
+    // 세 번째 방법
+    var box3 = ["사과","귤","딸기"];
+
+    writeArray(box3, 3);
+
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

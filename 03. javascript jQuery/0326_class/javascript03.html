@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jquery animate</title>
+    <style>
+    * {margin:0;padding:0;box-sizing: border-box;}
+    html, body, main {height:100%;}
+    .intro_main {height:100%;position:relative;}
+    .deco0 {left:0;top:0;position: absolute;opacity: 0;border:5px solid red;}
+    .deco0 img {width:100%;max-width: 100%;}
+    </style>
+    <script src="./js/jquery-1.10.1.min.js"></script>
+    <script src="./js/jquery.easing.1.3.js"></script>
+    <script>
+        $(function(){
+            $(".deco0").stop().delay(2000).animate({opacity:1, top:0}, 1300, "easeInOutElastic");
+        });
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <div class="intro_main">
+            <div class="deco0"><img src="./images/intro_img07.png" alt=""></div>
+        </div>
+    </div>
+</body>
+</html>

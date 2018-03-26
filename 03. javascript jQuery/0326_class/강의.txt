@@ -1,0 +1,7 @@
+객체들
+
+1. 웹 브라우저 기반의 객체들 : DOM
+window, document, history, location ~ 
+
+2. 내장 객체들
+
