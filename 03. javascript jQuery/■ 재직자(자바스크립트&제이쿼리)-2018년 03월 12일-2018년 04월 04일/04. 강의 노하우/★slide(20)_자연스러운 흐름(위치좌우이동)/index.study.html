@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+	<title>http://www.blueb.co.kr</title>
+	
+	<script src="js/jquery-1.4.4.min.js"></script>
+	<script src="js/slides.jquery.js"></script>
+	<script>
+		$(function(){
+			$('#slides').slides({
+				preload: true,
+				preloadImage: 'img/loading.gif',
+				play: 2000,
+				pause: 2500,
+				hoverPause: true
+			});
+		});
+	</script>
+	<link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+	<div id="container">
+		<div id="example">
+			<div id="slides">
+				<div class="slides_container">
+					<img src="./images/1.jpg" alt="포토1">
+					<img src="./images/2.jpg" alt="포토2">
+					<img src="./images/3.jpg" alt="포토3">
+					<img src="./images/4.jpg" alt="포토4">
+					<img src="./images/5.jpg" alt="포토5">
+					<img src="./images/6.jpg" alt="포토6">
+					<img src="./images/7.jpg" alt="포토7">
+				</div>
+				<a href="#" class="prev"><img src="img/arrow-prev.png" width="24" height="43" alt="Arrow Prev"></a>
+				<a href="#" class="next"><img src="img/arrow-next.png" width="24" height="43" alt="Arrow Next"></a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

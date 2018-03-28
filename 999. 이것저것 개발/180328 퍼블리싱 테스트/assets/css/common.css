@@ -1,0 +1,39 @@
+/*
+# css 선언 규칙
+1) 속성은 형태 - 흐름 - 위치 - 크기 - 박스모델 - 배경 - 글자 - 기타 순으로 지정한다.
+a {
+    display: inline-block; float: left; clear: both; 
+    position: left; left:10px; right:10px; top:10px; bottom: 10px; z-index:10px;
+    width:10px;height:10px;overflow: hidden;
+    margin:0 auto; padding: 0 0 0 0; border: 1px solid red;
+    background: url('./test.gif');
+    text-align:center; font-size:10px;
+}
+*/
+
+/*
+# 파일명 명명 규칙
+1) 형태_의미_순서_상태.확장자
+1-1) 위치_형태_의미_순서_상태.확장자
+
+파일명은 20글자 이내로 알파벳 소문자, 숫자, 언더바( _ ) 을 조합하여 생성 (대문자, 공백, 특수기호는 사용하지 않음)
+
+btn_down.gif, btn_down_02.gif, btn_down_03.gif
+bg_faq.gif, bg_faq_on.gif
+
+*/
+
+/* main 꾸미기 */
+main {width:1920px;}
+header {width:1200px;margin:0 auto;  border:1px solid red;}
+#top {height:180px;position: relative; margin:0 auto;   border:1px solid orange;}
+#top .top_left {position: absolute;left:0;}
+#top .top_right {position: absolute;right:0;}
+#top .top_right li {float:left;margin-right:10px;}
+#top .top_right li:last-child {margin-right:0px;}
+
+#gnb {height:55px;border:1px solid yellow}
+
+#visual {width:1920px;height:599px;border:1px solid orange;}
+#contents {width:1920px;height:1840px;border:1px solid yellow;}
+footer {width:1920px;height:213px;border:1px solid green;}
