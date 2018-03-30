@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>	
+	<title>bean o`clock</title>	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<!--
+	<link type="text/css" href="css/style.css" rel="stylesheet">
+	-->
+	<link type="text/css" href="./navi/css/style_kang.css" rel="stylesheet">
+	
+	<script src="js/jquery-2.1.3.min.js"></script>
+	<script src="js/jquery.parallax-scroll.min.js"></script>
+	
+	<!-- scroll menu -->
+	<script type="text/javascript" src="./navi/js/jquery.easing.1.3.min.js"></script>
+	<script type="text/javascript" src="./navi/js/scroll_menu.js"></script>
+	
+	<!-- page header 관련 jquery-->
+    <script src="./navi/js/jquery.ba-throttle-debounce.min.js"></script>
+	<script src="./navi/js/jquery.smooth-scroll.min.js"></script>
+	<script src="./navi/js/main.js"></script>
+	
+</head>
+<body>
+
+<div id="wrap">
+    <!-- 오른쪽 바로가기 메뉴-->
+    <div id="top_menu">
+		<ul>
+			<li class="on"><a href="#ms1"><span>01</span></a></li>
+			<li><a href="#ms2"><span>02</span></a></li>
+			<li><a href="#ms3"><span>03</span></a></li>
+		</ul>
+	</div>
+
+	<header class="page-header" role="banner">
+		<div class="inner clearfix">
+			<h1 class="site-logo"><a href="http://naver.com"><img src="images/logo.jpg"></a></h1>
+			<nav class="primary-nav" role="navigation">
+				<ul>
+					<li><a href="#ms1" class="scroll">Page 01</a></li>
+					<li><a href="#ms2" class="scroll">Page 02</a></li>
+					<li><a href="#ms3" class="scroll">Page 03</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	
+	<script>
+		$(document).ready(function() {
+			$('.scroll').click(function(e) {
+				e.preventDefault();
+				$('html, body').animate({scrollTop:$(this.hash).offset().top}, 500);
+			});
+		});
+	</script>
+	<div id="contents">
+	<div id="ms1" class="container bg-holder" style='background-image:url("images/bg01.jpg")' data-width="1200" data-height="600">
+		<section class="content">			
+			<h3>It's bean o'clock</h3>
+			<p>더치커피와 원두커피 전문 쇼핑몰 빈어클락 입니다.				
+				<!-- <div class='icon'><img src='images/icon_view.png'></div> -->
+				<div class='icon'><img src='images/icon_01.png' style="width:120px;"></div>
+			</p>
+		</section>
+	</div>
+	<div id="ms2" class="container bg-holder" style='background-image:url("images/bg02.jpg")' data-width="1200" data-height="600">
+		<section class="content">
+			<h3>Cold brewed coffee</h3>
+			<p>	믿을수있는 고품질의 더치커피를 찾으신다면<br>
+				지금바로 주문하세요 !				
+				<!-- <div class='icon'><img src='images/icon_order.png'></div> -->
+				<div class='icon'><img src='images/icon_01.png' style="width:120px;"></div>
+			</p>
+		</section>
+	</div>
+	<div id="ms3" class="container bg-holder" style='background-image:url("images/bg03.jpg")' data-width="1200" data-height="600">
+		<section class="content">
+			<h3>Roasted bean</h3>
+			<p>	주문 후 로스팅 한 신선한 원두를<br>
+				만나보고 싶다면 지금 바로 주문하세요!
+				<div class='icon'><img src='images/icon_01.png' style="width:120px;"></div>
+			</p>
+		</section>
+	</div>
+</div>
+
+	<script>   
+		$("document").ready(function(){
+			$(window).resize(function(){
+				wd = $(window);
+				
+				$( ".bg-holder" ).width( wd.width() ).height( wd.height() );
+				$( ".content" ).each(function(){
+					$( this ).css( "margin-left", ( $(this).width() / 2 * -1 ) + "px" ).css( "margin-top", ( $(this).height() / 2 * -1 ) + "px" );
+				});
+		
+			});
+			
+			setTimeout(function(){ $(window).resize() }, 1000);
+			//1초마다 함수호출
+            //1초마다 창크기 조절시 실행해라
+				
+			$(".bg-holder").parallaxScroll({  //bg-holder요소에서 parallaxScroll을 실행
+				friction: 0.3   //0 : 배경이미지가 콘텐츠를 따라 스크롤, 1 : 배경이 완전히 고정되어 콘텐츠만 스크롤
+				//0~1사이의 값을 적절히 사용시  콘텐츠와 배경의 스크롤 속도를 다르게 해서 패럴랙스 효과 낼수 있음
+			});
+  
+		
+			$( ".icon img" ).hover(function(){　　　　
+				 $( this ).attr( "src", $( this ).attr("src").replace( ".png", "_over.png" ) );
+			},function(){　　　　　　　　　　　　　　　
+				$( this ).attr( "src", $( this ).attr("src").replace( "_over", "" ) );
+			});			
+		});
+	</script>
+</div>
+</body>
+</html>

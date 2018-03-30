@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 4 Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+  <style>
+    .container {border:1px solid red;}
+    .row div {border:1px solid blue;}
+
+
+
+  </style>
+</head>
+<body>
+
+<div class="jumbotron">
+  <div class="container">
+    <div class="row">
+      <h1>hasdflja<mark>dsflka</mark>jdf</h1>
+      <h2>bbbbbbb</h2>
+      <button type="button" class="btn btn-primary btn-block">Button 1</button>
+    </div>
+    <div class="row">
+      <div class="btn-group">
+          <button type="button" class="btn btn-primary">Apple</button>
+          <button type="button" class="btn btn-primary">Samsung</button>
+          <div class="btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                Sony
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Tablet</a>
+              <a class="dropdown-item" href="#">Smartphone</a>
+            </div>
+          </div>
+        </div>      
+    </div>
+    
+  </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3"><h1 class="bg-primary">My First Bootstrap Page</h1></div>
+        <div class="col-lg-4"></div>
+        <div class="col-lg-5"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-5"><p>This is some text.</p></div>
+        <div class="col-sm-4"></div>
+        <div class="col-sm-3"></div>
+    </div>
+
+    <div class="table-responsive">          
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Firstname</th>
+                  <th>Lastname</th>
+                  <th>Age</th>
+                  <th>City</th>
+                  <th>Country</th>
+                  <th>Sex</th>
+                  <th>Example</th>
+                  <th>Example</th>
+                  <th>Example</th>
+                  <th>Example</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Anna</td>
+                  <td>Pitt</td>
+                  <td>35</td>
+                  <td>New York</td>
+                  <td>USA</td>
+                  <td>Female</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+    
+</div>
+
+
+<!-- ############################ body javascript include #################################-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+javascript 객체 유형들
+1. 브라우저 기반의 내장객체 : window, document, history, location
+2. 내장객체 : eval(), parseInt(), parseFloat();

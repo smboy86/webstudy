@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> javascirpt 내장객체들 </title>
+    <script>
+        //문자열객체
+        //문자열 객체변수="string"
+        var s="★java script♥";
+        //객체.특성 or 객체.메소드()
+        
+        //length특성 : 문자개수를 읽어냄
+        document.write(s.length, "<br>"); //13
+        
+        //charAt(첨자) : 첨자 위치의 문자 한개를 읽어냄
+        document.write(s.charAt(3), "<br>"); //
+        
+        document.write(s.indexOf("a"), "<br>"); //
+        document.write(s.lastIndexOf("a"), "<br>"); //
+
+        // 부분적 문자 추출
+        // substring(시작-index, 끝-index);
+        document.write(s.substring(0,1), "<br>");
+        document.write(s.substring(0,4), "<br>");
+        document.write(s.substring(3,8), "<br>");
+        document.write(s.substring(12,13), "<br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

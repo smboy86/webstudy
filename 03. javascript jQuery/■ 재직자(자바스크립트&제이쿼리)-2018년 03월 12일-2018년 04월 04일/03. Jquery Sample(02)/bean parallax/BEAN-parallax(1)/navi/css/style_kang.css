@@ -1,0 +1,56 @@
+﻿
+*{  margin:0; padding:0; }
+html, body{background:#000;}
+h3, p, a {  font-family: "맑은 고딕", 돋움, 굴림; }
+#navi {  position:fixed;	 width:100vw;  z-index:10000; background:#333; }
+#navi h1 {  float:left; padding:35px 0 0 15px; }
+.mainnav {  position:relative; float:left; height:110px; margin:10px 0 0 50px; }
+.mainnav li {  list-style:none;  display:inline-block; margin:37px 30px; }
+.mainnav a {  color: #fff;  font-size:20px; text-decoration: none; }
+
+/*
+ * Page header
+ */
+
+.page-header {  background-color: #333; width: 100%; height:100px; border:0px solid blue;}
+.no-boxshadow .page-header {    }
+.page-header > .inner {  margin: auto; width: 960px;border:0px solid red;}
+/* Logo */
+.site-logo {  font-size: 100%; float: left; margin-top: 25px; }
+
+/* Primary nav */
+.primary-nav {  float: right; line-height: 65px; letter-spacing: 1px; text-transform: uppercase; }
+.primary-nav li {float: left; list-style:none; }
+.primary-nav a { display: block; padding: 10px 30px; color:#fff; text-decoration:none;}
+.primary-nav a:hover {color:yellow; }
+
+/* Sticky header (clone) 여기서부터 스크롤 내렸을떄 css */
+.page-header-clone {  background-color:rgba(0,0,0,0.7); height:50px; position: fixed; top: -130px; width: 100%; z-index: 30;  -webkit-transition: top 0.25s; transition: top 0.25s; }
+.page-header-clone > .inner {  margin: auto; width: 960px; border:0px solid yellow;}
+.page-header-clone.visible { top: 0; }
+.page-header-clone:hover { opacity: 1; }
+.page-header-clone .site-logo { margin-left: 8px; display:none;}
+.page-header-clone .site-logo a {  display: block; width: 143px; height: 32px; overflow: hidden; }
+.page-header-clone .site-logo a:before { content: url(../img/logo-small.png); display: inline-block;}
+.page-header-clone .primary-nav {  font-size: 14px; line-height: 30px; }
+.page-header-clone .primary-nav a { color: #fff; }
+
+
+#top_menu{ z-index:999999999;}
+#top_menu ul{position:fixed; width:50px; height:240px; right:40px; top:50%; margin-top:-120px; z-index:999999999;}
+#top_menu ul li{list-style:none; }
+#top_menu ul li a{display:block; height:80px; text-decoration:none; background:url(../images/1.png) no-repeat center center; }			
+#top_menu ul li a span{ visibility:hidden; width:70px; display:inline-block;}
+#top_menu ul li.on a{background:url(../images/2.png) no-repeat center center;}
+
+#ms1, #ms2, #ms3{ min-height:730px; }
+.container {  position:relative; background-position: center; background-repeat: no-repeat; overflow:hidden; }
+
+.bg-holder{  width:100%; height:100%; }
+
+.container .content {  color: #fff; text-align: center; position: absolute; left:50%; top: 50%;
+-webkit-transform: translateY(-50%);  -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -o-transform: translateY(-50%); transform: translateY(-50%); }
+
+.content h3{  font-family:'Nexa Bold'; color:#e9592c; font-size:65px; text-align:center; }
+.content p{  margin-top:12px; line-height:32px; font-size:24px; text-align:center; color:#fff; }
+.icon{  text-align:center; height:118px; margin:20px auto 0;  cursor:pointer; }
