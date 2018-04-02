@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>gs건설 웹사이트 제작</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+
+    <style>
+        html,
+        body,
+        section {
+            height: 100%;
+        }
+
+        .container {
+            border: 2px solid black;
+            width: 980px;
+        }
+
+
+        /* ##################################################   */
+
+        #top {
+            border: 1px solid red;
+            height: 109px;
+        }
+
+        #top nav {
+            padding: 0px;
+            height: 31px;
+        }
+
+        #top .nav-item:last-child {
+            background-color: #00509a;
+        }
+
+        #top .nav-item a {
+            font-family: 'NanumSquare';
+            font-size: 13pt;
+            color: rgba(51, 51, 51, 255);
+            text-align: left;
+        }
+
+        #gnb {
+            height: 77px;
+        }
+
+        /* ############################################################################################################### */
+
+        #visual {
+            border: 1px solid red;
+            height: 1000px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <section id="top">
+        <div class="container">
+            <nav id="topNav" class="navbar navbar-expand-lg bg-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse text-center" id="navbarText">
+                    <!-- Links -->
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">로그인</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">회원가입</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">사이트맵</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">english</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="./assets/img/top_icon_search.png" alt="search_icon"></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div id="gnb" class="row">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <img src="./assets/img/top_logo.png" alt="logo">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- container -->
+    </section>
+    <section id="visual">
+        <div class="container">
+
+        </div>
+    </section>
+    <section id="contents"></section>
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

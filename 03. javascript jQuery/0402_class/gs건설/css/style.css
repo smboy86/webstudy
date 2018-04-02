@@ -1,0 +1,14 @@
+/*reset*/
+*{margin:0; padding:0; box-sizing:border-box;}
+html,body,main{position: relative; height:100%;}
+ol,ul{list-style:none;}
+
+/*common(공통영역)*/
+body{font-family:"맑은 고딕", font-size:100%;}
+a{text-decoration:none;}
+header{width:100%; height:120px; background:black;}
+footer{width:100%; height:120px; background:black;}
+
+/*style*/
+#visual{width:100%; height:100%; background:yellow;}
+#contents{width:100%; height:200%; background:pink;}
