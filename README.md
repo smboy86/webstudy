@@ -142,7 +142,3 @@ http://css3generator.com/
 # 180326 웹 psd 읽기 사이트
 뭐 이런 미친 사이트가.. ㄷㄷ
 https://studio.psdetch.com/
-
-
-# 혜화동
-http://bringeld.tistory.com/150
