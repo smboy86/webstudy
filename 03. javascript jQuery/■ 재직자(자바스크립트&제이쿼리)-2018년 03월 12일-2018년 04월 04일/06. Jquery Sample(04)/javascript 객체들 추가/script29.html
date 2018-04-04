@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title> this </title>
+<meta charset="utf-8">
+<script>
+function load(obj){
+   i=obj.selectedIndex; //선택된 옵션의 번지수
+	 //alert(i);
+	 //선택된 옵션의 value값을 url변수에 넘김
+	 url=obj.options[i].value;
+	 //window.location.href=url;
+	 if(i != 0) window.open(url,"","") //인덱스 번호가 0이 아닌
+	
+}
+</script>
+</head>
+<body>
+<form name="site">
+   <select name="link" onchange="load(this)">
+	     <option value="#">바로가기</option>
+			 <option value="http://www.naver.com">naver</option>
+			 <option value="http://www.daum.net">daum</option>
+	 </select>
+</form>
+</body>
+</html>

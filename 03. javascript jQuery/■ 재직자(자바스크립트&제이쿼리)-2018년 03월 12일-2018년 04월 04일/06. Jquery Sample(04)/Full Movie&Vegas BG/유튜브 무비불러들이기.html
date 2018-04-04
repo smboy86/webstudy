@@ -1,0 +1,42 @@
+﻿<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tubular 플러그인 연습</title>	
+	<style>
+		* {
+			margin:0;
+			padding:0;
+		}
+		a, a:visited {
+			text-decoration:none;
+			margin:5px 15px;
+			color:white;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<a href="#" class="tubular-play">PLAY</a> 
+		<a href="#" class="tubular-pause">PAUSE</a> 
+		<a href="#" class="tubular-volume-up">Volumn up</a> 
+		<a href="#" class="tubular-volume-down">Volumn down</a>  
+		<a href="#" class="tubular-mute">Sound stop</a></p> 
+		
+	</div>
+	<script src="js/jquery-2.1.3.min.js"></script>
+	<script src="js/jquery.tubular.1.0.js"></script>
+	<script>
+		$("document").ready(function() {
+			var options = {
+				videoId : 'iA6zAZ4dYF8',
+				//videoId : 'lnXXfYA91Y8';
+				start:2
+			};
+			
+			$('#wrapper').tubular(options);
+		});
+	</script>	
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title> 그리드 유형의 로딩 이미지 </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css" href="./css/style.css" />
+
+<!-- 이미지 로딩 관련 css&jquery-->
+<link rel="stylesheet" type="text/css" href="css/default.css" />
+<link rel="stylesheet" type="text/css" href="css/component.css" />
+<script src="js/modernizr.custom.js"></script>
+
+ <!-- 스와이퍼 관련 css&jquery-->
+ <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="./Swiper-3.3.1/Swiper-3.3.1/dist/css/swiper.min.css">
+
+    <!-- Demo styles -->
+    <style>
+    html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+	
+	.main_visual01{
+	   background:url(./Swiper-3.3.1/Swiper-3.3.1/demos/images/1.jpg) no-repeat center top;
+	   background-size:cover;
+	}
+	.main_visual02{
+	   background:url(./Swiper-3.3.1/Swiper-3.3.1/demos/images/2.jpg) no-repeat center top;
+	   background-size:cover;
+	}
+	.main_visual03{
+	   background:url(./Swiper-3.3.1/Swiper-3.3.1/demos/images/3.jpg) no-repeat center top;
+	   background-size:cover;
+	}
+    </style>
+
+</head>
+<body>
+     <header> 헤더</header>
+     <section id="visual">
+	       <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide main_visual01"></div>
+            <div class="swiper-slide main_visual02"></div>
+            <div class="swiper-slide main_visual03"></div>
+    </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+		<!-- Add Arrows -->
+        <div class="next"></div>
+        <div class="prev"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="./Swiper-3.3.1/Swiper-3.3.1/dist/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+		autoplay: 2500,
+        autoplayDisableOnInteraction: true,
+		nextButton: '.next',
+        prevButton: '.prev'
+    });
+    </script>
+	 </section>
+	 <section id="product">
+	     <!-- 이미지 로딩 끼어넣기 -->
+		 <div class="container">
+	      	<ul class="grid effect-2" id="grid">
+				<li><a href="#"><img src="images/gallery01.png" /></a></li>
+				<li><a href="#"><img src="images/gallery02.png" /></a></li>
+				<li><a href="#"><img src="images/gallery03.png" /></a></li>
+				<li><a href="#"><img src="images/gallery04.png" /></a></li>
+				<li><a href="#"><img src="images/gallery05.png" /></a></li>
+				<li><a href="#"><img src="images/gallery06.png" /></a></li>
+				<li><a href="#"><img src="images/gallery07.png" /></a></li>
+				<li><a href="#"><img src="images/gallery08.png" /></a></li>
+				<li><a href="#"><img src="images/gallery09.png" /></a></li>
+				<li><a href="#"><img src="images/gallery10.png" /></a></li>
+				<li><a href="#"><img src="images/gallery11.png" /></a></li>
+				<li><a href="#"><img src="images/gallery12.png" /></a></li>
+				<li><a href="#"><img src="images/gallery13.png" /></a></li>
+				<li><a href="#"><img src="images/gallery14.png" /></a></li>
+				<li><a href="#"><img src="images/gallery15.png" /></a></li>
+			
+			</ul>
+		</div>
+		<script src="js/masonry.pkgd.min.js"></script>
+		<script src="js/imagesloaded.js"></script>
+		<script src="js/classie.js"></script>
+		<script src="js/AnimOnScroll.js"></script>
+		<script>
+			new AnimOnScroll( document.getElementById( 'grid' ), {
+				minDuration : 0.4,
+				maxDuration : 0.7,
+				viewportFactor : 0.2
+			} );
+		</script>
+		 <!-- //이미지 로딩 끼어넣기 -->
+	 </section>
+	 <footer>하단</footer>
+</body>
+</html>

@@ -1,0 +1,51 @@
+/*★★★★★dist폴더안의 swiper.css 부분에서 추가*/
+ 
+ /* ★추가된 부분 시작*/
+  html, body {
+        position: relative;
+        height: 100%;
+    }
+ 
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+	
+    .swiper-slide {   /* 수평으로 가운데/수직으로 가운데 정렬로 셋팅됨*/
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+ /* ★추가된 부분 끝*/
+
+.swiper-container,.swiper-container2{   /* ★추가된 부분 */
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  /* Fix of Webkit flickering */
+  z-index: 1;
+}

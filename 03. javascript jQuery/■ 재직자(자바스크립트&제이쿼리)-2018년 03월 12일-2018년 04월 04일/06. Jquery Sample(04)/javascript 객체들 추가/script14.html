@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>웹 브라우저 기반의 객체(window객체)</title>
+<meta charset="utf-8">
+<script>
+   function win(){
+	   window.open("http://www.naver.com","","");
+		 //window.open("불러들일 파일 또는 주소", "창이름", "속성과 속성값 컴마로 나열");
+		 //window.open("load.html","",""); 세번째 위치를 따옴표로만 표시할 경우 웹 브라우저 전체가 화면에 뜨는 유형 즉 _blank처럼 전체 웹 브라우저 기준으로 파일을 읽어들임
+	 }
+</script>
+</head>
+<body onload="win()">
+문서가 열리는 순간 win함수 호출
+</body>
+</html>

@@ -1,0 +1,23 @@
+
+/*Tech*/
+.Tech_List .tech{position:relative;}
+.Tech_List .wrap01 .tech02{position:absolute; top:0; right:0;}
+.Tech_List .wrap02 .tech04{position:absolute; top:0; right:0;}
+.Tech_List .wrap03 .tech06{position:absolute; top:0; right:0;}
+.Tech_List .wrap04 .tech08{position:absolute; top:0; right:0;}
+.Tech_List dl.cont dt a {background:black;}
+
+
+/*Biz*/
+.tabs ul.horizontal{position:relative;height:80px}
+.tabs ul.horizontal li.tab01 a{position:absolute; top:0; left:0;}
+.tabs ul.horizontal li.tab02 a{position:absolute; top:0; left:328px;}
+.tabs ul.horizontal li.tab03 a{position:absolute; top:0; left:656px;}
+.tabs ul.horizontal li.tab04 a{position:absolute; top:51px; left:0;}
+.tabs ul.horizontal li.tab05 a{position:absolute; top:51px; left:328px;}
+
+
+/*Login*/
+.Login_List fieldset .wrap input[type=text], .Login_List input[type=password]{margin-left:-10px; }
+.Login_List input[type=checkbox]{margin-top:10px; margin-left:-4px; }
+.Login_List input[type=checkbox]+label{ margin-top:12px;}

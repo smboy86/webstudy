@@ -1,0 +1,49 @@
+/*main.css*/
+
+/*공통(title)*/
+.inner h3.title{font-family:'Myriad Pro';font-weight:700; font-size:34px;padding-top:72px;padding-bottom:17px;}
+.inner p.title{font-family: 'nanum-square-r';font-size:15px;padding-bottom:44px; line-height:1.5}
+.inner h3.title, .inner p.title{text-align:center;}
+
+
+/*-------------section01-------------*/
+#section01 .inner a{display:block;}
+#section01 .inner dl{float:left;width:97.5%;height:auto;background:#fff;}
+#section01 .inner dl dd.img{padding-top:70%}
+#section01 .inner dl.news01 dd.img{background:url(../images/main/sec01_img01.png) no-repeat center 0;background-size:cover;}
+#section01 .inner dl.news02 dd.img{background:url(../images/main/sec01_img02.png) no-repeat center 0; background-size:cover;}
+#section01 .inner dl.news03 dd.img{background:url(../images/main/sec01_img03.png) no-repeat center 0; background-size:cover;}
+#section01 .inner dl.news04 dd.img{background:url(../images/sub/news/news04.png) no-repeat center 0; background-size:cover;}
+#section01 .inner dl.news05 dd.img{background:url(../images/sub/news/news05.jpg) no-repeat center 0; background-size:cover;}
+#section01 .inner dl.news06 dd.img{background:url(../images/sub/news/news06.png) no-repeat center 0; background-size:cover;}
+#section01 .inner dl.news03{margin-right:0;}
+#section01 .inner dl dd.news{font-size:19px; padding:30px 0 10px 18px; font-family:"Myriad Pro"; font-weight:700; letter-spacing:-0.3px; background:url(../images/main/sec01_bar.png) no-repeat 18px 100%;}
+#section01 .inner dl dt.subject{padding:25px 18px 35px 18px;font-weight:600;	font-size:15px;line-height:1.5;}
+#section01 .inner dl.news02 dt.subject, #section01 .inner dl.news06 dt.subject{padding-bottom:58px;}
+#section01 .inner dl dd.date{font-family:'NanumGothic';	font-size:13px;line-height:1.5;padding-left:18px;padding-bottom:18px;}
+
+/*arrow*/
+#section01 .inner .arrow{visibility:hidden;}
+#section01 .inner .arrow p{position:absolute;top:271px;text-align:center;}
+#section01 .inner .arrow .left{left:0;}
+#section01 .inner .arrow .right{right:0;}
+#section01 .inner .arrow a{width:34px;height:34px;background:rgba(0,0,0,0.8);	display:inline-block;}
+#section01 .inner p img{width:20px;height:19px;padding-top:8px;}
+
+
+/*------모바일(480px) 반응형------*/
+@media screen and (max-width:480px){
+
+/*----------공통(title)----------*/
+.inner h3.title{font-weight:bold;font-size:2em;padding-top:14%;padding-bottom:7%;}
+#section01 .inner p.title{display:none;}
+
+/*-------------section01-------------*/
+#section01 .inner dl{width:100%; height:auto;}
+#section01 .inner dl dd.img{height:60%;}
+#section01 .inner dl dt.subject{padding:25px 12px 33px 12px;font-size:1.417em;}
+#section01 .inner dl dd.news{font-size:19px; padding:30px 0 10px 12px; font-family:"Myriad Pro"; font-weight:700; letter-spacing:-0.3px; background:url(../images/main/sec01_bar.png) no-repeat 14px 100%;}
+#section01 .inner dl dd.date{font-size:1.250em;padding-left:12px;	}
+#section01 .inner .arrow p{position:absolute;top:50%;}
+}
+

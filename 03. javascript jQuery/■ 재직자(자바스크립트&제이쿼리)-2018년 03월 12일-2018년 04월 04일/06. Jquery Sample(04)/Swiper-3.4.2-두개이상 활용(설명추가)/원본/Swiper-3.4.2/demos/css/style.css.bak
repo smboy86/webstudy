@@ -1,0 +1,18 @@
+/* reset */
+*{margin:0; padding:0; box-sizing:border-box;}
+ol,ul{list-style:none;}
+html,body,main{height:100%;}
+
+/* main */
+.inner{width:90%; height:100%; border:3px solid red;margin:0 auto;}
+header, section, footer{ width:100%; }
+
+header{ height:120px; background-color:rgba(255,255,255,0.5);position:absolute;width:100%;z-index:100;}
+#visual{ height:100%;}
+#product{ height:auto;} 
+#product .inner{ height:auto; overflow:hidden; position:relative;width:80%;} /* ★★★★★position:relative;overflow:hidden; 추가됨*/
+#product dl{ height:auto; overflow:hidden; border:5px solid cyan;width:100%;margin-bottom:50px;}
+#product dl dt{ padding:20px 0;background:pink;}
+#product dl dd{ padding:20px 0 100px;background:black;}
+
+footer{ height:150px; background:#000;}

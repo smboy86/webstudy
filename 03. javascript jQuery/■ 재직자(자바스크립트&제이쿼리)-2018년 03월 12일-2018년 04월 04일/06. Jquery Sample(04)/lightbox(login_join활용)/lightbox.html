@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>http://www.blueb.co.kr</title>
+
+<script type="text/javascript" src="jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="jquery.model.js"></script>
+
+<style>
+body {
+font-family:verdana;
+font-size:15px;
+}
+
+a {color:#333; text-decoration:none}
+a:hover {color:#ccc; text-decoration:none}
+
+#mask {
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:9000;
+  background-color:#000;
+  display:none;
+}
+  
+#boxes .window {
+  position:absolute;
+  left:0;
+  top:0;
+  width:440px;
+  height:200px;
+  display:none;
+  z-index:9999;
+  padding:20px;
+}
+
+#boxes #dialog {
+  width:375px; 
+  height:203px;
+  padding:10px;
+  background-color:#ffffff;
+}
+
+</style>
+</head>
+<body>
+
+<p><a href="#dialog" name="modal">심플한 모달 윈도우 샘플</a></p>
+
+<div id="boxes">
+	<div id="dialog" class="window">
+	Simple Modal Window | 
+	<a href="#"class="close"/>Close it</a>
+	</div>
+	  
+	<!-- 마스크 영역 - 삭제하면 작동하지 않습니다. -->
+	<div id="mask"></div>
+</div>
+
+</body>
+</html>
